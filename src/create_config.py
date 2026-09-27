@@ -5,7 +5,7 @@ def create_config():
     # Add sections and key-value pairs
     config['crewai'] = {
         'VERBOSE_ENABLED': 'True',
-        'DEEP_ANALYSIS_ENABLED': 'True'
+        'DEEP_ANALYSIS_ENABLED': 'False'
     }
 
     with open('jogi_agent/config/config.ini', 'w') as configfile:

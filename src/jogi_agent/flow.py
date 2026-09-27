@@ -38,7 +38,7 @@ class JogiFlow(Flow):
         self.state["completion_tokens"] = 0
         self.state["successful_requests"] = 0
 
-
+        self.state["read_pdf"] = ""
         self.state["agent1_output"] = ""            # 1. agens
         self.state["rag_chunks"] = ""               # 2. agens
         self.state["cleaned_rag_chunks"] = ""       # 3. agens
@@ -76,6 +76,7 @@ class JogiFlow(Flow):
         #print(f"Flow State ID: {self.state['id']}")
 
         agent_instance = JogiAgent()
+        pdf_feladat = agent_instance.jogi_pdf_beolvasasi_feladat()
         tervezo_feladat = agent_instance.jogi_strategiai_tervezes_feladat()
         rag_task = agent_instance.jogi_kutatasi_feladat()
         megalapozottsag_task = agent_instance.jogszabalyi_megalapozottsag_feladat()
@@ -88,6 +89,7 @@ class JogiFlow(Flow):
         crew_result = agent_instance.crew().kickoff(inputs=flow_inputs)
         self.run_metrics(crew_result)
 
+        self.state["read_pdf"] = pdf_feladat.output.raw
         self.state["agent1_output"] = tervezo_feladat.output.raw
         self.state["rag_chunks"] = rag_task.output.raw
         self.state["cleaned_rag_chunks"] = megalapozottsag_task.output.raw
@@ -314,6 +316,7 @@ class JogiFlow(Flow):
             "Prompt_Tokens": self.state["prompt_tokens"],
             "Completion_Tokens": self.state["completion_tokens"],
             "Successful_Requests": self.state["successful_requests"],
+            "Read_PDF": self.state["read_pdf"],
             "Agent1_Output": self.state["agent1_output"],
             "Agent2_Output": self.state["rag_chunks"],
             "Agent3_Output": self.state["cleaned_rag_chunks"],
@@ -371,6 +374,7 @@ class JogiFlow(Flow):
                 "Prompt_Tokens": self.state["prompt_tokens"],
                 "Completion_Tokens": self.state["completion_tokens"],
                 "Successful_Requests": self.state["successful_requests"],
+                "Read_PDF": self.state["read_pdf"],
                 "Agent1_Output": self.state["agent1_output"],
                 "Agent2_Output": self.state["rag_chunks"],
                 "Agent3_Output": self.state["cleaned_rag_chunks"],
