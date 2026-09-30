@@ -23,7 +23,7 @@ class MyCustomTool(BaseTool):
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        build_rag()
+        #build_rag()
 
         # Elérési út, embeddings beállítása
         db_path = os.path.abspath(os.path.join(os.getcwd(), "../chroma_db"))
