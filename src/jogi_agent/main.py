@@ -13,7 +13,7 @@ from jogi_agent.crew import JogiAgent
 from jogi_agent.utils import get_config, format_history_for_prompt
 from jogi_agent.router import RouterFlow
 import yaml
-from jogi_agent.utils import init_deep_analysis, run_deep_analysis
+from jogi_agent.utils import init_deep_analysis, run_deep_analysis, run_pdf_agent
 
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
 
@@ -45,6 +45,7 @@ def run():
 
     while question != "break":
         formatted_history = format_history_for_prompt(history)
+        pdf_output = run_pdf_agent(question, is_verbose)
 
         try:
             if is_deep_analysis:
@@ -58,6 +59,7 @@ def run():
             inputs = {
                 'topic': question,
                 'current_year': datetime.now().year,
+                'pdf_text' : pdf_output,
                 'history': formatted_history,
                 'details': "",
                 'da_questions': da_questions,

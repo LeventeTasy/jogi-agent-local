@@ -1,7 +1,6 @@
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
 from crewai.agents.agent_builder.base_agent import BaseAgent
-from crewai_tools import PDFSearchTool
 from dotenv import load_dotenv
 from jogi_agent.utils import get_config
 
@@ -38,27 +37,11 @@ class JogiAgent():
 
     @agent
     def jogi_strategist(self) -> Agent:
-
-        pdf_tool = PDFSearchTool(
-            config={
-                "embedding_model": {
-                    "provider": "google-generativeai",
-                    "config": {
-                        "model_name": "gemini-embedding-001"
-                    }
-                },
-                "vectordb": {
-                    "provider": "chromadb",
-                    "config": {}
-                }
-            }
-        )
         return Agent(
             config=self.agents_config['jogi_strategist'],  # type: ignore[index]
             verbose=self.is_verbose,
             temperature=0.1,
-            max_retries=5,
-            tools=[pdf_tool]
+            max_retries=5
         )
 
     @agent
@@ -104,16 +87,9 @@ class JogiAgent():
 
 
     @task
-    def jogi_pdf_beolvasasi_feladat(self) -> Task:
-        return Task(
-            config=self.tasks_config['jogi_pdf_beolvasasi_feladat'], # type: ignore[index]
-        )
-
-    @task
     def jogi_strategiai_tervezes_feladat(self) -> Task:
         return Task(
             config=self.tasks_config['jogi_strategiai_tervezes_feladat'], # type: ignore[index]
-            context=[self.jogi_pdf_beolvasasi_feladat()]
         )
 
     @task

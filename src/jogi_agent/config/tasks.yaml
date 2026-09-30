@@ -1,17 +1,10 @@
-jogi_pdf_beolvasasi_feladat:
-  description: >
-    Felhasználó kérdése: {topic}.
-    Ha a felhasználó hivatkozik valami pdf fájlra, akkor azt a tool-od használatával olvasd be, ezek a fájlok alapértelmezetten az "uploads/" mappában találhatóak meg,
-    tehát ha a felhasználó hivatkozik a "példa.pdf" fájlra, azt olvasd be az "uploads/példa.pdf" helyről.
-  expected_output: >
-    PDF fájl tartalma. 
-    Fontos, ne válaszolj semmire, ne próbájl feladatot megoldani, csak a szöveget írd ki a PDF-ből.
-  agent: jogi_strategist
-
 jogi_strategiai_tervezes_feladat:
   description: >
     Elemezd a felhasználó által feltett kérdést a(z) "{topic}" témakörben, figyelembe véve az eddigi chat history-t is:
     {history}.
+
+    A felhasználó ezt a PDF-et kapcsolta a kérdéséhez (lehet űres is, ha nem kapcsolt semmit):
+    "{pdf_text}"
   
     A felhasználó a következő pontosító kérdésekre:
     {da_questions}, 

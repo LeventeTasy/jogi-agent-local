@@ -1,3 +1,14 @@
+jogi_pdf_beolvasasi_feladat:
+  description: >
+    Felhasználó kérdése: "{topic}".
+    Ha a felhasználó hivatkozik valami pdf fájlra, akkor azt a tool-od használatával olvasd be, ezek a fájlok alapértelmezetten az "uploads/" mappában találhatóak meg,
+    tehát ha a felhasználó hivatkozik a "példa.pdf" fájlra, azt olvasd be az "uploads/példa.pdf" helyről. Ne válaszolj semmire, csak a toolod használva olvasd be a pdf tartalmát.
+    Csak azt/azokat a pdf-t/pdf-ket olvasd be, amiket a felhasználó megemlített.
+  expected_output: >
+    PDF fájl tartalma.
+    Fontos, ne válaszolj semmire, ne próbálj feladatot megoldani, csak a szöveget írd ki a PDF-ből.
+  agent: jogi_pdf_reader
+
 deep_analysis_feladat:
   description: >
     Elemezd a felhasználó által feltett kérdést a(z) "{topic}" témakörben, figyelembe véve az eddigi chat history-t is: 
