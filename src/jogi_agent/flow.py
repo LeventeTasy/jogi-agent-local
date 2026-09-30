@@ -56,6 +56,11 @@ class JogiFlow(Flow):
         if "history" not in self.state:
             self.state["history"] = []
 
+        if "init_tokens" not in self.state:
+            self.state["init_tokens"] = 0
+        else:
+            self.state["total_tokens"] += self.state["init_tokens"]
+
     def run_metrics(self, result):
         metrics = result.token_usage
 
@@ -208,7 +213,8 @@ class JogiFlow(Flow):
         return {"totalTokens": self.state["total_tokens"],
                 "promptTokens": self.state["prompt_tokens"],
                 "completionTokens": self.state["completion_tokens"],
-                "successfulRequests": self.state["successful_requests"]}
+                "successfulRequests": self.state["successful_requests"],
+                'initTokens': self.init_tokens,}
 
     @router(run_main_crew)
     def check_answer(self):

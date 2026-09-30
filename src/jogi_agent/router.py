@@ -31,6 +31,7 @@ class RouterFlow(Flow):
 
         self.state["chunks"] = ""
         self.state["verifier_counter"] = ""
+        self.state["total_tokens"] = 0
 
         if self.state["inputs"]["chatID"] == "":
             self.state["inputs"]["chatID"] = f"C_{uuid.uuid4()}".upper()
@@ -76,6 +77,7 @@ class RouterFlow(Flow):
             {"role": "user", "content": self.state["question"]},
         ]
         response = llm.call(messages)
+        self.state["total_tokens"] = llm.get_token_usage_summary()
 
         if "not_legal" in response.lower():
             return "NOT_LEGAL"
@@ -89,6 +91,7 @@ class RouterFlow(Flow):
         flow = JogiFlow()
         flow.state["inputs"] = self.state["inputs"]
         flow.state["history"] = self.state["history"]
+        flow.state["init_tokens"] = self.state["total_tokens"]
 
         resp = flow.kickoff()
 
