@@ -38,7 +38,6 @@ class JogiFlow(Flow):
         self.state["completion_tokens"] = 0
         self.state["successful_requests"] = 0
 
-
         self.state["agent1_output"] = ""            # 1. agens
         self.state["rag_chunks"] = ""               # 2. agens
         self.state["cleaned_rag_chunks"] = ""       # 3. agens
@@ -55,6 +54,17 @@ class JogiFlow(Flow):
 
         if "history" not in self.state:
             self.state["history"] = []
+
+        if "pdf_text" not in self.state:
+            self.state["pdf_text"] = "None"
+
+        if "init_tokens" not in self.state:
+            self.state["init_tokens"] = 0
+        else:
+            self.state["total_tokens"] += self.state["init_tokens"].total_tokens
+            self.state["prompt_tokens"] += self.state["init_tokens"].prompt_tokens
+            self.state["completion_tokens"] += self.state["init_tokens"].completion_tokens
+            self.state["successful_requests"] += self.state["init_tokens"].successful_requests
 
     def run_metrics(self, result):
         metrics = result.token_usage
@@ -206,7 +216,8 @@ class JogiFlow(Flow):
         return {"totalTokens": self.state["total_tokens"],
                 "promptTokens": self.state["prompt_tokens"],
                 "completionTokens": self.state["completion_tokens"],
-                "successfulRequests": self.state["successful_requests"]}
+                "successfulRequests": self.state["successful_requests"],
+                'initTokens': self.init_tokens,}
 
     @router(run_main_crew)
     def check_answer(self):
@@ -314,6 +325,7 @@ class JogiFlow(Flow):
             "Prompt_Tokens": self.state["prompt_tokens"],
             "Completion_Tokens": self.state["completion_tokens"],
             "Successful_Requests": self.state["successful_requests"],
+            "Read_PDF": self.state["pdf_text"],
             "Agent1_Output": self.state["agent1_output"],
             "Agent2_Output": self.state["rag_chunks"],
             "Agent3_Output": self.state["cleaned_rag_chunks"],
@@ -371,6 +383,7 @@ class JogiFlow(Flow):
                 "Prompt_Tokens": self.state["prompt_tokens"],
                 "Completion_Tokens": self.state["completion_tokens"],
                 "Successful_Requests": self.state["successful_requests"],
+                "Read_PDF": self.state["pdf_text"],
                 "Agent1_Output": self.state["agent1_output"],
                 "Agent2_Output": self.state["rag_chunks"],
                 "Agent3_Output": self.state["cleaned_rag_chunks"],
@@ -385,6 +398,7 @@ class JogiFlow(Flow):
 
     @listen(or_(correction, "complete"))
     def finish_flow(self):
+
         if not isinstance(self.state.get("history"), list):
             self.state["history"] = []
 

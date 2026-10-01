@@ -2,6 +2,9 @@ jogi_strategiai_tervezes_feladat:
   description: >
     Elemezd a felhasználó által feltett kérdést a(z) "{topic}" témakörben, figyelembe véve az eddigi chat history-t is:
     {history}.
+
+    A felhasználó ezt a PDF-et kapcsolta a kérdéséhez (lehet űres is, ha nem kapcsolt semmit):
+    "{pdf_text}"
   
     A felhasználó a következő pontosító kérdésekre:
     {da_questions}, 
@@ -10,11 +13,13 @@ jogi_strategiai_tervezes_feladat:
   
     Vesd össze a felhasználó válaszait a feltett pontosító kérdésekkel, és ezek alapján határozd meg a jogi szempontból releváns tényállást és a vizsgálandó jogi kérdéseket.
     A válaszokból csak olyan tényeket és körülményeket vegyél figyelembe, amelyeket a felhasználó ténylegesen megadott. Ne egészítsd ki a tényállást feltételezésekkel, és ne következtess olyan konkrét körülményekre, amelyekre a felhasználó nem adott információt.
-  
+    
     Kérlek, vedd figyelembe a felhasználó által megadott további körülményeket és részleteket is:
     "{details}"
   
-    A komplex problémát bontsd fel 2-4, egymástól jól elkülöníthető specifikus rész-kérdésre a releváns jogterületek alapján (pl. Ptk., GDPR, Mt. stb.).
+    A komplex problémát bontsd fel minimum 2-4, egymástól jól elkülöníthető specifikus rész-kérdésre a releváns jogterületek alapján (pl. Ptk., GDPR, Mt. stb.).
+    Több rész-kérdést is megfogalmazhatsz, ha úgy gondolod hogy szükség lehet rá a pontosság érdekében.
+    Fontos! Ha a felhasználó egy PDF fájra utal a kérdésében, akkor az általad írt rész-kérdésekben ne a PDF xy részére hivatkozz, hanem fogalmazz meg egy-egy mondatot, csak ne a pdf egyik részére hivatkozz.
     Minden rész-kérdést önálló, célzott jogi keresési kérdésként fogalmazz meg, amely egy jogi RAG keresőmotor számára egyértelműen értelmezhető és releváns jogszabályi rendelkezések, jogi fogalmak vagy alkalmazandó szabályok visszakeresésére alkalmas.
   
     A rész-kérdések legyenek konkrétak és a felhasználó ténylegesen megadott élethelyzetére szabottak. Kerüld az általános vagy túl tág keresési kérdéseket.

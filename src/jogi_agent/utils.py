@@ -3,13 +3,14 @@ from datetime import datetime
 from pathlib import Path
 from crewai import Agent, Task
 import yaml
-
+from crewai_tools import PDFSearchTool
 import jsonschema
 import os
 import json
 import base64
 import firebase_admin
 from firebase_admin import credentials, firestore
+from jogi_agent.tools.PDFReader import PDFFullTextReaderTool
 
 def get_config():
     config = configparser.ConfigParser()
@@ -58,10 +59,10 @@ def format_history_for_prompt(history: list[dict[str, str]], max_turns: int = 5)
 def init_deep_analysis(is_verbose: bool):
     BASE_DIR = Path(__file__).resolve().parent
 
-    with open(BASE_DIR / "config" / "deep_analyst_agent.yaml", "r", encoding='UTF-8') as f:
+    with open(BASE_DIR / "config" / "pre_flow_agents.yaml", "r", encoding='UTF-8') as f:
         agents_config = yaml.safe_load(f)
 
-    with open(BASE_DIR / "config" / "deep_analysis_task.yaml", "r", encoding='UTF-8') as f:
+    with open(BASE_DIR / "config" / "pre_flow_tasks.yaml", "r", encoding='UTF-8') as f:
         tasks_config = yaml.safe_load(f)
 
     da_agent = Agent(
@@ -71,12 +72,13 @@ def init_deep_analysis(is_verbose: bool):
 
     return tasks_config, da_agent
 
-def run_deep_analysis(tasks_config, question: str, formatted_history: str, da_agent: Agent):
+def run_deep_analysis(tasks_config, question: str, formatted_history: str, da_agent: Agent, pdf_txt: str = ""):
     # format: topic, history
     tasks_config["deep_analysis_feladat"]["description"] = tasks_config["deep_analysis_feladat"][
         "description"].format(
         topic=question,
-        history=formatted_history
+        history=formatted_history,
+        pfd_text = pdf_txt
     )
 
     da_task = Task(
@@ -87,5 +89,30 @@ def run_deep_analysis(tasks_config, question: str, formatted_history: str, da_ag
     # run deep analysis
     return str(da_task.execute_sync())
 
+def run_pdf_agent(question: str, is_verbose: bool):
+    BASE_DIR = Path(__file__).resolve().parent
 
+    with open(BASE_DIR / "config" / "pre_flow_agents.yaml", "r", encoding='UTF-8') as f:
+        agents_config = yaml.safe_load(f)
+
+    with open(BASE_DIR / "config" / "pre_flow_tasks.yaml", "r", encoding='UTF-8') as f:
+        tasks_config = yaml.safe_load(f)
+
+    tasks_config["jogi_pdf_beolvasasi_feladat"]["description"] = tasks_config["jogi_pdf_beolvasasi_feladat"][
+        "description"].format(
+        topic=question
+    )
+
+    agens = Agent(
+        config=agents_config["jogi_pdf_reader"],
+        verbose=is_verbose,
+        tools = [PDFFullTextReaderTool()]
+    )
+
+    pdf_read_task = Task(
+        config=tasks_config["jogi_pdf_beolvasasi_feladat"],
+        agent=agens
+    )
+
+    return str(pdf_read_task.execute_sync())
 

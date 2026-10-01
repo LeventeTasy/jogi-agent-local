@@ -1,9 +1,9 @@
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
 from crewai.agents.agent_builder.base_agent import BaseAgent
-from crewai.tasks.conditional_task import ConditionalTask
 from dotenv import load_dotenv
 from jogi_agent.utils import get_config
+from jogi_agent.tools.custom_tool import MyCustomTool
 
 import os
 # If you want to run a snippet of code before or after the crew starts,
@@ -33,6 +33,7 @@ class JogiAgent():
     
     # If you would like to add tools to your agents, you can learn more about it here:
     # https://docs.crewai.com/concepts/agents#agent-tools
+
 
 
     @agent
@@ -85,6 +86,7 @@ class JogiAgent():
     # task dependencies, and task callbacks, check out the documentation:
     # https://docs.crewai.com/concepts/tasks#overview-of-a-task
 
+
     @task
     def jogi_strategiai_tervezes_feladat(self) -> Task:
         return Task(
@@ -95,6 +97,7 @@ class JogiAgent():
     def jogi_kutatasi_feladat(self) -> Task:
         return Task(
             config=self.tasks_config['jogi_kutatasi_feladat'],  # type: ignore[index]
+            tools=[MyCustomTool()]
         )
 
     @task

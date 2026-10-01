@@ -1,20 +1,21 @@
-# JOGI SZAKVÉLEMÉNY: milyen feltetelek mellett adhato el egy szantofold?
+# JOGI SZAKVÉLEMÉNY: mennyire szabalyos a lakberleti_szerzodes.pdf
 
-### RÖVID VÁLASZ 
-**Feltételesen adható.** A szántóföld átruházása szigorú **formai**, **eljárási** és **tulajdonszerzési** korlátokhoz kötött.
+### RÖVID VÁLASZ
+**Jogellenes és tisztességtelen.** A vizsgált szerződéses kikötések a hatályos jogszabályok értelmében **semmisek**.
 
-### JOGI INDOKOLÁS 
-Az adásvételi szerződés érvényességéhez **szigorú alakiság** szükséges: a megállapodást **közokiratba** vagy **ügyvéd által ellenjegyzett** magánokiratba kell foglalni. A szerződésnek **kötelező elemeket** kell tartalmaznia, így a felek adatait, az ingatlan helyrajzi számát, a területnagyságot, a vételárat és a használati jogviszonyra vonatkozó nyilatkozatokat.
+### JOGI INDOKOLÁS
+A bérleti díj egyoldalú, mérték nélküli emelésére vonatkozó kikötések a **Polgári Törvénykönyv 6:102. §** alapján **tisztességtelenek**, mivel a jóhiszeműség és tisztesség követelményét sértve a szerződő fél hátrányára indokolatlanul egyoldalúan állapítják meg a jogokat. Fogyasztói szerződés esetén a **6:104. §** értelmében a szolgáltatás egyoldalú módosítása akkor tisztességtelen, ha a szerződés nem jelöl meg **érvényes okot**.
 
-A tulajdonjog átruházása **hatósági jóváhagyáshoz** kötött. A szerződést az ingatlan fekvése szerinti települési önkormányzatnál **60 napra** közzé kell tenni (kifüggesztés). Ezen idő alatt gyakorolható az **elővásárlási jog**, amely a törvény erejénél fogva illeti meg a jogosultakat, mint például a földet használó földművest vagy a szomszédot. Az elővásárlási jog gyakorlása alakszerű **elfogadó nyilatkozattal** történik.
+A kaució 180 napos visszatartása ellentétes az **1993. évi LXXVIII. törvény 23. § (1) bekezdésével**, amely kimondja, hogy a bérleti jogviszony megszűnésekor a bérbeadó köteles a kaucióval **elszámolni**, amint a bérlő a lakást elhagyta és a bérbeadónak követelése nincs.
 
-A folyamat során a **földbizottság** vizsgálja a szerződést, és állásfoglalást ad ki a támogatásról vagy elutasításról. A tulajdonszerzéshez kapcsolódóan **személyi korlátok** is fennállnak: földművesnek nem minősülő belföldi természetes személy **legfeljebb 1 hektár** földet szerezhet meg. A földművesek esetében a tulajdonszerzés felső határa a **birtokmaximum** szabályaihoz kötött.
+A bérbeadó belépési joga tekintetében a **Polgári Törvénykönyv 6:339. §** egyértelmű korlátokat állít: a belépésről a bérlőt **előzetesen tájékoztatni** kell. Minden olyan kikötés, amely a bérlő magánszféráját indokolatlanul korlátozza, **semmis**.
 
-### JOGSZABÁLYI HIVATKOZÁSOK 
-- **1994. évi LV. törvény a termőföldről**: 10. § (1)-(2) bekezdés, 18. § (1) és (4) bekezdés, 21. § (1) bekezdés, 23. § (1) bekezdés.
-- **2013. évi V. törvény (Ptk.)**: 6:215. § (1) bekezdés.
+Az adatkezeléssel kapcsolatos kikötések, amelyek a hozzájárulás visszavonhatóságát kizárják, közvetlenül sértik az **EU 2016/679 (GDPR) 6. cikk (1) bekezdését**, amely szerint a hozzájárulást az érintett **bármikor visszavonhatja**.
 
-### KOCKÁZATI TÉNYEZŐK ÉS KIVÉTELEK 
-- **Törvényi kivételek**: A termőföld tulajdonjogának megszerzése kapcsán a törvény utal **meghatározott kivételekre**, így az általános szabályoktól való eltérések eseti vizsgálata szükséges.
-- **Birtokmaximum**: A földművesek tulajdonszerzési korlátja **dinamikus**, a mindenkori birtokmaximum szabályok határozzák meg a pontos limitet.
-- **Hatósági jóváhagyás**: A hatósági jóváhagyás hiánya a jogügylet **teljes érvénytelenségét** eredményezheti, mivel ez a tulajdonjog átruházásának kötelező jogi feltétele.
+### JOGSZABÁLYI HIVATKOZÁSOK
+- **Polgári Törvénykönyv (2013. évi V. törvény)** 6:102. §, 6:104. §, 6:339. §
+- **Lakástörvény (1993. évi LXXVIII. törvény a lakások és helyiségek bérletére)** 23. § (1) bekezdés
+- **GDPR (Az Európai Parlament és a Tanács (EU) 2016/679 rendelete)** 6. cikk (1) bekezdés
+
+### KOCKÁZATI TÉNYEZŐK ÉS KIVÉTELEK
+A szerződéses kikötések **fennálló jogellenessége** miatt a dokumentum érvényessége vitatható. Az adatkezelés körében a hozzájárulás visszavonása **nem érinti** a már megtörtént, visszavonás előtti adatkezelés jogszerűségét. Nincs más releváns kivétel, a hivatkozott jogszabályok **kötelező érvényűek**.
