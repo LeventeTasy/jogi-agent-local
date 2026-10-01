@@ -72,12 +72,13 @@ def init_deep_analysis(is_verbose: bool):
 
     return tasks_config, da_agent
 
-def run_deep_analysis(tasks_config, question: str, formatted_history: str, da_agent: Agent):
+def run_deep_analysis(tasks_config, question: str, formatted_history: str, pdf_txt: str, da_agent: Agent):
     # format: topic, history
     tasks_config["deep_analysis_feladat"]["description"] = tasks_config["deep_analysis_feladat"][
         "description"].format(
         topic=question,
-        history=formatted_history
+        history=formatted_history,
+        pfd_text = pdf_txt
     )
 
     da_task = Task(

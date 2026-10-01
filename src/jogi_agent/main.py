@@ -49,7 +49,7 @@ def run():
 
         try:
             if is_deep_analysis:
-                da_questions = run_deep_analysis(tasks_config, question, formatted_history, da_agent)
+                da_questions = run_deep_analysis(tasks_config, question, formatted_history, pdf_output, da_agent)
                 print(da_questions+"\n")
 
                 da_answers = input("Deep analysisre válasz: ")
