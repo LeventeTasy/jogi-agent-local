@@ -11,7 +11,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from firebase_admin import firestore
 from pydantic import BaseModel
 
-from jogi_agent.utils import get_config, initialize_firebase, format_history_for_prompt, init_deep_analysis, run_deep_analysis
+from jogi_agent.utils import get_config, initialize_firebase, format_history_for_prompt, init_deep_analysis, run_deep_analysis, run_pdf_agent
 from jogi_agent.router import RouterFlow
 
 
@@ -97,9 +97,11 @@ def ask(
     verify_api_secret(authorization)
 
     config = get_config()
+    pdf_output = run_pdf_agent(request.question)
 
     inputs = {
         "topic": request.question,
+        'pdf_text': pdf_output,
         "details": "",
         "history": format_history_for_prompt(request.history),
         "da_questions": request.da_questions or "",
