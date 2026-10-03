@@ -18,7 +18,7 @@ MODEL_IS_AGENT = True # True -> AGENT | False -> RAG
 PATH = BASE_DIR.parent / "datasets" / "model_comparison" / "test_questions.csv"
 
 if MODEL_IS_AGENT:
-    SAVE_PATH = BASE_DIR.parent / "results" / "model_comparison" / "answered_questions_agent_unified_2-4-wo_ver.csv"
+    SAVE_PATH = BASE_DIR.parent / "results" / "answered_questions_clm_eval.csv"
 else:
     SAVE_PATH = BASE_DIR.parent / "results" / "answered_questions_rag.csv"
 
@@ -80,7 +80,7 @@ for col in text_columns:
 
 print(f"{len(df)} tesztkérdés beolvasva!")
 
-limit = 100
+limit = 5
 ind = 0
 
 print(f"Running the {'Agent' if MODEL_IS_AGENT else 'RAG'} model...")
@@ -105,6 +105,7 @@ for index, row in df.iterrows():
 
     inputs = {
             'topic': kerdes,
+            'pdf_text': "",
             'history': "",
             'details': "",
             'da_questions': "",
