@@ -1,22 +1,18 @@
-# JOGI SZAKVÉLEMÉNY: Biztosítási szerződés keretében a biztosító a fedezetfeltöltés (Ptk. 6:461. §) elmulasztása miatt csökkenti a biztosítási összeget, ugyanakkor az adóhatóság az eredeti (teljes) biztosítási összeg után megfizetett díj kedvezményezettjének jövedelemadózását vizsgálja. Hogyan értelmezhető az SZJA törvény 72. § szerinti kamatkedvezmény, ha a biztosító a fedezetfeltöltés során kedvezményes törlesztési lehetőséget kínál a munkavállaló szerződő félnek, és hogyan kell biztosítani az adatvédelmi tisztviselő bevonását, ha a biztosítási esemény különleges adatot (GDPR 9. cikk) is érint?
+# JOGI SZAKVÉLEMÉNY: Egy munkavállaló, aki megváltozott munkaképességű, július 1-jén lépett munkaviszonyba. A munkavállaló augusztus hónapban üzemi baleset miatt vált keresőképtelenné, majd a felépülése után, októberben betegség miatt 10 munkanapra keresőképtelenné vált. Jogosult-e az érintett a 120. § szerinti 5 munkanap pótszabadságra az adott naptári évben, és hány munkanap betegszabadság illeti meg az év hátralévő részében a 126. § szabályai alapján?
 
 ### RÖVID VÁLASZ
-**Adóköteles juttatás.** Az SZJA törvény alapján a biztosító által nyújtott kedvezményes törlesztés **kamatkedvezménynek minősül**, a GDPR előírásai pedig **kötelező DPO-bevonást** írnak elő.
+**Részben jogosult.** A pótszabadság tekintetében **időarányos**, a betegszabadság tekintetében pedig **fennmaradó** kerettel rendelkezik.
 
 ### JOGI INDOKOLÁS
-A Ptk. 6:461. § alapján a biztosító a fedezetfeltöltés elmaradása esetén a **biztosítási összeget csökkentheti**, vagy a szerződést írásban módosíthatja. Amennyiben a biztosító ezen folyamat keretében kedvezményes törlesztést biztosít, az SZJA törvény 72. § (2) bekezdése értelmében a munkáltató által fizetett biztosítási díjon keresztül nyújtott előny **vagyoni értékű juttatásnak** tekintendő.
+A megváltozott munkaképességű munkavállalót megillető pótszabadság vonatkozásában a jogszabály egyértelműen rendelkezik: a 120. § (1) bekezdése szerinti 5 munkanap pótszabadság tekintetében a 120. § (2) bekezdése kimondja, hogy „a munkaviszony év közbeni kezdete esetén a szabadságot **arányosan kell** számítani”. Mivel a munkaviszony július 1-jén kezdődött, az érintett munkavállalót az éves keret fele, azaz 2,5 munkanap (kerekítve 3 munkanap) pótszabadság illeti meg.
 
-Az adójogi megítélés szempontjából az SZJA törvény 72. § (4) bekezdése kimondja, hogy amennyiben a munkáltató díjátvállalása révén a munkavállaló kedvezményes törlesztési lehetőséghez jut, a juttatás értéke **kamatkedvezményként adóköteles**. Ez azt jelenti, hogy a biztosítási összeg csökkentése nem mentesíti a felet az eredetileg nyújtott vagy elért kedvezmény utáni adófizetési kötelezettség alól, mivel a juttatás jellege határozza meg az adózási státuszt.
-
-A különleges adatok kezelését illetően a GDPR 9. cikk (2) bekezdése főszabályként **tiltja az ilyen adatok kezelését**, kivéve, ha az a biztosítási szerződés teljesítéséhez elengedhetetlen. Mivel a biztosítási események gyakran egészségügyi adatokat érintenek, az adatkezelőnek biztosítania kell a GDPR 38. cikk (1) bekezdése szerinti **DPO-bevonást**. Az adatvédelmi tisztviselő feladata a 39. cikk (1) bekezdése alapján az adatvédelmi hatásvizsgálattal kapcsolatos **tanácsadás és nyomon követés**, ami kötelező eljárásrendi követelmény.
+A betegszabadság mértékét illetően a 126. § (1) bekezdése értelmében a munkavállalónak „naptári évenként tizenöt munkanap” betegszabadság jár, azonban év közbeni munkaviszony esetén ennek az időarányos részét kell biztosítani. A 126. § (3) bekezdése alapján az augusztusi üzemi balesetből eredő keresőképtelenség „nem minősül betegszabadságnak”, így az üzemi baleset időtartama nem csökkenti az éves betegszabadsági keretet. Ezzel szemben az októberi, általános betegség miatti 10 munkanap keresőképtelenség „betegszabadságnak” minősül. A 15 napos éves keret július 1-jei kezdés esetén 7,5 munkanapra (kerekítve 8 munkanapra) redukálódik. Mivel a munkavállaló az év hátralévő részében 10 munkanap betegállományban volt, és az időarányos kerete (8 nap) ennél alacsonyabb, az érintett a rendelkezésre álló időarányos betegszabadsági keretét **teljes mértékben kimerítette**.
 
 ### JOGSZABÁLYI HIVATKOZÁSOK
-*   **Polgári Törvénykönyv (2013. évi V. törvény)**: 6:461. §
-*   **Személyi Jövedelemadóról szóló törvény (1995. évi CXVII. törvény)**: 72. § (2) bekezdés és (4) bekezdés
-*   **GDPR (Az Európai Parlament és a Tanács (EU) 2016/679 rendelete)**: 9. cikk (2) bekezdés, 38. cikk (1) bekezdés, 39. cikk (1) bekezdés
+**2012. évi I. törvény a munka törvénykönyvéről** 120. § (1)-(2) bekezdés
+**2012. évi I. törvény a munka törvénykönyvéről** 126. § (1), (3) és (4) bekezdés
 
 ### KOCKÁZATI TÉNYEZŐK ÉS KIVÉTELEK
-*   A biztosítási összeget csökkentő intézkedés **nem automatikus**, a biztosító mérlegelési jogkörébe tartozik (Ptk. 6:461. §), ami a szerződő felek közötti jogvitákhoz vezethet.
-*   Az adóhatósági vizsgálat során a **juttatás jellegének** pontos meghatározása elengedhetetlen (SZJA tv. 72. § (4)), mivel az eltérő adózási kategóriák (kamatkedvezmény vs. egyéb jövedelem) eltérő adóterhet vonnak maguk után.
-*   A DPO bevonása során a „megfelelő időben” történő bevonás **nem konkrét határidőt** jelöl, hanem a folyamat kritikus szakaszaihoz (pl. hatásvizsgálat kezdete) kötött kötelezettséget jelent.
-*   Egyéb kockázat: Nincs.
+A kerekítés szabályai: **számítási eltérés**. A jogszabály arányosítást ír elő, de a tört napok kerekítésének kötelező algoritmusát a Munka Törvénykönyve nem részletezi, ezért a gyakorlatban **kerekítési vita** merülhet fel. 
+Üzemi baleset minősítése: **hatósági döntés**. A "nem minősül betegszabadságnak" tétel feltétele a baleseti táppénzre való jogosultság, amelynek igazolása **kizárólagos feltétel**. 
+Nincs más ismert kockázat.
