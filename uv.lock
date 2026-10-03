@@ -1503,7 +1503,6 @@ dependencies = [
     { name = "rich" },
     { name = "transformers" },
     { name = "uvicorn", extra = ["standard"] },
-    { name = "vllm" },
 ]
 
 [package.metadata]
@@ -1526,7 +1525,6 @@ requires-dist = [
     { name = "rich", specifier = ">=14.3.4" },
     { name = "transformers", specifier = "==4.48.3" },
     { name = "uvicorn", extras = ["standard"], specifier = ">=0.46.0" },
-    { name = "vllm", specifier = "==0.7.3" },
 ]
 
 [[package]]

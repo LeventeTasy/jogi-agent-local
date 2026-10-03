@@ -1,6 +1,13 @@
 .env
+vllm-env/
 chroma_db/
 .idea/
 .venv/
 test/generate_xlsx.py
 serviceAccountKey.json
+__pycache__/
+*.py[cod]
+.cache/
+huggingface/
+models/
+

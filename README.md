@@ -245,6 +245,170 @@ deep_analysis_enabled = False
 
 ---
 
+## 🤖 Helyi Qwen3 + Contrastive-LM környezet
+
+A Contrastive-LM használatához a projekt két külön virtuális környezetet használ:
+
+```text
+.venv/       # Fő projekt: CrewAI, RAG, Contrastive-LM
+vllm-env/    # Helyi Qwen3-8B modell és vLLM
+```
+
+A két környezet szétválasztása azért szükséges, mert a Qwen3-8B futtatásához használt vLLM és Transformers verziók eltérnek a fő projekt környezetétől.
+
+### 1. Contrastive-LM telepítése
+
+A Contrastive-LM a fő projekt `.venv` környezetébe kerül:
+
+```bash
+# Contrastive-LM hozzáadása a projekthez:
+uv add "contrastive-lm>=0.1.0"
+```
+
+Ellenőrzés:
+
+```bash
+# A CLM Python modul ellenőrzése:
+uv run python -c "import clm; print('CLM OK:', clm)"
+```
+
+### 2. Külön vLLM környezet létrehozása
+
+A Qwen3-8B futtatásához a projekt gyökerében hozzon létre külön virtuális környezetet:
+
+```bash
+# Projekt gyökérkönyvtára:
+cd /data_shared/tasyl/jogi-agent-rag
+
+# Külön Python 3.12 környezet létrehozása:
+uv venv --python 3.12 vllm-env
+```
+
+A `vllm-env/` csak a lokális modell futtatási környezete, ezért Gitben nem szükséges követni.
+
+### 3. vLLM és Qwen3 szükséges csomagjainak telepítése
+
+```bash
+# vLLM telepítése a külön környezetbe:
+uv pip install --python ./vllm-env/bin/python "vllm==0.8.5"
+
+# Qwen3 kompatibilis Transformers verzió:
+uv pip install --python ./vllm-env/bin/python "transformers==4.51.3"
+```
+
+Ellenőrzés:
+
+```bash
+./vllm-env/bin/python -c "import torch, transformers, vllm; print('torch:', torch.__version__); print('transformers:', transformers.__version__); print('vLLM:', vllm.__version__); print('CUDA:', torch.cuda.is_available()); print('GPU:', torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'N/A')"
+```
+
+### 4. Hugging Face cache áthelyezése
+
+Mivel a Qwen3-8B több GB méretű, a modell letöltéséhez elegendő tárhelyet biztosító könyvtárat kell használni:
+
+```bash
+# Hugging Face cache létrehozása:
+mkdir -p /data_shared/tasyl/.cache/huggingface
+mkdir -p /data_shared/tasyl/tmp
+
+# Hugging Face cache áthelyezése a nagy tárhellyel rendelkező partícióra:
+export HF_HOME=/data_shared/tasyl/.cache/huggingface
+export HF_HUB_CACHE=/data_shared/tasyl/.cache/huggingface/hub
+export HF_XET_CACHE=/data_shared/tasyl/.cache/huggingface/xet
+
+# Ideiglenes fájlok helyének áthelyezése:
+export TMPDIR=/data_shared/tasyl/tmp
+```
+
+Ezeket a környezeti változókat új terminál megnyitásakor újra be kell állítani, vagy célszerű a shell konfigurációjába menteni.
+
+### 5. Qwen3-8B vLLM szerver indítása
+
+A Qwen3-8B modellt külön terminálban kell elindítani:
+
+```bash
+# Projekt gyökérkönyvtára:
+cd /data_shared/tasyl/jogi-agent-rag
+
+# Qwen3-8B indítása embedding módban:
+./vllm-env/bin/vllm serve Qwen/Qwen3-8B \
+  --served-model-name qwen3-8b \
+  --task embed \
+  --dtype half \
+  --max-model-len 2048 \
+  --enforce-eager \
+  --port 8090
+```
+
+A vLLM szerver a `8090`-es porton biztosítja a Qwen3 embedding API-t.
+
+### 6. Contrastive-LM szerver indítása
+
+Nyisson egy második terminált, majd a projekt gyökeréből indítsa el a CLM szervert:
+
+```bash
+# Projekt gyökérkönyvtára:
+cd /data_shared/tasyl/jogi-agent-rag
+
+# Contrastive-LM szerver indítása:
+./.venv/bin/clm-serve \
+  --port 8700 \
+  --emb-url http://127.0.0.1:8090/v1/embeddings
+```
+
+A CLM a Qwen3 embedding API-jához a `8090`-es porton kapcsolódik, és a saját API-ját a `8700`-as porton teszi elérhetővé.
+
+Sikeres induláskor például az alábbihoz hasonló üzenetek jelennek meg:
+
+```text
+[clm] models ['clm-latest', 'clm-raw'] on cuda
+[clm] embedder http://127.0.0.1:8090/v1/embeddings (qwen3-8b) up; auth off
+[clm] POST http://0.0.0.0:8700/v1/systemone
+```
+
+A rendszer ezután a következő felépítésben működik:
+
+```text
+Qwen3-8B
+    │
+    ▼
+vLLM :8090
+    │
+    ▼
+/v1/embeddings
+    │
+    ▼
+Contrastive-LM :8700
+    │
+    ▼
+CLMClient()
+    │
+    ▼
+jogi-agent-rag
+```
+
+### 7. Contrastive-LM tesztelése
+
+A fő projekt `.venv` környezetében futtatható a CLM teszt:
+
+```bash
+# Projekt gyökérkönyvtára:
+cd /data_shared/tasyl/jogi-agent-rag
+
+# CLM teszt futtatása:
+./.venv/bin/python src/jogi_agent/clm_test.py
+```
+
+PyCharm használata esetén a projekt interpreterének a következő Python környezetet kell használni:
+
+```text
+/data_shared/tasyl/jogi-agent-rag/.venv/bin/python
+```
+
+A Qwen3/vLLM és a CLM szervereket PyCharmtól függetlenül, külön terminálokban kell futtatni.
+
+---
+
 ## 🚀 Futtatás és Használat
 
 ### 1. Interaktív Jogi Asszisztens (CLI)
