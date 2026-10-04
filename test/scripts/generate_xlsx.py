@@ -30,12 +30,12 @@ columns = [
     # str, str, str, str, str, str, float, str, float, str, float, str, int, int ,int ,int
 ]
 
-MODEL = str(os.getenv("MODEL"))
+MODEL = "gemini/gemini-3.8-flash"
 llm = LLM(model=MODEL)
 
 def add_save_df(law: str, tipus_rovid: str, kerdes: str, rag_context: str):
     BASE_DIR = Path(__file__).resolve().parent
-    file_path = BASE_DIR.parent / "datasets" / "model_comparison" / "test_questions.csv"
+    file_path = BASE_DIR.parent / "datasets" / "full_test_questions.csv"
 
     extended_data = (law, tipus_rovid, kerdes, rag_context, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
 
@@ -75,7 +75,8 @@ torvenyek = [
     "Munka Törvénykönyve (Mt.)",
     "GDPR rendelet",
     "Polgári Törvénykönyv (Ptk.)",
-    "SZJA törvény"
+    "SZJA törvény",
+    "Büntető Törvénykönyv (Btk.)"
 ]
 
 
@@ -92,8 +93,8 @@ for law in torvenyek:
 
 # 1. fazis: torvenyenkent 15 konnyu és 5 nehez kerdes
 kategoriak = {
-    "könnyű, alapvető, egyenes választ igénylő": 3,
-    "nehéz, kivételekre és speciális esetekre fókuszáló": 2
+    "könnyű, alapvető, egyenes választ igénylő": 9,
+    "nehéz, kivételekre és speciális esetekre fókuszáló": 7
 }
 
 print("\nKérdések generálása kategóriűnként")
@@ -163,7 +164,7 @@ for law, chunks in law_chunks_dict.items():
 # 2. fazis: 20 db osszetett kerdes
 print("\nÖsszetett kérdések generálása")
 
-for i in range(1):
+for i in range(20):
     print(f"{i + 1}. 5 db összetett kérdés generálása...")
 
     mixed_chunks = []

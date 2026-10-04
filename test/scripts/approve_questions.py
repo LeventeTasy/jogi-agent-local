@@ -11,7 +11,7 @@ if project_root not in sys.path:
 
 BASE_DIR = Path(__file__).resolve().parent
 
-INPUT_PATH = (BASE_DIR.parent/ "datasets"/ "model_comparison"/ "test_questions.csv")
+INPUT_PATH = (BASE_DIR.parent/ "datasets"/ "full_test_questions.csv")
 SAVE_PATH = (BASE_DIR.parent/ "results"/ "approved"/ "reviewed_questions.csv")
 
 
