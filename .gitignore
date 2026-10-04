@@ -3,3 +3,5 @@
 .venv/
 test/generate_xlsx.py
 serviceAccountKey.json
+src/jogi_agent/tools/__pycache__
+src/jogi_agent/__pycache__
