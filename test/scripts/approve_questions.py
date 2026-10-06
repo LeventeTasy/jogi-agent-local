@@ -9,16 +9,22 @@ project_root = os.path.abspath(os.path.join(current_dir, "..", ".."))
 if project_root not in sys.path:
     sys.path.append(project_root)
 
+
 BASE_DIR = Path(__file__).resolve().parent
 
-INPUT_PATH = (BASE_DIR.parent/ "datasets"/ "full_test_questions.csv")
-SAVE_PATH = (BASE_DIR.parent/ "results"/ "approved"/ "reviewed_questions.csv")
+INPUT_PATH = BASE_DIR.parent / "datasets" / "full_test_questions.csv"
+SAVE_PATH = BASE_DIR.parent / "results" / "approved" / "reviewed_questions.csv"
 
 
-df = pd.read_csv(INPUT_PATH)
+if SAVE_PATH.exists():
+    df = pd.read_csv(SAVE_PATH)
+    print(f"\nKorábbi review betöltve innen: {SAVE_PATH}")
+else:
+    df = pd.read_csv(INPUT_PATH)
+    print(f"\nÚj review indul innen: {INPUT_PATH}")
 
-print(f"\nÖsszes kérdés: {len(df)}")
-print(f"Input: {INPUT_PATH}")
+
+print(f"Összes kérdés: {len(df)}")
 print(f"Output: {SAVE_PATH}\n")
 
 
@@ -46,11 +52,6 @@ def print_question(index, row):
     print(row.get("Q_chunk", ""))
     print("-" * 100)
 
-    print(f"\nA_CHUNK:")
-    print("-" * 100)
-    print(row.get("A_chunk", ""))
-    print("-" * 100)
-
 
 def edit_question(index):
     old_question = str(df.at[index, "Kerdes"])
@@ -73,16 +74,30 @@ def edit_question(index):
     return True
 
 
-# REVIEW
+# REVIEW KEZDŐINDEX
 
-index = 0
+while True:
+    try:
+        start_index = int(input(f"Hanyadik indextől folytassuk? (0-{len(df) - 1}): "))
+
+        if 0 <= start_index < len(df):
+            break
+
+        print("Érvénytelen index.")
+
+    except ValueError:
+        print("Adj meg egy egész számot.")
+
+
+index = start_index
+
+print(f"\nReview folytatása a(z) {index}. indextől.")
+
 
 while index < len(df):
 
     row = df.iloc[index]
     jelenlegi_kerdes = row["Kerdes"]
-
-    # Üres kérdés kezelése
 
     if pd.isna(jelenlegi_kerdes) or str(jelenlegi_kerdes).strip() == "":
         print(f"\nÜres kérdés a(z) {index + 1}. sorban.")
@@ -119,18 +134,15 @@ while index < len(df):
 
     action = input("Választás: ").strip().lower()
 
-    # JÓ
     if action == "y":
         print("Jóváhagyva.")
         index += 1
 
-    # TÖRLÉS
     elif action == "n":
 
         confirm = input("Biztosan törlöd ezt a kérdést? [y/n]: ").strip().lower()
 
         if confirm == "y":
-
             df.drop(index=index, inplace=True)
             df.reset_index(drop=True, inplace=True)
 
@@ -140,13 +152,14 @@ while index < len(df):
         else:
             print("Törlés megszakítva.")
 
-
-    # edit
     elif action == "e":
         changed = edit_question(index)
 
         if changed:
             save_dataframe()
+
+        # szerkesztés után továbblépünk
+        index += 1
 
     elif action == "s":
         print("Kihagyva.")
@@ -154,7 +167,7 @@ while index < len(df):
 
     elif action == "q":
         save_dataframe()
-        print("\nAktuális állapot elmentve. Kilépés")
+        print("\nAktuális állapot elmentve. Kilépés.")
         break
 
     else:
