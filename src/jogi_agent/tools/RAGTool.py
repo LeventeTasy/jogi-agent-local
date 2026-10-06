@@ -12,7 +12,7 @@ class JogiKeresoInput(BaseModel):
     query: str = Field(..., description="A jogi kérdés vagy keresőszavak.")
 
 
-class MyCustomTool(BaseTool):
+class RagTool(BaseTool):
     name: str = "Jogi adatbázis"
     description: str = (
         "Használd ezt a toolt, ha a Munka Törvénykönyve, Ptk vagy GDPR kapcsán kell keresned."

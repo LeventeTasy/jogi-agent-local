@@ -245,6 +245,8 @@ deep_analysis_enabled = False
 
 ---
 
+# Futtatás és Használat
+
 ## 🤖 Helyi Qwen3 + Contrastive-LM környezet
 
 A Contrastive-LM használatához a projekt két külön virtuális környezetet használ:
