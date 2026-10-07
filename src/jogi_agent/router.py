@@ -9,8 +9,8 @@ from crewai import LLM
 from dotenv import load_dotenv
 from jogi_agent.flow import JogiFlow
 import os
-
-from jogi_agent.utils import initialize_firebase
+from clm import CLMClient
+from jogi_agent.utils import initialize_firebase, ask_clm_llm_choice
 
 
 class RouterFlow(Flow):
@@ -71,17 +71,34 @@ class RouterFlow(Flow):
            NOT_LEGAL
         '''
 
-        llm = LLM(model=self.state["model"])
+        """llm = LLM(model=self.state["model"])
         messages = [
             {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": self.state["question"]},
         ]
         response = llm.call(messages)
-        self.state["total_tokens"] = llm.get_token_usage_summary()
+        self.state["total_tokens"] = llm.get_token_usage_summary()"""
 
-        if "not_legal" in response.lower():
+
+        client = CLMClient()
+        instruction = f"""Döntsd el, hogy a felhasználó kérdése jogi vagy nem jogi.
+                    A beszélgetési előzmény figyelembevételével:
+                    {formatted_history}"""
+
+        criteria = {
+            "legal": "A kérdés jogi.",
+            "not_legal": "A kérdés nem jogi."
+        }
+
+        r = ask_clm_llm_choice(self.state["question"], instruction, criteria,
+                               SYSTEM_PROMPT, client)
+
+        classification = r["resp"].choice if not r["is_llm"] else r["resp"]
+        #print(classification)
+
+        if "not_legal" in classification.lower():
             return "NOT_LEGAL"
-        elif "legal" in response.lower():
+        elif "legal" in classification.lower():
             return "LEGAL"
         else:
             return "HIBA"

@@ -1,19 +1,20 @@
-# JOGI SZAKVÉLEMÉNY: hany év jár a sitten marihuana termesztesert?
+# JOGI SZAKVÉLEMÉNY: szia viszlat
 
 ### RÖVID VÁLASZ
-**Fokozatosan változó**, a büntetési tétel az elkövetés körülményeitől függően **egy évtől öt évig**, illetve csekély mennyiség esetén **két évig** terjedő szabadságvesztés lehet.
+**Részben releváns.**
 
 ### JOGI INDOKOLÁS
-A hatályos Büntető Törvénykönyv szerint a kábítószer-termesztés alapesetben **egy-öt évig** terjedő szabadságvesztéssel büntetendő bűntettnek minősül. Amennyiben az elkövető a cselekményt **csekély mennyiségű** kábítószerre, **saját használatra** termesztette, a törvényi büntetési tétel kedvezőbb, **két évig** terjedő szabadságvesztésre csökken.
+A 25 év alattiak kedvezménye az **összevont adóalapba** tartozó jövedelmek után érvényesíthető. A kedvezmény jogosultsága az adóév során mindaddig fennáll, amíg a magánszemély a **25. életévét** be nem tölti, vagy legfeljebb annak a hónapnak a végéig, amelyben betölti a 25. életévét.
 
-A büntetés kiszabása során a bíróság **enyhítő körülményként** értékeli különösen a **büntetlen előéletet**, a beismerő vallomást, valamint a kábítószerfüggőséget, amennyiben az elkövető aláveti magát a törvényben meghatározott **megelőző-felvilágosító szolgáltatásnak** vagy kezelésnek. 
+A kedvezmény mértéke **havi korlátozással** rendelkezik: az alapja havonta legfeljebb a tárgyévet megelőző év július hónapjára vonatkozó, a Központi Statisztikai Hivatal által közzétett nemzetgazdasági szintű **bruttó átlagkereset** összege lehet.
 
-Amennyiben a termesztés **személyes fogyasztási** célból történik és csekély mennyiségű, a hatóságnak lehetősége van a **büntethetőséget megszüntető** okok alkalmazására, vagy az eljárás felfüggesztésével a **megelőző-felvilágosító** részvétel elrendelésére. A kábítószer mennyiségének minősítése a törvény mellékletében rögzített **hatóanyagtartalom** függvényében történik.
+Kifejezetten **kizárt** a kedvezmény érvényesítése azokra a jövedelmekre, amelyek nem képezik az összevont adóalap részét, különösen a **külön adózó jövedelmek** (például ingatlan bérbeadásból származó jövedelem vagy osztalék), valamint a vállalkozói kivét vagy átalányban megállapított jövedelem esetében.
+
+Amennyiben az adózó az adókedvezményt jogosulatlanul érvényesíti, az adózás rendjéről szóló törvény értelmében **adókülönbözetet** köteles megfizetni. Ehhez az adókülönbözethez az általános szabályok szerinti **adóbírság** és **késedelmi pótlék** kapcsolódhat.
 
 ### JOGSZABÁLYI HIVATKOZÁSOK - 
-**2012. évi C. törvény a Büntető Törvénykönyvről** 178. § (1) és (6) bekezdés
-**2012. évi C. törvény a Büntető Törvénykönyvről** 81. §
-**2012. évi C. törvény a Büntető Törvénykönyvről** 459. § (1) bekezdés 18. pont
+**1995. évi CXVII. törvény a személyi jövedelemadóról** 29/F. § (1), (2), (5) bekezdés
+**2017. évi CL. törvény az adózás rendjéről** 202. §
 
-### KOCKÁZATI TÉNYEZŐK ÉS KIVÉTELEK
-A büntetés mértéke **nem automatikus**, mivel a bíróság a konkrét eset összes körülményeit mérlegeli. A "csekély mennyiség" meghatározása **hatóanyagfüggő**, így a növények száma nem feltétlenül tükrözi a jogi kategóriát. A büntethetőséget megszüntető okok alkalmazása **lehetőség**, nem kötelező jogi előírás. A **termesztés célja** döntő bizonyítási kérdés, ahol a kereskedelmi szándék gyanúja kizárhatja a kedvezőbb büntetési tételt.
+### KOCKÁZATI TÉNYEZŐK ÉS KIVÉTELEK 
+**Szándékos megtévesztés.** Amennyiben a jogosulatlanság szándékos megtévesztés eredménye, az **jogalap nélküli** adóelkerülésnek minősülhet, ami szigorúbb jogkövetkezményeket vonhat maga után. **Életkor határa.** A kedvezmény a 25. életév betöltését követően **automatikusan** megszűnik, további érvényesítése kivétel nélkül jogellenes. **Jövedelmi besorolás.** A kizárásoknál a törvény a "különösen" kifejezést használja, ami **nem zárt lista**, így más, összevont adóalapba nem tartozó jövedelmek is kizárhatják a kedvezményt.
