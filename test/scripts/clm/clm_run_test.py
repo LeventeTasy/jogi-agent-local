@@ -1,7 +1,7 @@
 import os.path
 from pathlib import Path
 
-from jogi_agent.utils import ask_clm_llm_choice, ask_llm, ask_clm_choice
+from jogi_agent.utils import ask_clm_llm_choice, ask_llm, ask_clm_choice, classify_onnx
 from clm import CLMClient
 import pandas as pd
 
@@ -13,7 +13,7 @@ print(r.answers["department"].probabilities)  # {'billing': 0.93878, 'technical'
                                            "technical": "Bugs and outages"})"""
 
 BASE_DIR = Path(__file__).resolve().parent
-PATH_SAVE = BASE_DIR.parent.parent / "results" / "clm" / "CLM_v0.1-8B-v2.csv"
+PATH_SAVE = BASE_DIR.parent.parent / "results" / "clm" / "HorizonLabs-ZeSh_onnx.csv"
 
 
 
@@ -183,43 +183,72 @@ write_header = (not os.path.exists(PATH_SAVE) or os.path.getsize(PATH_SAVE) == 0
 
 prob = 0.5
 
-probs = [0, 0.2, 0.3, 0.4, 0.5]
+probs = [0, 0.2, 0.3, 0.4, 0.5, 0.6]
+
+MODEL = "onnx"
+
+ONNX_LABELS = {
+    "legal": (
+        "a legal question about law, legal rights or legal obligations"
+    ),
+    "not_legal": (
+        "a non-legal question unrelated to law"
+    ),
+}
 
 for prob_i in probs:
     for i, q in enumerate(questions):
-        ask = ask_clm_llm_choice(q["question"],instruction,criteria,SYSTEM_PROMPT,client,prob_i)
+        if MODEL == "clm":
+            ask = ask_clm_llm_choice(
+                q["question"], instruction, criteria,
+                SYSTEM_PROMPT, client, prob_i
+            )
+
+            is_llm = ask["is_llm"]
+
+            if is_llm:
+                llm_used += 1
+                questions[i]["choice"] = ask["resp"]
+                prediction = ask["resp"]
+                confidence = None
+                legal_prob = None
+                not_legal_prob = None
+            else:
+                resp = ask["resp"]
+                questions[i]["choice"] = resp.choice
+                prediction = resp.choice
+                confidence = resp.confidence
+                legal_prob = resp.probabilities["legal"]
+                not_legal_prob = resp.probabilities["not_legal"]
+
+        else:
+            prediction, confidence, scores = classify_onnx(q["question"], ONNX_LABELS)
+            legal_prob = scores["legal"]
+            not_legal_prob = scores["not_legal"]
+
+            prob_element = abs(legal_prob-not_legal_prob)
+
+            is_llm = prob_element < prob_i
+
+            if is_llm:
+                llm_used += 1
+                prediction = ask_llm(SYSTEM_PROMPT, q["question"])
+                questions[i]["choice"] = prediction
+            else:
+                questions[i]["choice"] = prediction
 
         row = {
             "question": q["question"],
             "label": q["real"],
-            "is_llm": ask["is_llm"],
-            "prediction": None,
-            "confidence": None,
-            "legal_prob": None,
-            "not_legal_prob": None,
+            "is_llm": is_llm,
+            "prediction": prediction,
+            "confidence": confidence,
+            "legal_prob": legal_prob,
+            "not_legal_prob": not_legal_prob,
             "prob": prob_i,
             "c_legal": criteria["legal"],
             "c_not_legal": criteria["not_legal"]
-
         }
-
-        if ask["is_llm"]:
-            llm_used += 1
-            questions[i]["choice"] = ask["resp"]
-
-            row["prediction"] = ask["resp"]
-
-        else:
-            resp = ask["resp"]
-
-            questions[i]["choice"] = resp.choice
-            questions[i]["confidence"] = resp.confidence
-            questions[i]["probability"] = (resp.probabilities[resp.choice])
-
-            row["prediction"] = resp.choice
-            row["confidence"] = resp.confidence
-            row["legal_prob"] = resp.probabilities["legal"]
-            row["not_legal_prob"] = resp.probabilities["not_legal"]
 
         pd.DataFrame([row]).to_csv(
             PATH_SAVE,
@@ -236,7 +265,7 @@ for prob_i in probs:
     nem_egyezo_db = 0
 
     for i in questions:
-        if i['choice'] != i["real"]:
+        if i["choice"] != i["real"]:
             nem_egyezo_db += 1
 
     print(f"Nem egyezik: {nem_egyezo_db}")

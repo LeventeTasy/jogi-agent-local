@@ -398,7 +398,7 @@ A fő projekt `.venv` környezetében futtatható a CLM teszt:
 cd /data_shared/tasyl/jogi-agent-rag
 
 # CLM teszt futtatása:
-./.venv/bin/python src/jogi_agent/clm_test.py
+./.venv/bin/python src/jogi_agent/clm_run_test.py
 ```
 
 PyCharm használata esetén a projekt interpreterének a következő Python környezetet kell használni:
