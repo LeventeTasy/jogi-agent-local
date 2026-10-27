@@ -6,15 +6,16 @@ import matplotlib.pyplot as plt
 
 
 BASE_DIR = Path(__file__).resolve().parent
-PATH_SAVE = BASE_DIR.parent.parent / "results" / "clm" / "CLM_v0.1-8B-v2.csv"
+PATH_SAVE = BASE_DIR.parent.parent / "results" / "clm" / "HorizonLabs-ZeSh_onnx.csv"
 df = pd.read_csv(PATH_SAVE)
 
 df["prediction"] = df["prediction"].str.lower()
+p = 0.3
 
 p_s = [0, 0.2, 0.3, 0.4, 0.5, 0.6]
 
 for p in p_s:
-    CM_PATH_SAVE = BASE_DIR.parent.parent / "results" / "clm" / "ConfusionMatrices" / f"CLM_v0.1-8B-v2_p{str(p).replace('.', '_')}.csv"
+    CM_PATH_SAVE = BASE_DIR.parent.parent / "results" / "clm" / "ConfusionMatrices" / f"HorizonLabs-ZeSh_onnx_p{str(p).replace('.', '_')}.png"
 
     df_c = df[df["prob"] == p]
 
@@ -29,7 +30,7 @@ for p in p_s:
 
 
     disp.plot(values_format="d")
-    plt.title("CLM v0.1 8B")
+    plt.title("Horizon Labs ZeSh ONNX")
     plt.gcf().text(0.95, 0.95, f"p={p}", ha="right", va="top")
-    plt.savefig("confusion_matrix.png", dpi=300, bbox_inches="tight")
+    plt.savefig(CM_PATH_SAVE, dpi=300, bbox_inches="tight")
     plt.show()
