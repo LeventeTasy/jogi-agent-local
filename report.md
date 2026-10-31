@@ -1,20 +1,23 @@
-# JOGI SZAKVÉLEMÉNY: mikor torvenytelen egy munkaszerődés felbontasa?
+# JOGI SZAKVÉLEMÉNY: mikor torvenytelen egy munkaszerzodes felmondasa?
 
 ### RÖVID VÁLASZ
-**Jogellenes felmondás** áll fenn, amennyiben a munkáltató megszegi az **indokolási kötelezettségét**, vagy olyan **védett időszakban** szünteti meg a munkaviszonyt, amelyre a törvény **felmondási tilalmat** ír elő.
+A felmondás akkor tekinthető törvénytelennek, ha az **jogellenes**, azaz sérti a Munka Törvénykönyve által előírt **felmondási tilalmakat** vagy az **indokolási kötelezettséget**.
 
 ### JOGI INDOKOLÁS
-A munkaviszony megszüntetése során a munkáltatónak elsődlegesen be kell tartania az indokolási kötelezettséget, amely a határozatlan tartamú munkaviszony esetén **kötelező feltétel**. A Munka Törvénykönyve 66. § (2) bekezdése alapján a felmondás indoka **kizárólag** a munkavállaló munkaviszonnyal kapcsolatos magatartásával, képességével, vagy a munkáltató működésével összefüggő ok lehet. Ezen indoklás hiánya vagy valótlan volta a munkaviszony **jogellenes megszüntetését** eredményezi.
+A munkaviszony megszüntetése során a munkáltató köteles betartani a jogszabályi korlátokat. Elsődlegesen, a munkáltató nem szüntetheti meg a munkaviszonyt felmondással a törvényben meghatározott **védett időszakokban**, mint például a várandósság, szülési szabadság vagy gyermek gondozása céljából igénybe vett fizetés nélküli szabadság alatt (**65. § (3)**).
 
-Másodlagosan, a jogszabály explicit módon meghatározza azokat a helyzeteket, amikor a munkáltató **tilos felmondással** élni. A 65. § (3) bekezdés értelmében a munkáltató **nem szüntetheti meg** a munkaviszonyt felmondással a várandósság, a szülési szabadság, az apasági szabadság, a szülői szabadság, a gyermek gondozása céljából igénybe vett fizetés nélküli szabadság, továbbá a tényleges önkéntes tartalékos katonai szolgálatteljesítés időtartama alatt.
+Másodsorban, a munkáltató által közölt felmondásnak **írásbelinek** és **indokolt**nak kell lennie (**66. § (2)**). Az indokolásnak a munkavállaló magatartásával, képességével vagy a munkáltató működésével összefüggő oknak kell lennie. Amennyiben az indokolás hiányzik, vagy az nem valós és okszerű, a felmondás törvényellenesnek minősülhet.
 
-Amennyiben a munkáltató a fenti rendelkezések ellenére szünteti meg a munkaviszonyt, a 82. § (1) bekezdés értelmében **jogellenes a megszüntetés**. Ennek jogkövetkezménye, hogy a munkáltató **köteles megtéríteni** a munkavállaló elmaradt jövedelmét és a felmerült kárát, emellett a munkavállaló a 82. § (2) bekezdés alapján **követelheti a végkielégítést** is.
+Kivételt képeznek a speciális munkavállalói státuszok és helyzetek. Vezető állású munkavállaló esetében a munkáltató **nem köteles** indokolni a felmondást (**211. §**). Továbbá, határozott idejű munkaviszonynál a munkáltató indokolás nélkül is megszüntetheti a munkaviszonyt, ha **felszámolási** vagy **végelszámolási** eljárás alatt áll (**66. § (8)**).
 
 ### JOGSZABÁLYI HIVATKOZÁSOK
-**Munka Törvénykönyve** 64. § (2) bekezdés
-**Munka Törvénykönyve** 65. § (3) bekezdés
-**Munka Törvénykönyve** 66. § (2) bekezdés
-**Munka Törvénykönyve** 82. § (1) és (2) bekezdés
+* **2012. évi I. törvény a munka törvénykönyvéről** 65. § (3) bekezdés
+* **2012. évi I. törvény a munka törvénykönyvéről** 66. § (2) bekezdés
+* **2012. évi I. törvény a munka törvénykönyvéről** 66. § (8) bekezdés
+* **2012. évi I. törvény a munka törvénykönyvéről** 211. § (1) bekezdés
 
 ### KOCKÁZATI TÉNYEZŐK ÉS KIVÉTELEK
-A jogszabályban meghatározott felmondási tilalmak körében **nincs kivétel** a felsorolt védett időszakok vonatkozásában. A munkáltató indokolási kötelezettsége a határozatlan idejű munkaviszonyra vonatkozik, azonban a munkaviszony egyéb megszűnési módjai (pl. **közös megegyezés**) esetén a jogszabály által előírt indokolási kényszer **nem érvényesül**. A jogellenesség megállapítása minden esetben **egyedi vizsgálatot** igényel.
+A szabályok alkalmazhatósága nem tekinthető abszolútnak, az alábbi kivételek fennállhatnak:
+* **Vezetői státusz:** Vezető állású munkavállalónál az indokolási kötelezettség **kizárt**.
+* **Felszámolási eljárás:** Határozott idejű munkaviszonynál a felszámolási eljárás **felülírja** az indokolási kötelezettséget.
+* **Egyéb korlátok:** A fenti felsorolás a felmondás szabálytalanságának főbb pontjait tartalmazza, de nem zárja ki egyéb, a törvényben meghatározott további érvénytelenítési okok fennállását.
