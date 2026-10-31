@@ -328,12 +328,7 @@ for law1, law2 in law_pairs:
             A decision értéke APPROVE, MODIFY vagy REJECT lehet.
             """
 
-            validation = validate_question(
-                f"{law1}; {law2}",
-                "összetett",
-                kerdes,
-                rag_context
-            )
+            validation = validate_question(f"{law1}; {law2}","összetett",kerdes,rag_context)
 
             decision = validation["decision"].upper()
 
@@ -347,12 +342,7 @@ for law1, law2 in law_pairs:
             if decision == "MODIFY":
                 kerdes = validation["question"]
 
-            add_save_df(
-                f"{law1}; {law2}",
-                "összetett",
-                kerdes,
-                rag_context
-            )
+            add_save_df(f"{law1}; {law2}","összetett",kerdes,rag_context)
 
             generated += 1
 

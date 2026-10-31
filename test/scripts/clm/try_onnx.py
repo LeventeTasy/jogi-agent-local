@@ -17,10 +17,8 @@ for question in questions:
     start = time.perf_counter()
     try:
         label, score, c_scores = classify_onnx(question, labels)
-        print(
-            f"{time.perf_counter() - start:.3f}s | "
+        print(f"{time.perf_counter() - start:.3f}s | "
             f"{label} | {score:.4f} | {c_scores}"
-            f" | {abs(c_scores['legal']-c_scores['not_legal'])}"
-        )
+            f" | {abs(c_scores['legal']-c_scores['not_legal'])}")
     except Exception:
         raise
