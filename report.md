@@ -1,22 +1,20 @@
-# JOGI SZAKVÉLEMÉNY: A Forma–1-ben milyen büntetést kaphat egy pilóta szabálytalan előzésért?
+# JOGI SZAKVÉLEMÉNY: mikor torvenytelen egy munkaszerődés felbontasa?
 
 ### RÖVID VÁLASZ
-**Igen, többféle szankció alkalmazható,** amelyeket a sportfelügyelők mérlegelési jogkörükben szabnak ki.
+**Jogellenes felmondás** áll fenn, amennyiben a munkáltató megszegi az **indokolási kötelezettségét**, vagy olyan **védett időszakban** szünteti meg a munkaviszonyt, amelyre a törvény **felmondási tilalmat** ír elő.
 
 ### JOGI INDOKOLÁS
-A szabálytalan előzések, különösen a pályaelhagyással szerzett előny vagy a másik versenyző leszorítása esetén, a 2024-es FIA Forma–1-es sportszabályzat alapján szankcionálhatóak. A szabályzat **Article 12.2** pontja kifejezetten rögzíti, hogy a pályaelhagyásból származó tartós előny szerzése esetén alkalmazható büntetések közé tartozik az **5 másodperces időbüntetés, a 10 másodperces időbüntetés, a boxutca-áthajtásos (drive-through) büntetés, valamint a stop-and-go büntetés.**
+A munkaviszony megszüntetése során a munkáltatónak elsődlegesen be kell tartania az indokolási kötelezettséget, amely a határozatlan tartamú munkaviszony esetén **kötelező feltétel**. A Munka Törvénykönyve 66. § (2) bekezdése alapján a felmondás indoka **kizárólag** a munkavállaló munkaviszonnyal kapcsolatos magatartásával, képességével, vagy a munkáltató működésével összefüggő ok lehet. Ezen indoklás hiánya vagy valótlan volta a munkaviszony **jogellenes megszüntetését** eredményezi.
 
-A szankciók kiszabásakor a sportfelügyelők rendelkeznek **mérlegelési jogkörrel**. Az **Article 15.3** értelmében a felügyelők a büntetés arányosságának meghatározásakor figyelembe veszik az incidens súlyosságát, ideértve a pilóta **szándékosságát, a versenytársakra gyakorolt hatást, valamint a jármű feletti uralmat.** A döntés megalapozásához a felügyelők telemetriai adatokat és videófelvételeket is **elemezhetnek.**
+Másodlagosan, a jogszabály explicit módon meghatározza azokat a helyzeteket, amikor a munkáltató **tilos felmondással** élni. A 65. § (3) bekezdés értelmében a munkáltató **nem szüntetheti meg** a munkaviszonyt felmondással a várandósság, a szülési szabadság, az apasági szabadság, a szülői szabadság, a gyermek gondozása céljából igénybe vett fizetés nélküli szabadság, továbbá a tényleges önkéntes tartalékos katonai szolgálatteljesítés időtartama alatt.
 
-A szabálytalan előzésből származó előny önkéntes visszaadására vonatkozó eljárást az **Article 12.2.1** szabályozza. Amennyiben a pilóta a pozíciót **azonnal visszaadja**, a sportfelügyelők általában **nem szabnak ki** további büntetést. Ezzel szemben a pozíció visszaszolgáltatásának elmaradása vizsgálatot von maga után, amelynek eredményeként a szerzett előnnyel **arányos büntetés** várható.
-
-A kiszabott szankciókkal szemben a jogorvoslat korlátozott. Az **Article 17.1** szerint a felügyelők döntései véglegesek és kötelező érvényűek, azonban az érintettek élhetnek a **tiltakozás vagy fellebbezés jogával**, valamint abban az esetben, ha a döntés idején nem ismert, **jelentős új bizonyíték** merül fel, benyújthatják a felülvizsgálat jogát (Right of Review).
+Amennyiben a munkáltató a fenti rendelkezések ellenére szünteti meg a munkaviszonyt, a 82. § (1) bekezdés értelmében **jogellenes a megszüntetés**. Ennek jogkövetkezménye, hogy a munkáltató **köteles megtéríteni** a munkavállaló elmaradt jövedelmét és a felmerült kárát, emellett a munkavállaló a 82. § (2) bekezdés alapján **követelheti a végkielégítést** is.
 
 ### JOGSZABÁLYI HIVATKOZÁSOK
-*   **FIA Formula 1 Sporting Regulations** – Article 12.2, 12.2.1, 15.3, 17.1
+**Munka Törvénykönyve** 64. § (2) bekezdés
+**Munka Törvénykönyve** 65. § (3) bekezdés
+**Munka Törvénykönyve** 66. § (2) bekezdés
+**Munka Törvénykönyve** 82. § (1) és (2) bekezdés
 
 ### KOCKÁZATI TÉNYEZŐK ÉS KIVÉTELEK
-A szabályrendszer alkalmazása során figyelembe kell venni a következőket:
-*   A "nem szabnak ki" kifejezés az **Article 12.2.1**-ben nem jelenti azt, hogy a büntetés kizárt, csupán azt, hogy a pozíció azonnali visszaadása esetén a felügyelők **általában eltekintenek** további szankciótól.
-*   A **versenyigazgató** abszolút mérlegelési jogkörrel bír annak eldöntésében, hogy lehetőséget ad-e a pilótának a szabálytalanul szerzett előny visszaadására (**Article 12.2**).
-*   A felülvizsgálati kérelem (Right of Review) benyújtása **nem automatikus jog**, annak feltétele egy, a korábban nem rendelkezésre álló, **jelentős és releváns** új elem felfedezése (**Article 17.1**).
+A jogszabályban meghatározott felmondási tilalmak körében **nincs kivétel** a felsorolt védett időszakok vonatkozásában. A munkáltató indokolási kötelezettsége a határozatlan idejű munkaviszonyra vonatkozik, azonban a munkaviszony egyéb megszűnési módjai (pl. **közös megegyezés**) esetén a jogszabály által előírt indokolási kényszer **nem érvényesül**. A jogellenesség megállapítása minden esetben **egyedi vizsgálatot** igényel.

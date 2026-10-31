@@ -8,12 +8,14 @@ from langchain_core.documents import Document
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_community.retrievers import BM25Retriever
 
 # Setup
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 CHROMA_PATH = os.path.abspath(os.path.join(BASE_DIR, "../chroma_db"))
 DATA_PATH = os.path.abspath(os.path.join(BASE_DIR, "../pdf"))
 RETRIEVAL_K = 5
+IS_BM25 = True
 
 
 def load_documents():
@@ -199,11 +201,28 @@ def query_rag(query_text: str):
     )
 
     allowed_types = ["cikk", "paragrafus"]
-    results = db.similarity_search_with_score(
-        query_text,
-        k=RETRIEVAL_K,
-        filter={"section_type": {"$in": allowed_types}}
-    )
+
+    if not IS_BM25:
+        results = db.similarity_search_with_score(
+            query_text,
+            k=RETRIEVAL_K,
+            filter={"section_type": {"$in": allowed_types}}
+        )
+    else:
+        data = db.get(include=["documents", "metadatas"])
+
+        documents = [
+            Document(page_content=text, metadata=metadata or {})
+            for text, metadata in zip(data["documents"],data["metadatas"])
+            if (metadata or {}).get("section_type") in allowed_types
+        ]
+
+        retriever = BM25Retriever.from_documents(
+            documents,
+            k=RETRIEVAL_K
+        )
+
+        results = [(doc, None) for doc in retriever.invoke(query_text)]
 
     formatted_context = ""
     source_list = []
@@ -217,7 +236,10 @@ def query_rag(query_text: str):
         page = meta.get("page", "multiple")
         src = os.path.basename(meta.get("source", "file"))
 
-        distance_score = round(float(score), 4)
+        if not IS_BM25:
+            distance_score = round(float(score), 4)
+        else:
+            distance_score = "BM25"
 
         clean_content = doc.page_content[:1500] + "... [vágva a stabilitásért]" if len(
             doc.page_content) > 1500 else doc.page_content

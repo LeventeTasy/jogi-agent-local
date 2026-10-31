@@ -1,10 +1,12 @@
 import os
-from typing import Type
+from typing import Type, ClassVar
 from pydantic import BaseModel, Field, PrivateAttr
 from crewai.tools import BaseTool
 from langchain_chroma import Chroma
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from rag import build_rag
+from langchain_core.documents import Document
+from langchain_community.retrievers import BM25Retriever
 
 
 class JogiKeresoInput(BaseModel):
@@ -18,6 +20,7 @@ class RagTool(BaseTool):
         "Használd ezt a toolt, ha a Munka Törvénykönyve, Ptk vagy GDPR kapcsán kell keresned."
     )
     args_schema: Type[BaseModel] = JogiKeresoInput
+    IS_BM25: ClassVar[bool] = True
 
     _db: Chroma = PrivateAttr()
 
@@ -38,11 +41,21 @@ class RagTool(BaseTool):
 
     def _run(self, query: str) -> str:
         # A self._db-ből kérünk ki top 10 találatot)
-        results = self._db.similarity_search_with_score(
-            query,
-            k=10,
-            filter={"section_type": {"$in": ["cikk", "paragrafus"]}}
-        )
+
+        if not self.IS_BM25:
+            results = self._db.similarity_search_with_score(query, k=10, filter={"section_type": {"$in": ["cikk", "paragrafus"]}})
+        else:
+            data = self._db.get(include=["documents", "metadatas"])
+
+            documents = [
+                Document(page_content=text, metadata=metadata or {})
+                for text, metadata in zip(data["documents"], data["metadatas"])
+                if (metadata or {}).get("section_type") in ["cikk", "paragrafus"]
+            ]
+
+            retriever = BM25Retriever.from_documents(documents,k=10)
+
+            results = [(doc, None) for doc in retriever.invoke(query)]
 
         formatted_context = ""
 
@@ -54,7 +67,7 @@ class RagTool(BaseTool):
             page = meta.get("page", "multiple")
             src = os.path.basename(meta.get("source", "file"))
 
-            distance_score = round(float(_score), 4)
+            distance_score = "BM25" if _score is None else round(float(_score), 4)
 
             clean_content = doc.page_content[:1500] + "... [vágva a stabilitásért]" if len(
                 doc.page_content) > 1500 else doc.page_content
