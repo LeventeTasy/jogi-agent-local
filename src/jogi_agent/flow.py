@@ -61,10 +61,13 @@ class JogiFlow(Flow):
         if "init_tokens" not in self.state:
             self.state["init_tokens"] = 0
         else:
-            self.state["total_tokens"] += self.state["init_tokens"].total_tokens
-            self.state["prompt_tokens"] += self.state["init_tokens"].prompt_tokens
-            self.state["completion_tokens"] += self.state["init_tokens"].completion_tokens
-            self.state["successful_requests"] += self.state["init_tokens"].successful_requests
+            try:
+                self.state["total_tokens"] += self.state["init_tokens"].total_tokens
+                self.state["prompt_tokens"] += self.state["init_tokens"].prompt_tokens
+                self.state["completion_tokens"] += self.state["init_tokens"].completion_tokens
+                self.state["successful_requests"] += self.state["init_tokens"].successful_requests
+            except AttributeError:
+                print("Couldn't calculate init tokens in the flow!")
 
     def run_metrics(self, result):
         metrics = result.token_usage

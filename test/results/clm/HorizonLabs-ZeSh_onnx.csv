@@ -1,0 +1,601 @@
+question,label,is_llm,prediction,confidence,legal_prob,not_legal_prob,prob,c_legal,c_not_legal
+Mikor vehetem igénybe a 25 éven aluliak adókedvezményét?,legal,False,legal,0.68007493019104,0.68007493019104,0.31992506980895996,0,A kérdés jogi.,A kérdés nem jogi.
+Felmondhat-e a munkáltatóm azonnali hatállyal próbaidő alatt?,legal,False,legal,0.6389862895011902,0.6389862895011902,0.3610137104988098,0,A kérdés jogi.,A kérdés nem jogi.
+"Mit tehetek, ha a munkáltatóm nem fizeti ki a béremet?",legal,False,legal,0.747125506401062,0.747125506401062,0.252874493598938,0,A kérdés jogi.,A kérdés nem jogi.
+Kötelező-e írásba foglalni a munkaszerződést?,legal,False,legal,0.832977294921875,0.832977294921875,0.16702264547348022,0,A kérdés jogi.,A kérdés nem jogi.
+Hány nap szabadság jár egy munkavállalónak évente?,legal,False,legal,0.5541633367538452,0.5541633367538452,0.4458366632461548,0,A kérdés jogi.,A kérdés nem jogi.
+Mikor tagadhatja meg a munkáltató a szabadság kiadását?,legal,False,legal,0.7347251176834106,0.7347251176834106,0.26527488231658936,0,A kérdés jogi.,A kérdés nem jogi.
+"Felmondhatok-e azonnali hatállyal, ha nem fizetnek ki?",legal,False,legal,0.667322039604187,0.667322039604187,0.3326779007911682,0,A kérdés jogi.,A kérdés nem jogi.
+Milyen feltételekkel jár munkanélküli-ellátás Magyarországon?,legal,False,legal,0.8044814467430115,0.8044814467430115,0.1955185979604721,0,A kérdés jogi.,A kérdés nem jogi.
+Mikor évül el egy polgári jogi követelés?,legal,False,legal,0.8206377029418945,0.8206377029418945,0.17936229705810547,0,A kérdés jogi.,A kérdés nem jogi.
+"Mit tehetek, ha valaki nem fizeti vissza a kölcsönadott pénzemet?",legal,False,legal,0.7105810046195984,0.7105810046195984,0.289419025182724,0,A kérdés jogi.,A kérdés nem jogi.
+Érvényes-e egy szóbeli megállapodás szerződésként?,legal,False,legal,0.7414698004722595,0.7414698004722595,0.25853022933006287,0,A kérdés jogi.,A kérdés nem jogi.
+Mikor állhatok el egy online vásárlástól?,legal,False,legal,0.616312563419342,0.616312563419342,0.38368749618530273,0,A kérdés jogi.,A kérdés nem jogi.
+Hány napom van elállni egy interneten vásárolt terméktől?,legal,False,not_legal,0.5006077885627747,0.49939215183258057,0.5006077885627747,0,A kérdés jogi.,A kérdés nem jogi.
+"Mit tehetek, ha a webáruház nem akarja visszafizetni a pénzemet?",legal,False,legal,0.7115054726600647,0.7115054726600647,0.2884944975376129,0,A kérdés jogi.,A kérdés nem jogi.
+"Ki felel, ha a bérelt lakásban kárt okozok?",legal,False,legal,0.7306410074234009,0.7306410074234009,0.26935896277427673,0,A kérdés jogi.,A kérdés nem jogi.
+Felmondhatja-e a főbérlő azonnal a lakásbérleti szerződést?,legal,False,legal,0.6722134947776794,0.6722134947776794,0.32778650522232056,0,A kérdés jogi.,A kérdés nem jogi.
+Visszatarthatja-e a főbérlő a teljes kauciómat kiköltözéskor?,legal,False,legal,0.5988664031028748,0.5988664031028748,0.40113356709480286,0,A kérdés jogi.,A kérdés nem jogi.
+"Milyen jogaim vannak, ha a szomszédom rendszeresen zajong éjszaka?",legal,False,legal,0.8430158495903015,0.8430158495903015,0.1569841504096985,0,A kérdés jogi.,A kérdés nem jogi.
+Készíthetek-e felvételt valakiről az engedélye nélkül?,legal,False,not_legal,0.5469173789024353,0.4530826210975647,0.5469173789024353,0,A kérdés jogi.,A kérdés nem jogi.
+Közzétehetem-e más ember fényképét a közösségi médiában az engedélye nélkül?,legal,False,legal,0.5292372703552246,0.5292372703552246,0.4707627296447754,0,A kérdés jogi.,A kérdés nem jogi.
+"Milyen jogaim vannak, ha valaki engedély nélkül használja a fotómat?",legal,False,legal,0.8294073939323425,0.8294073939323425,0.17059257626533508,0,A kérdés jogi.,A kérdés nem jogi.
+Milyen következménye lehet a rágalmazásnak?,legal,False,legal,0.6044636964797974,0.6044636964797974,0.3955363631248474,0,A kérdés jogi.,A kérdés nem jogi.
+Mi a különbség a rágalmazás és a becsületsértés között?,legal,False,legal,0.6699651479721069,0.6699651479721069,0.33003485202789307,0,A kérdés jogi.,A kérdés nem jogi.
+Mikor köteles valaki kártérítést fizetni egy baleset után?,legal,False,legal,0.8180450797080994,0.8180450797080994,0.18195496499538422,0,A kérdés jogi.,A kérdés nem jogi.
+Ki felel a parkoló autómban okozott kárért?,legal,False,legal,0.7702421545982361,0.7702421545982361,0.22975781559944153,0,A kérdés jogi.,A kérdés nem jogi.
+"Mit tehetek, ha hibás terméket vásároltam?",legal,False,legal,0.6396792531013489,0.6396792531013489,0.3603207767009735,0,A kérdés jogi.,A kérdés nem jogi.
+Mi a különbség a jótállás és a kellékszavatosság között?,legal,False,legal,0.5809916853904724,0.5809916853904724,0.4190082848072052,0,A kérdés jogi.,A kérdés nem jogi.
+Mikor tagadhatja meg egy üzlet a termék visszavételét?,legal,False,legal,0.7550889849662781,0.7550889849662781,0.24491102993488312,0,A kérdés jogi.,A kérdés nem jogi.
+Milyen feltételekkel lehet örökölni végrendelet nélkül?,legal,False,legal,0.6593833565711975,0.6593833565711975,0.3406166732311249,0,A kérdés jogi.,A kérdés nem jogi.
+Hogyan lehet érvényesen végrendeletet készíteni?,legal,False,legal,0.7555261254310608,0.7555261254310608,0.24447385966777802,0,A kérdés jogi.,A kérdés nem jogi.
+Milyen jogai vannak a gyermeknek a szülők válása után?,legal,False,legal,0.8345136642456055,0.8345136642456055,0.1654863953590393,0,A kérdés jogi.,A kérdés nem jogi.
+Hogyan határozzák meg a gyermektartásdíj összegét?,legal,False,legal,0.5670446753501892,0.5670446753501892,0.4329553544521332,0,A kérdés jogi.,A kérdés nem jogi.
+Mikor köteles valaki tartásdíjat fizetni a volt házastársának?,legal,False,legal,0.785321056842804,0.785321056842804,0.21467892825603485,0,A kérdés jogi.,A kérdés nem jogi.
+Milyen feltételekkel lehet megváltoztatni a gyermek felügyeletéről szóló döntést?,legal,False,legal,0.7764216065406799,0.7764216065406799,0.22357842326164246,0,A kérdés jogi.,A kérdés nem jogi.
+"Mit tehetek, ha egy hatóság elutasította a kérelmemet?",legal,False,legal,0.7568148374557495,0.7568148374557495,0.2431851476430893,0,A kérdés jogi.,A kérdés nem jogi.
+Mennyi időn belül lehet fellebbezni egy hatósági határozat ellen?,legal,False,legal,0.7383992075920105,0.7383992075920105,0.2616007328033447,0,A kérdés jogi.,A kérdés nem jogi.
+Milyen jogaim vannak rendőri igazoltatás során?,legal,False,legal,0.8651105761528015,0.8651105761528015,0.1348893642425537,0,A kérdés jogi.,A kérdés nem jogi.
+Mikor jogosult a rendőrség átvizsgálni a táskámat?,legal,False,legal,0.7503556609153748,0.7503556609153748,0.24964430928230286,0,A kérdés jogi.,A kérdés nem jogi.
+Milyen következményei lehetnek a jogosítvány nélküli vezetésnek?,legal,False,legal,0.719454824924469,0.719454824924469,0.280545175075531,0,A kérdés jogi.,A kérdés nem jogi.
+Milyen feltételekkel igényelhetek személyi jövedelemadó-visszatérítést?,legal,False,legal,0.8457135558128357,0.8457135558128357,0.1542864590883255,0,A kérdés jogi.,A kérdés nem jogi.
+"Hogyan írjak Pythonban egy függvényt, amely két számot összead?",not_legal,False,not_legal,0.6762934327125549,0.3237065374851227,0.6762934327125549,0,A kérdés jogi.,A kérdés nem jogi.
+Mi a különbség a lista és a tuple között Pythonban?,not_legal,False,not_legal,0.563433825969696,0.43656620383262634,0.563433825969696,0,A kérdés jogi.,A kérdés nem jogi.
+Hogyan tudom kijavítani a Git merge conflictot?,not_legal,False,legal,0.5133274793624878,0.5133274793624878,0.4866724908351898,0,A kérdés jogi.,A kérdés nem jogi.
+Miért kapok 404-es hibát egy HTTP-kérésnél?,not_legal,False,not_legal,0.5243176817893982,0.4756823182106018,0.5243176817893982,0,A kérdés jogi.,A kérdés nem jogi.
+Hogyan lehet egy fájlt beolvasni Pythonban?,not_legal,False,not_legal,0.5431118011474609,0.45688825845718384,0.5431118011474609,0,A kérdés jogi.,A kérdés nem jogi.
+Mi a különbség a mesterséges intelligencia és a gépi tanulás között?,not_legal,False,not_legal,0.5934672355651855,0.40653282403945923,0.5934672355651855,0,A kérdés jogi.,A kérdés nem jogi.
+Hogyan működik egy neurális hálózat?,not_legal,False,not_legal,0.6410154700279236,0.35898450016975403,0.6410154700279236,0,A kérdés jogi.,A kérdés nem jogi.
+Miért fogyaszt sok memóriát a Chrome?,not_legal,False,not_legal,0.6544193625450134,0.3455805778503418,0.6544193625450134,0,A kérdés jogi.,A kérdés nem jogi.
+Hogyan tudom felgyorsítani a Windows rendszerindítását?,not_legal,False,not_legal,0.7198541164398193,0.28014594316482544,0.7198541164398193,0,A kérdés jogi.,A kérdés nem jogi.
+Milyen algoritmussal érdemes rendezni egy nagy listát?,not_legal,False,not_legal,0.5025638341903687,0.49743616580963135,0.5025638341903687,0,A kérdés jogi.,A kérdés nem jogi.
+Miért kék az ég?,not_legal,False,not_legal,0.5369544625282288,0.46304547786712646,0.5369544625282288,0,A kérdés jogi.,A kérdés nem jogi.
+Hogyan keletkezik a szivárvány?,not_legal,False,not_legal,0.6766431927680969,0.32335683703422546,0.6766431927680969,0,A kérdés jogi.,A kérdés nem jogi.
+Mi a különbség a vírus és a baktérium között?,not_legal,False,not_legal,0.5641682744026184,0.4358316957950592,0.5641682744026184,0,A kérdés jogi.,A kérdés nem jogi.
+Miért alszunk naponta több órát?,not_legal,False,not_legal,0.5752070546150208,0.42479294538497925,0.5752070546150208,0,A kérdés jogi.,A kérdés nem jogi.
+Hogyan működik a fotoszintézis?,not_legal,False,not_legal,0.5878927111625671,0.41210728883743286,0.5878927111625671,0,A kérdés jogi.,A kérdés nem jogi.
+Melyik bolygó van a legközelebb a Naphoz?,not_legal,False,not_legal,0.6932371258735657,0.30676284432411194,0.6932371258735657,0,A kérdés jogi.,A kérdés nem jogi.
+Hogyan készíthetek otthon palacsintát?,not_legal,False,not_legal,0.761040985584259,0.23895901441574097,0.761040985584259,0,A kérdés jogi.,A kérdés nem jogi.
+Milyen hőmérsékleten érdemes sütni a csirkét?,not_legal,False,not_legal,0.6230855584144592,0.3769144117832184,0.6230855584144592,0,A kérdés jogi.,A kérdés nem jogi.
+Hogyan lehet megtanulni gyorsabban gépelni?,not_legal,False,not_legal,0.62824547290802,0.37175452709198,0.62824547290802,0,A kérdés jogi.,A kérdés nem jogi.
+Milyen gyakorlatokkal lehet fejleszteni a memóriát?,not_legal,False,not_legal,0.6457076072692871,0.3542923629283905,0.6457076072692871,0,A kérdés jogi.,A kérdés nem jogi.
+Hogyan állíthatom be a jogosultságokat egy Google Drive-mappán?,not_legal,False,legal,0.576679527759552,0.576679527759552,0.423320472240448,0,A kérdés jogi.,A kérdés nem jogi.
+"Hogyan ellenőrizhetem, hogy egy API-kérés megfelel-e a specifikációnak?",not_legal,False,legal,0.510761559009552,0.510761559009552,0.4892384707927704,0,A kérdés jogi.,A kérdés nem jogi.
+Mit jelent a szerződés egy REST API dokumentációjában?,not_legal,False,legal,0.5073676109313965,0.5073676109313965,0.4926323890686035,0,A kérdés jogi.,A kérdés nem jogi.
+Hogyan kezeljem a hozzáférési jogokat egy SQL-adatbázisban?,not_legal,False,legal,0.726100742816925,0.726100742816925,0.27389925718307495,0,A kérdés jogi.,A kérdés nem jogi.
+Hogyan lehet visszavonni egy felhasználó adminisztrátori jogosultságát Linuxon?,not_legal,False,legal,0.697238028049469,0.697238028049469,0.302761971950531,0,A kérdés jogi.,A kérdés nem jogi.
+"Milyen büntetés jár a Monopolyban, ha rossz helyre lépek?",not_legal,False,legal,0.5852841734886169,0.5852841734886169,0.4147157669067383,0,A kérdés jogi.,A kérdés nem jogi.
+Mikor jár büntetőrúgás a fociban?,not_legal,False,legal,0.581523060798645,0.581523060798645,0.418476939201355,0,A kérdés jogi.,A kérdés nem jogi.
+Milyen szabálytalanságért jár kétperces kiállítás kézilabdában?,not_legal,False,legal,0.6665330529212952,0.6665330529212952,0.3334669768810272,0,A kérdés jogi.,A kérdés nem jogi.
+Mikor kap büntetőpontot egy versenyző a Forma–1-ben?,not_legal,False,legal,0.7116304039955139,0.7116304039955139,0.2883695960044861,0,A kérdés jogi.,A kérdés nem jogi.
+"Milyen büntetés jár, ha sakkban szabálytalan lépést teszek?",not_legal,False,legal,0.7257252931594849,0.7257252931594849,0.27427464723587036,0,A kérdés jogi.,A kérdés nem jogi.
+Hogyan számolja ki a játék a karakteremre kiszabott büntetést?,not_legal,False,legal,0.54944908618927,0.54944908618927,0.45055091381073,0,A kérdés jogi.,A kérdés nem jogi.
+Milyen feltételekkel oldható fel egy letiltott fiók egy videojátékban?,not_legal,False,legal,0.7852813601493835,0.7852813601493835,0.21471863985061646,0,A kérdés jogi.,A kérdés nem jogi.
+Hogyan működik a jogosultságkezelés egy Discord-szerveren?,not_legal,False,legal,0.6013681292533875,0.6013681292533875,0.39863190054893494,0,A kérdés jogi.,A kérdés nem jogi.
+Milyen szabályok vonatkoznak egy sakkverseny időmérésére?,not_legal,False,legal,0.7828382849693298,0.7828382849693298,0.21716171503067017,0,A kérdés jogi.,A kérdés nem jogi.
+"Mekkora adót kell fizetnem a Monopolyban, ha a mezőre lépek?",not_legal,False,legal,0.7430599927902222,0.7430599927902222,0.25694000720977783,0,A kérdés jogi.,A kérdés nem jogi.
+Hogyan készíthetek szerződésmintát egy objektumorientált programban?,not_legal,False,legal,0.5538085699081421,0.5538085699081421,0.4461914002895355,0,A kérdés jogi.,A kérdés nem jogi.
+Mit jelent az öröklődés a Java osztályaiban?,not_legal,False,legal,0.6164809465408325,0.6164809465408325,0.3835190236568451,0,A kérdés jogi.,A kérdés nem jogi.
+Hogyan kezelhetem a felhasználói szerepköröket egy webalkalmazásban?,not_legal,False,legal,0.6647441983222961,0.6647441983222961,0.33525583148002625,0,A kérdés jogi.,A kérdés nem jogi.
+"Mi történik, ha megszegem a játékon belüli küldetés szabályait?",not_legal,False,legal,0.663790225982666,0.663790225982666,0.33620980381965637,0,A kérdés jogi.,A kérdés nem jogi.
+Hogyan lehet egy dokumentumon szerkesztési és olvasási engedélyeket beállítani?,not_legal,False,legal,0.7000563740730286,0.7000563740730286,0.2999436557292938,0,A kérdés jogi.,A kérdés nem jogi.
+Szia!,not_legal,False,not_legal,0.5126351714134216,0.487364798784256,0.5126351714134216,0,A kérdés jogi.,A kérdés nem jogi.
+"Helló, hogy vagy?",not_legal,False,not_legal,0.6108689308166504,0.3891310691833496,0.6108689308166504,0,A kérdés jogi.,A kérdés nem jogi.
+Jó reggelt!,not_legal,False,legal,0.5259166955947876,0.5259166955947876,0.4740833342075348,0,A kérdés jogi.,A kérdés nem jogi.
+Jó estét kívánok!,not_legal,False,not_legal,0.5004762411117554,0.49952375888824463,0.5004762411117554,0,A kérdés jogi.,A kérdés nem jogi.
+Köszi szépen!,not_legal,False,legal,0.5595828294754028,0.5595828294754028,0.44041717052459717,0,A kérdés jogi.,A kérdés nem jogi.
+Nagyon hálás vagyok a segítségedért.,not_legal,False,legal,0.6681845784187317,0.6681845784187317,0.3318153917789459,0,A kérdés jogi.,A kérdés nem jogi.
+"Viszlát, további szép napot!",not_legal,False,not_legal,0.595681369304657,0.404318630695343,0.595681369304657,0,A kérdés jogi.,A kérdés nem jogi.
+Mit csinálsz most?,not_legal,False,not_legal,0.5080465078353882,0.49195346236228943,0.5080465078353882,0,A kérdés jogi.,A kérdés nem jogi.
+Milyen napod volt?,not_legal,False,not_legal,0.5744971632957458,0.42550286650657654,0.5744971632957458,0,A kérdés jogi.,A kérdés nem jogi.
+Mi újság veled?,not_legal,False,not_legal,0.5655328631401062,0.4344671666622162,0.5655328631401062,0,A kérdés jogi.,A kérdés nem jogi.
+Tudsz egy kicsit beszélgetni?,not_legal,False,not_legal,0.6896471977233887,0.31035280227661133,0.6896471977233887,0,A kérdés jogi.,A kérdés nem jogi.
+"Unatkozom, mit csináljak?",not_legal,False,not_legal,0.5109371542930603,0.4890628159046173,0.5109371542930603,0,A kérdés jogi.,A kérdés nem jogi.
+Ajánlanál egy jó filmet estére?,not_legal,False,not_legal,0.7742522954940796,0.22574768960475922,0.7742522954940796,0,A kérdés jogi.,A kérdés nem jogi.
+Milyen zenét hallgassak tanuláshoz?,not_legal,False,not_legal,0.7148026823997498,0.28519734740257263,0.7148026823997498,0,A kérdés jogi.,A kérdés nem jogi.
+Szerinted mit vegyek fel ma?,not_legal,False,not_legal,0.6750766634941101,0.3249232769012451,0.6750766634941101,0,A kérdés jogi.,A kérdés nem jogi.
+Mit főzzek ma vacsorára?,not_legal,False,not_legal,0.8001225590705872,0.19987747073173523,0.8001225590705872,0,A kérdés jogi.,A kérdés nem jogi.
+Holnap milyen programot szervezzek a barátaimmal?,not_legal,False,not_legal,0.7998528480529785,0.20014716684818268,0.7998528480529785,0,A kérdés jogi.,A kérdés nem jogi.
+Elmesélhetek neked valamit?,not_legal,False,legal,0.5388312339782715,0.5388312339782715,0.46116873621940613,0,A kérdés jogi.,A kérdés nem jogi.
+"Ez nagyon jól hangzik, mesélj még!",not_legal,False,legal,0.5765590071678162,0.5765590071678162,0.4234410226345062,0,A kérdés jogi.,A kérdés nem jogi.
+"Bocsi, ezt nem értettem. Elmagyaráznád újra?",not_legal,False,legal,0.5135334730148315,0.5135334730148315,0.48646652698516846,0,A kérdés jogi.,A kérdés nem jogi.
+Mikor vehetem igénybe a 25 éven aluliak adókedvezményét?,legal,False,legal,0.68007493019104,0.68007493019104,0.31992506980895996,0.2,A kérdés jogi.,A kérdés nem jogi.
+Felmondhat-e a munkáltatóm azonnali hatállyal próbaidő alatt?,legal,False,legal,0.6389862895011902,0.6389862895011902,0.3610137104988098,0.2,A kérdés jogi.,A kérdés nem jogi.
+"Mit tehetek, ha a munkáltatóm nem fizeti ki a béremet?",legal,False,legal,0.747125506401062,0.747125506401062,0.252874493598938,0.2,A kérdés jogi.,A kérdés nem jogi.
+Kötelező-e írásba foglalni a munkaszerződést?,legal,False,legal,0.832977294921875,0.832977294921875,0.16702264547348022,0.2,A kérdés jogi.,A kérdés nem jogi.
+Hány nap szabadság jár egy munkavállalónak évente?,legal,True,LEGAL,0.5541633367538452,0.5541633367538452,0.4458366632461548,0.2,A kérdés jogi.,A kérdés nem jogi.
+Mikor tagadhatja meg a munkáltató a szabadság kiadását?,legal,False,legal,0.7347251176834106,0.7347251176834106,0.26527488231658936,0.2,A kérdés jogi.,A kérdés nem jogi.
+"Felmondhatok-e azonnali hatállyal, ha nem fizetnek ki?",legal,False,legal,0.667322039604187,0.667322039604187,0.3326779007911682,0.2,A kérdés jogi.,A kérdés nem jogi.
+Milyen feltételekkel jár munkanélküli-ellátás Magyarországon?,legal,False,legal,0.8044814467430115,0.8044814467430115,0.1955185979604721,0.2,A kérdés jogi.,A kérdés nem jogi.
+Mikor évül el egy polgári jogi követelés?,legal,False,legal,0.8206377029418945,0.8206377029418945,0.17936229705810547,0.2,A kérdés jogi.,A kérdés nem jogi.
+"Mit tehetek, ha valaki nem fizeti vissza a kölcsönadott pénzemet?",legal,False,legal,0.7105810046195984,0.7105810046195984,0.289419025182724,0.2,A kérdés jogi.,A kérdés nem jogi.
+Érvényes-e egy szóbeli megállapodás szerződésként?,legal,False,legal,0.7414698004722595,0.7414698004722595,0.25853022933006287,0.2,A kérdés jogi.,A kérdés nem jogi.
+Mikor állhatok el egy online vásárlástól?,legal,False,legal,0.616312563419342,0.616312563419342,0.38368749618530273,0.2,A kérdés jogi.,A kérdés nem jogi.
+Hány napom van elállni egy interneten vásárolt terméktől?,legal,True,LEGAL,0.5006077885627747,0.49939215183258057,0.5006077885627747,0.2,A kérdés jogi.,A kérdés nem jogi.
+"Mit tehetek, ha a webáruház nem akarja visszafizetni a pénzemet?",legal,False,legal,0.7115054726600647,0.7115054726600647,0.2884944975376129,0.2,A kérdés jogi.,A kérdés nem jogi.
+"Ki felel, ha a bérelt lakásban kárt okozok?",legal,False,legal,0.7306410074234009,0.7306410074234009,0.26935896277427673,0.2,A kérdés jogi.,A kérdés nem jogi.
+Felmondhatja-e a főbérlő azonnal a lakásbérleti szerződést?,legal,False,legal,0.6722134947776794,0.6722134947776794,0.32778650522232056,0.2,A kérdés jogi.,A kérdés nem jogi.
+Visszatarthatja-e a főbérlő a teljes kauciómat kiköltözéskor?,legal,True,LEGAL,0.5988664031028748,0.5988664031028748,0.40113356709480286,0.2,A kérdés jogi.,A kérdés nem jogi.
+"Milyen jogaim vannak, ha a szomszédom rendszeresen zajong éjszaka?",legal,False,legal,0.8430158495903015,0.8430158495903015,0.1569841504096985,0.2,A kérdés jogi.,A kérdés nem jogi.
+Készíthetek-e felvételt valakiről az engedélye nélkül?,legal,True,LEGAL,0.5469173789024353,0.4530826210975647,0.5469173789024353,0.2,A kérdés jogi.,A kérdés nem jogi.
+Közzétehetem-e más ember fényképét a közösségi médiában az engedélye nélkül?,legal,True,LEGAL,0.5292372703552246,0.5292372703552246,0.4707627296447754,0.2,A kérdés jogi.,A kérdés nem jogi.
+"Milyen jogaim vannak, ha valaki engedély nélkül használja a fotómat?",legal,False,legal,0.8294073939323425,0.8294073939323425,0.17059257626533508,0.2,A kérdés jogi.,A kérdés nem jogi.
+Milyen következménye lehet a rágalmazásnak?,legal,False,legal,0.6044636964797974,0.6044636964797974,0.3955363631248474,0.2,A kérdés jogi.,A kérdés nem jogi.
+Mi a különbség a rágalmazás és a becsületsértés között?,legal,False,legal,0.6699651479721069,0.6699651479721069,0.33003485202789307,0.2,A kérdés jogi.,A kérdés nem jogi.
+Mikor köteles valaki kártérítést fizetni egy baleset után?,legal,False,legal,0.8180450797080994,0.8180450797080994,0.18195496499538422,0.2,A kérdés jogi.,A kérdés nem jogi.
+Ki felel a parkoló autómban okozott kárért?,legal,False,legal,0.7702421545982361,0.7702421545982361,0.22975781559944153,0.2,A kérdés jogi.,A kérdés nem jogi.
+"Mit tehetek, ha hibás terméket vásároltam?",legal,False,legal,0.6396792531013489,0.6396792531013489,0.3603207767009735,0.2,A kérdés jogi.,A kérdés nem jogi.
+Mi a különbség a jótállás és a kellékszavatosság között?,legal,True,LEGAL,0.5809916853904724,0.5809916853904724,0.4190082848072052,0.2,A kérdés jogi.,A kérdés nem jogi.
+Mikor tagadhatja meg egy üzlet a termék visszavételét?,legal,False,legal,0.7550889849662781,0.7550889849662781,0.24491102993488312,0.2,A kérdés jogi.,A kérdés nem jogi.
+Milyen feltételekkel lehet örökölni végrendelet nélkül?,legal,False,legal,0.6593833565711975,0.6593833565711975,0.3406166732311249,0.2,A kérdés jogi.,A kérdés nem jogi.
+Hogyan lehet érvényesen végrendeletet készíteni?,legal,False,legal,0.7555261254310608,0.7555261254310608,0.24447385966777802,0.2,A kérdés jogi.,A kérdés nem jogi.
+Milyen jogai vannak a gyermeknek a szülők válása után?,legal,False,legal,0.8345136642456055,0.8345136642456055,0.1654863953590393,0.2,A kérdés jogi.,A kérdés nem jogi.
+Hogyan határozzák meg a gyermektartásdíj összegét?,legal,True,LEGAL,0.5670446753501892,0.5670446753501892,0.4329553544521332,0.2,A kérdés jogi.,A kérdés nem jogi.
+Mikor köteles valaki tartásdíjat fizetni a volt házastársának?,legal,False,legal,0.785321056842804,0.785321056842804,0.21467892825603485,0.2,A kérdés jogi.,A kérdés nem jogi.
+Milyen feltételekkel lehet megváltoztatni a gyermek felügyeletéről szóló döntést?,legal,False,legal,0.7764216065406799,0.7764216065406799,0.22357842326164246,0.2,A kérdés jogi.,A kérdés nem jogi.
+"Mit tehetek, ha egy hatóság elutasította a kérelmemet?",legal,False,legal,0.7568148374557495,0.7568148374557495,0.2431851476430893,0.2,A kérdés jogi.,A kérdés nem jogi.
+Mennyi időn belül lehet fellebbezni egy hatósági határozat ellen?,legal,False,legal,0.7383992075920105,0.7383992075920105,0.2616007328033447,0.2,A kérdés jogi.,A kérdés nem jogi.
+Milyen jogaim vannak rendőri igazoltatás során?,legal,False,legal,0.8651105761528015,0.8651105761528015,0.1348893642425537,0.2,A kérdés jogi.,A kérdés nem jogi.
+Mikor jogosult a rendőrség átvizsgálni a táskámat?,legal,False,legal,0.7503556609153748,0.7503556609153748,0.24964430928230286,0.2,A kérdés jogi.,A kérdés nem jogi.
+Milyen következményei lehetnek a jogosítvány nélküli vezetésnek?,legal,False,legal,0.719454824924469,0.719454824924469,0.280545175075531,0.2,A kérdés jogi.,A kérdés nem jogi.
+Milyen feltételekkel igényelhetek személyi jövedelemadó-visszatérítést?,legal,False,legal,0.8457135558128357,0.8457135558128357,0.1542864590883255,0.2,A kérdés jogi.,A kérdés nem jogi.
+"Hogyan írjak Pythonban egy függvényt, amely két számot összead?",not_legal,False,not_legal,0.6762934327125549,0.3237065374851227,0.6762934327125549,0.2,A kérdés jogi.,A kérdés nem jogi.
+Mi a különbség a lista és a tuple között Pythonban?,not_legal,True,NOT_LEGAL,0.563433825969696,0.43656620383262634,0.563433825969696,0.2,A kérdés jogi.,A kérdés nem jogi.
+Hogyan tudom kijavítani a Git merge conflictot?,not_legal,True,NOT_LEGAL,0.5133274793624878,0.5133274793624878,0.4866724908351898,0.2,A kérdés jogi.,A kérdés nem jogi.
+Miért kapok 404-es hibát egy HTTP-kérésnél?,not_legal,True,NOT_LEGAL,0.5243176817893982,0.4756823182106018,0.5243176817893982,0.2,A kérdés jogi.,A kérdés nem jogi.
+Hogyan lehet egy fájlt beolvasni Pythonban?,not_legal,True,NOT_LEGAL,0.5431118011474609,0.45688825845718384,0.5431118011474609,0.2,A kérdés jogi.,A kérdés nem jogi.
+Mi a különbség a mesterséges intelligencia és a gépi tanulás között?,not_legal,True,NOT_LEGAL,0.5934672355651855,0.40653282403945923,0.5934672355651855,0.2,A kérdés jogi.,A kérdés nem jogi.
+Hogyan működik egy neurális hálózat?,not_legal,False,not_legal,0.6410154700279236,0.35898450016975403,0.6410154700279236,0.2,A kérdés jogi.,A kérdés nem jogi.
+Miért fogyaszt sok memóriát a Chrome?,not_legal,False,not_legal,0.6544193625450134,0.3455805778503418,0.6544193625450134,0.2,A kérdés jogi.,A kérdés nem jogi.
+Hogyan tudom felgyorsítani a Windows rendszerindítását?,not_legal,False,not_legal,0.7198541164398193,0.28014594316482544,0.7198541164398193,0.2,A kérdés jogi.,A kérdés nem jogi.
+Milyen algoritmussal érdemes rendezni egy nagy listát?,not_legal,True,NOT_LEGAL,0.5025638341903687,0.49743616580963135,0.5025638341903687,0.2,A kérdés jogi.,A kérdés nem jogi.
+Miért kék az ég?,not_legal,True,NOT_LEGAL,0.5369544625282288,0.46304547786712646,0.5369544625282288,0.2,A kérdés jogi.,A kérdés nem jogi.
+Hogyan keletkezik a szivárvány?,not_legal,False,not_legal,0.6766431927680969,0.32335683703422546,0.6766431927680969,0.2,A kérdés jogi.,A kérdés nem jogi.
+Mi a különbség a vírus és a baktérium között?,not_legal,True,NOT_LEGAL,0.5641682744026184,0.4358316957950592,0.5641682744026184,0.2,A kérdés jogi.,A kérdés nem jogi.
+Miért alszunk naponta több órát?,not_legal,True,NOT_LEGAL,0.5752070546150208,0.42479294538497925,0.5752070546150208,0.2,A kérdés jogi.,A kérdés nem jogi.
+Hogyan működik a fotoszintézis?,not_legal,True,NOT_LEGAL,0.5878927111625671,0.41210728883743286,0.5878927111625671,0.2,A kérdés jogi.,A kérdés nem jogi.
+Melyik bolygó van a legközelebb a Naphoz?,not_legal,False,not_legal,0.6932371258735657,0.30676284432411194,0.6932371258735657,0.2,A kérdés jogi.,A kérdés nem jogi.
+Hogyan készíthetek otthon palacsintát?,not_legal,False,not_legal,0.761040985584259,0.23895901441574097,0.761040985584259,0.2,A kérdés jogi.,A kérdés nem jogi.
+Milyen hőmérsékleten érdemes sütni a csirkét?,not_legal,False,not_legal,0.6230855584144592,0.3769144117832184,0.6230855584144592,0.2,A kérdés jogi.,A kérdés nem jogi.
+Hogyan lehet megtanulni gyorsabban gépelni?,not_legal,False,not_legal,0.62824547290802,0.37175452709198,0.62824547290802,0.2,A kérdés jogi.,A kérdés nem jogi.
+Milyen gyakorlatokkal lehet fejleszteni a memóriát?,not_legal,False,not_legal,0.6457076072692871,0.3542923629283905,0.6457076072692871,0.2,A kérdés jogi.,A kérdés nem jogi.
+Hogyan állíthatom be a jogosultságokat egy Google Drive-mappán?,not_legal,True,NOT_LEGAL,0.576679527759552,0.576679527759552,0.423320472240448,0.2,A kérdés jogi.,A kérdés nem jogi.
+"Hogyan ellenőrizhetem, hogy egy API-kérés megfelel-e a specifikációnak?",not_legal,True,NOT_LEGAL,0.510761559009552,0.510761559009552,0.4892384707927704,0.2,A kérdés jogi.,A kérdés nem jogi.
+Mit jelent a szerződés egy REST API dokumentációjában?,not_legal,True,LEGAL,0.5073676109313965,0.5073676109313965,0.4926323890686035,0.2,A kérdés jogi.,A kérdés nem jogi.
+Hogyan kezeljem a hozzáférési jogokat egy SQL-adatbázisban?,not_legal,False,legal,0.726100742816925,0.726100742816925,0.27389925718307495,0.2,A kérdés jogi.,A kérdés nem jogi.
+Hogyan lehet visszavonni egy felhasználó adminisztrátori jogosultságát Linuxon?,not_legal,False,legal,0.697238028049469,0.697238028049469,0.302761971950531,0.2,A kérdés jogi.,A kérdés nem jogi.
+"Milyen büntetés jár a Monopolyban, ha rossz helyre lépek?",not_legal,True,NOT_LEGAL,0.5852841734886169,0.5852841734886169,0.4147157669067383,0.2,A kérdés jogi.,A kérdés nem jogi.
+Mikor jár büntetőrúgás a fociban?,not_legal,True,NOT_LEGAL,0.581523060798645,0.581523060798645,0.418476939201355,0.2,A kérdés jogi.,A kérdés nem jogi.
+Milyen szabálytalanságért jár kétperces kiállítás kézilabdában?,not_legal,False,legal,0.6665330529212952,0.6665330529212952,0.3334669768810272,0.2,A kérdés jogi.,A kérdés nem jogi.
+Mikor kap büntetőpontot egy versenyző a Forma–1-ben?,not_legal,False,legal,0.7116304039955139,0.7116304039955139,0.2883695960044861,0.2,A kérdés jogi.,A kérdés nem jogi.
+"Milyen büntetés jár, ha sakkban szabálytalan lépést teszek?",not_legal,False,legal,0.7257252931594849,0.7257252931594849,0.27427464723587036,0.2,A kérdés jogi.,A kérdés nem jogi.
+Hogyan számolja ki a játék a karakteremre kiszabott büntetést?,not_legal,True,NOT_LEGAL,0.54944908618927,0.54944908618927,0.45055091381073,0.2,A kérdés jogi.,A kérdés nem jogi.
+Milyen feltételekkel oldható fel egy letiltott fiók egy videojátékban?,not_legal,False,legal,0.7852813601493835,0.7852813601493835,0.21471863985061646,0.2,A kérdés jogi.,A kérdés nem jogi.
+Hogyan működik a jogosultságkezelés egy Discord-szerveren?,not_legal,False,legal,0.6013681292533875,0.6013681292533875,0.39863190054893494,0.2,A kérdés jogi.,A kérdés nem jogi.
+Milyen szabályok vonatkoznak egy sakkverseny időmérésére?,not_legal,False,legal,0.7828382849693298,0.7828382849693298,0.21716171503067017,0.2,A kérdés jogi.,A kérdés nem jogi.
+"Mekkora adót kell fizetnem a Monopolyban, ha a mezőre lépek?",not_legal,False,legal,0.7430599927902222,0.7430599927902222,0.25694000720977783,0.2,A kérdés jogi.,A kérdés nem jogi.
+Hogyan készíthetek szerződésmintát egy objektumorientált programban?,not_legal,True,NOT_LEGAL,0.5538085699081421,0.5538085699081421,0.4461914002895355,0.2,A kérdés jogi.,A kérdés nem jogi.
+Mit jelent az öröklődés a Java osztályaiban?,not_legal,False,legal,0.6164809465408325,0.6164809465408325,0.3835190236568451,0.2,A kérdés jogi.,A kérdés nem jogi.
+Hogyan kezelhetem a felhasználói szerepköröket egy webalkalmazásban?,not_legal,False,legal,0.6647441983222961,0.6647441983222961,0.33525583148002625,0.2,A kérdés jogi.,A kérdés nem jogi.
+"Mi történik, ha megszegem a játékon belüli küldetés szabályait?",not_legal,False,legal,0.663790225982666,0.663790225982666,0.33620980381965637,0.2,A kérdés jogi.,A kérdés nem jogi.
+Hogyan lehet egy dokumentumon szerkesztési és olvasási engedélyeket beállítani?,not_legal,False,legal,0.7000563740730286,0.7000563740730286,0.2999436557292938,0.2,A kérdés jogi.,A kérdés nem jogi.
+Szia!,not_legal,True,NOT_LEGAL,0.5126351714134216,0.487364798784256,0.5126351714134216,0.2,A kérdés jogi.,A kérdés nem jogi.
+"Helló, hogy vagy?",not_legal,False,not_legal,0.6108689308166504,0.3891310691833496,0.6108689308166504,0.2,A kérdés jogi.,A kérdés nem jogi.
+Jó reggelt!,not_legal,True,NOT_LEGAL,0.5259166955947876,0.5259166955947876,0.4740833342075348,0.2,A kérdés jogi.,A kérdés nem jogi.
+Jó estét kívánok!,not_legal,True,NOT_LEGAL,0.5004762411117554,0.49952375888824463,0.5004762411117554,0.2,A kérdés jogi.,A kérdés nem jogi.
+Köszi szépen!,not_legal,True,NOT_LEGAL,0.5595828294754028,0.5595828294754028,0.44041717052459717,0.2,A kérdés jogi.,A kérdés nem jogi.
+Nagyon hálás vagyok a segítségedért.,not_legal,False,legal,0.6681845784187317,0.6681845784187317,0.3318153917789459,0.2,A kérdés jogi.,A kérdés nem jogi.
+"Viszlát, további szép napot!",not_legal,True,NOT_LEGAL,0.595681369304657,0.404318630695343,0.595681369304657,0.2,A kérdés jogi.,A kérdés nem jogi.
+Mit csinálsz most?,not_legal,True,NOT_LEGAL,0.5080465078353882,0.49195346236228943,0.5080465078353882,0.2,A kérdés jogi.,A kérdés nem jogi.
+Milyen napod volt?,not_legal,True,NOT_LEGAL,0.5744971632957458,0.42550286650657654,0.5744971632957458,0.2,A kérdés jogi.,A kérdés nem jogi.
+Mi újság veled?,not_legal,True,NOT_LEGAL,0.5655328631401062,0.4344671666622162,0.5655328631401062,0.2,A kérdés jogi.,A kérdés nem jogi.
+Tudsz egy kicsit beszélgetni?,not_legal,False,not_legal,0.6896471977233887,0.31035280227661133,0.6896471977233887,0.2,A kérdés jogi.,A kérdés nem jogi.
+"Unatkozom, mit csináljak?",not_legal,True,NOT_LEGAL,0.5109371542930603,0.4890628159046173,0.5109371542930603,0.2,A kérdés jogi.,A kérdés nem jogi.
+Ajánlanál egy jó filmet estére?,not_legal,False,not_legal,0.7742522954940796,0.22574768960475922,0.7742522954940796,0.2,A kérdés jogi.,A kérdés nem jogi.
+Milyen zenét hallgassak tanuláshoz?,not_legal,False,not_legal,0.7148026823997498,0.28519734740257263,0.7148026823997498,0.2,A kérdés jogi.,A kérdés nem jogi.
+Szerinted mit vegyek fel ma?,not_legal,False,not_legal,0.6750766634941101,0.3249232769012451,0.6750766634941101,0.2,A kérdés jogi.,A kérdés nem jogi.
+Mit főzzek ma vacsorára?,not_legal,False,not_legal,0.8001225590705872,0.19987747073173523,0.8001225590705872,0.2,A kérdés jogi.,A kérdés nem jogi.
+Holnap milyen programot szervezzek a barátaimmal?,not_legal,False,not_legal,0.7998528480529785,0.20014716684818268,0.7998528480529785,0.2,A kérdés jogi.,A kérdés nem jogi.
+Elmesélhetek neked valamit?,not_legal,True,NOT_LEGAL,0.5388312339782715,0.5388312339782715,0.46116873621940613,0.2,A kérdés jogi.,A kérdés nem jogi.
+"Ez nagyon jól hangzik, mesélj még!",not_legal,True,NOT_LEGAL,0.5765590071678162,0.5765590071678162,0.4234410226345062,0.2,A kérdés jogi.,A kérdés nem jogi.
+"Bocsi, ezt nem értettem. Elmagyaráznád újra?",not_legal,True,NOT_LEGAL,0.5135334730148315,0.5135334730148315,0.48646652698516846,0.2,A kérdés jogi.,A kérdés nem jogi.
+Mikor vehetem igénybe a 25 éven aluliak adókedvezményét?,legal,False,legal,0.68007493019104,0.68007493019104,0.31992506980895996,0.3,A kérdés jogi.,A kérdés nem jogi.
+Felmondhat-e a munkáltatóm azonnali hatállyal próbaidő alatt?,legal,True,LEGAL,0.6389862895011902,0.6389862895011902,0.3610137104988098,0.3,A kérdés jogi.,A kérdés nem jogi.
+"Mit tehetek, ha a munkáltatóm nem fizeti ki a béremet?",legal,False,legal,0.747125506401062,0.747125506401062,0.252874493598938,0.3,A kérdés jogi.,A kérdés nem jogi.
+Kötelező-e írásba foglalni a munkaszerződést?,legal,False,legal,0.832977294921875,0.832977294921875,0.16702264547348022,0.3,A kérdés jogi.,A kérdés nem jogi.
+Hány nap szabadság jár egy munkavállalónak évente?,legal,True,LEGAL,0.5541633367538452,0.5541633367538452,0.4458366632461548,0.3,A kérdés jogi.,A kérdés nem jogi.
+Mikor tagadhatja meg a munkáltató a szabadság kiadását?,legal,False,legal,0.7347251176834106,0.7347251176834106,0.26527488231658936,0.3,A kérdés jogi.,A kérdés nem jogi.
+"Felmondhatok-e azonnali hatállyal, ha nem fizetnek ki?",legal,False,legal,0.667322039604187,0.667322039604187,0.3326779007911682,0.3,A kérdés jogi.,A kérdés nem jogi.
+Milyen feltételekkel jár munkanélküli-ellátás Magyarországon?,legal,False,legal,0.8044814467430115,0.8044814467430115,0.1955185979604721,0.3,A kérdés jogi.,A kérdés nem jogi.
+Mikor évül el egy polgári jogi követelés?,legal,False,legal,0.8206377029418945,0.8206377029418945,0.17936229705810547,0.3,A kérdés jogi.,A kérdés nem jogi.
+"Mit tehetek, ha valaki nem fizeti vissza a kölcsönadott pénzemet?",legal,False,legal,0.7105810046195984,0.7105810046195984,0.289419025182724,0.3,A kérdés jogi.,A kérdés nem jogi.
+Érvényes-e egy szóbeli megállapodás szerződésként?,legal,False,legal,0.7414698004722595,0.7414698004722595,0.25853022933006287,0.3,A kérdés jogi.,A kérdés nem jogi.
+Mikor állhatok el egy online vásárlástól?,legal,True,LEGAL,0.616312563419342,0.616312563419342,0.38368749618530273,0.3,A kérdés jogi.,A kérdés nem jogi.
+Hány napom van elállni egy interneten vásárolt terméktől?,legal,True,LEGAL,0.5006077885627747,0.49939215183258057,0.5006077885627747,0.3,A kérdés jogi.,A kérdés nem jogi.
+"Mit tehetek, ha a webáruház nem akarja visszafizetni a pénzemet?",legal,False,legal,0.7115054726600647,0.7115054726600647,0.2884944975376129,0.3,A kérdés jogi.,A kérdés nem jogi.
+"Ki felel, ha a bérelt lakásban kárt okozok?",legal,False,legal,0.7306410074234009,0.7306410074234009,0.26935896277427673,0.3,A kérdés jogi.,A kérdés nem jogi.
+Felmondhatja-e a főbérlő azonnal a lakásbérleti szerződést?,legal,False,legal,0.6722134947776794,0.6722134947776794,0.32778650522232056,0.3,A kérdés jogi.,A kérdés nem jogi.
+Visszatarthatja-e a főbérlő a teljes kauciómat kiköltözéskor?,legal,True,LEGAL,0.5988664031028748,0.5988664031028748,0.40113356709480286,0.3,A kérdés jogi.,A kérdés nem jogi.
+"Milyen jogaim vannak, ha a szomszédom rendszeresen zajong éjszaka?",legal,False,legal,0.8430158495903015,0.8430158495903015,0.1569841504096985,0.3,A kérdés jogi.,A kérdés nem jogi.
+Készíthetek-e felvételt valakiről az engedélye nélkül?,legal,True,LEGAL,0.5469173789024353,0.4530826210975647,0.5469173789024353,0.3,A kérdés jogi.,A kérdés nem jogi.
+Közzétehetem-e más ember fényképét a közösségi médiában az engedélye nélkül?,legal,True,LEGAL,0.5292372703552246,0.5292372703552246,0.4707627296447754,0.3,A kérdés jogi.,A kérdés nem jogi.
+"Milyen jogaim vannak, ha valaki engedély nélkül használja a fotómat?",legal,False,legal,0.8294073939323425,0.8294073939323425,0.17059257626533508,0.3,A kérdés jogi.,A kérdés nem jogi.
+Milyen következménye lehet a rágalmazásnak?,legal,True,LEGAL,0.6044636964797974,0.6044636964797974,0.3955363631248474,0.3,A kérdés jogi.,A kérdés nem jogi.
+Mi a különbség a rágalmazás és a becsületsértés között?,legal,False,legal,0.6699651479721069,0.6699651479721069,0.33003485202789307,0.3,A kérdés jogi.,A kérdés nem jogi.
+Mikor köteles valaki kártérítést fizetni egy baleset után?,legal,False,legal,0.8180450797080994,0.8180450797080994,0.18195496499538422,0.3,A kérdés jogi.,A kérdés nem jogi.
+Ki felel a parkoló autómban okozott kárért?,legal,False,legal,0.7702421545982361,0.7702421545982361,0.22975781559944153,0.3,A kérdés jogi.,A kérdés nem jogi.
+"Mit tehetek, ha hibás terméket vásároltam?",legal,True,LEGAL,0.6396792531013489,0.6396792531013489,0.3603207767009735,0.3,A kérdés jogi.,A kérdés nem jogi.
+Mi a különbség a jótállás és a kellékszavatosság között?,legal,True,LEGAL,0.5809916853904724,0.5809916853904724,0.4190082848072052,0.3,A kérdés jogi.,A kérdés nem jogi.
+Mikor tagadhatja meg egy üzlet a termék visszavételét?,legal,False,legal,0.7550889849662781,0.7550889849662781,0.24491102993488312,0.3,A kérdés jogi.,A kérdés nem jogi.
+Milyen feltételekkel lehet örökölni végrendelet nélkül?,legal,False,legal,0.6593833565711975,0.6593833565711975,0.3406166732311249,0.3,A kérdés jogi.,A kérdés nem jogi.
+Hogyan lehet érvényesen végrendeletet készíteni?,legal,False,legal,0.7555261254310608,0.7555261254310608,0.24447385966777802,0.3,A kérdés jogi.,A kérdés nem jogi.
+Milyen jogai vannak a gyermeknek a szülők válása után?,legal,False,legal,0.8345136642456055,0.8345136642456055,0.1654863953590393,0.3,A kérdés jogi.,A kérdés nem jogi.
+Hogyan határozzák meg a gyermektartásdíj összegét?,legal,True,LEGAL,0.5670446753501892,0.5670446753501892,0.4329553544521332,0.3,A kérdés jogi.,A kérdés nem jogi.
+Mikor köteles valaki tartásdíjat fizetni a volt házastársának?,legal,False,legal,0.785321056842804,0.785321056842804,0.21467892825603485,0.3,A kérdés jogi.,A kérdés nem jogi.
+Milyen feltételekkel lehet megváltoztatni a gyermek felügyeletéről szóló döntést?,legal,False,legal,0.7764216065406799,0.7764216065406799,0.22357842326164246,0.3,A kérdés jogi.,A kérdés nem jogi.
+"Mit tehetek, ha egy hatóság elutasította a kérelmemet?",legal,False,legal,0.7568148374557495,0.7568148374557495,0.2431851476430893,0.3,A kérdés jogi.,A kérdés nem jogi.
+Mennyi időn belül lehet fellebbezni egy hatósági határozat ellen?,legal,False,legal,0.7383992075920105,0.7383992075920105,0.2616007328033447,0.3,A kérdés jogi.,A kérdés nem jogi.
+Milyen jogaim vannak rendőri igazoltatás során?,legal,False,legal,0.8651105761528015,0.8651105761528015,0.1348893642425537,0.3,A kérdés jogi.,A kérdés nem jogi.
+Mikor jogosult a rendőrség átvizsgálni a táskámat?,legal,False,legal,0.7503556609153748,0.7503556609153748,0.24964430928230286,0.3,A kérdés jogi.,A kérdés nem jogi.
+Milyen következményei lehetnek a jogosítvány nélküli vezetésnek?,legal,False,legal,0.719454824924469,0.719454824924469,0.280545175075531,0.3,A kérdés jogi.,A kérdés nem jogi.
+Milyen feltételekkel igényelhetek személyi jövedelemadó-visszatérítést?,legal,False,legal,0.8457135558128357,0.8457135558128357,0.1542864590883255,0.3,A kérdés jogi.,A kérdés nem jogi.
+"Hogyan írjak Pythonban egy függvényt, amely két számot összead?",not_legal,False,not_legal,0.6762934327125549,0.3237065374851227,0.6762934327125549,0.3,A kérdés jogi.,A kérdés nem jogi.
+Mi a különbség a lista és a tuple között Pythonban?,not_legal,True,NOT_LEGAL,0.563433825969696,0.43656620383262634,0.563433825969696,0.3,A kérdés jogi.,A kérdés nem jogi.
+Hogyan tudom kijavítani a Git merge conflictot?,not_legal,True,NOT_LEGAL,0.5133274793624878,0.5133274793624878,0.4866724908351898,0.3,A kérdés jogi.,A kérdés nem jogi.
+Miért kapok 404-es hibát egy HTTP-kérésnél?,not_legal,True,NOT_LEGAL,0.5243176817893982,0.4756823182106018,0.5243176817893982,0.3,A kérdés jogi.,A kérdés nem jogi.
+Hogyan lehet egy fájlt beolvasni Pythonban?,not_legal,True,NOT_LEGAL,0.5431118011474609,0.45688825845718384,0.5431118011474609,0.3,A kérdés jogi.,A kérdés nem jogi.
+Mi a különbség a mesterséges intelligencia és a gépi tanulás között?,not_legal,True,NOT_LEGAL,0.5934672355651855,0.40653282403945923,0.5934672355651855,0.3,A kérdés jogi.,A kérdés nem jogi.
+Hogyan működik egy neurális hálózat?,not_legal,True,NOT_LEGAL,0.6410154700279236,0.35898450016975403,0.6410154700279236,0.3,A kérdés jogi.,A kérdés nem jogi.
+Miért fogyaszt sok memóriát a Chrome?,not_legal,False,not_legal,0.6544193625450134,0.3455805778503418,0.6544193625450134,0.3,A kérdés jogi.,A kérdés nem jogi.
+Hogyan tudom felgyorsítani a Windows rendszerindítását?,not_legal,False,not_legal,0.7198541164398193,0.28014594316482544,0.7198541164398193,0.3,A kérdés jogi.,A kérdés nem jogi.
+Milyen algoritmussal érdemes rendezni egy nagy listát?,not_legal,True,NOT_LEGAL,0.5025638341903687,0.49743616580963135,0.5025638341903687,0.3,A kérdés jogi.,A kérdés nem jogi.
+Miért kék az ég?,not_legal,True,NOT_LEGAL,0.5369544625282288,0.46304547786712646,0.5369544625282288,0.3,A kérdés jogi.,A kérdés nem jogi.
+Hogyan keletkezik a szivárvány?,not_legal,False,not_legal,0.6766431927680969,0.32335683703422546,0.6766431927680969,0.3,A kérdés jogi.,A kérdés nem jogi.
+Mi a különbség a vírus és a baktérium között?,not_legal,True,NOT_LEGAL,0.5641682744026184,0.4358316957950592,0.5641682744026184,0.3,A kérdés jogi.,A kérdés nem jogi.
+Miért alszunk naponta több órát?,not_legal,True,NOT_LEGAL,0.5752070546150208,0.42479294538497925,0.5752070546150208,0.3,A kérdés jogi.,A kérdés nem jogi.
+Hogyan működik a fotoszintézis?,not_legal,True,NOT_LEGAL,0.5878927111625671,0.41210728883743286,0.5878927111625671,0.3,A kérdés jogi.,A kérdés nem jogi.
+Melyik bolygó van a legközelebb a Naphoz?,not_legal,False,not_legal,0.6932371258735657,0.30676284432411194,0.6932371258735657,0.3,A kérdés jogi.,A kérdés nem jogi.
+Hogyan készíthetek otthon palacsintát?,not_legal,False,not_legal,0.761040985584259,0.23895901441574097,0.761040985584259,0.3,A kérdés jogi.,A kérdés nem jogi.
+Milyen hőmérsékleten érdemes sütni a csirkét?,not_legal,True,NOT_LEGAL,0.6230855584144592,0.3769144117832184,0.6230855584144592,0.3,A kérdés jogi.,A kérdés nem jogi.
+Hogyan lehet megtanulni gyorsabban gépelni?,not_legal,True,NOT_LEGAL,0.62824547290802,0.37175452709198,0.62824547290802,0.3,A kérdés jogi.,A kérdés nem jogi.
+Milyen gyakorlatokkal lehet fejleszteni a memóriát?,not_legal,True,NOT_LEGAL,0.6457076072692871,0.3542923629283905,0.6457076072692871,0.3,A kérdés jogi.,A kérdés nem jogi.
+Hogyan állíthatom be a jogosultságokat egy Google Drive-mappán?,not_legal,True,NOT_LEGAL,0.576679527759552,0.576679527759552,0.423320472240448,0.3,A kérdés jogi.,A kérdés nem jogi.
+"Hogyan ellenőrizhetem, hogy egy API-kérés megfelel-e a specifikációnak?",not_legal,True,NOT_LEGAL,0.510761559009552,0.510761559009552,0.4892384707927704,0.3,A kérdés jogi.,A kérdés nem jogi.
+Mit jelent a szerződés egy REST API dokumentációjában?,not_legal,True,LEGAL,0.5073676109313965,0.5073676109313965,0.4926323890686035,0.3,A kérdés jogi.,A kérdés nem jogi.
+Hogyan kezeljem a hozzáférési jogokat egy SQL-adatbázisban?,not_legal,False,legal,0.726100742816925,0.726100742816925,0.27389925718307495,0.3,A kérdés jogi.,A kérdés nem jogi.
+Hogyan lehet visszavonni egy felhasználó adminisztrátori jogosultságát Linuxon?,not_legal,False,legal,0.697238028049469,0.697238028049469,0.302761971950531,0.3,A kérdés jogi.,A kérdés nem jogi.
+"Milyen büntetés jár a Monopolyban, ha rossz helyre lépek?",not_legal,True,NOT_LEGAL,0.5852841734886169,0.5852841734886169,0.4147157669067383,0.3,A kérdés jogi.,A kérdés nem jogi.
+Mikor jár büntetőrúgás a fociban?,not_legal,True,NOT_LEGAL,0.581523060798645,0.581523060798645,0.418476939201355,0.3,A kérdés jogi.,A kérdés nem jogi.
+Milyen szabálytalanságért jár kétperces kiállítás kézilabdában?,not_legal,False,legal,0.6665330529212952,0.6665330529212952,0.3334669768810272,0.3,A kérdés jogi.,A kérdés nem jogi.
+Mikor kap büntetőpontot egy versenyző a Forma–1-ben?,not_legal,False,legal,0.7116304039955139,0.7116304039955139,0.2883695960044861,0.3,A kérdés jogi.,A kérdés nem jogi.
+"Milyen büntetés jár, ha sakkban szabálytalan lépést teszek?",not_legal,False,legal,0.7257252931594849,0.7257252931594849,0.27427464723587036,0.3,A kérdés jogi.,A kérdés nem jogi.
+Hogyan számolja ki a játék a karakteremre kiszabott büntetést?,not_legal,True,NOT_LEGAL,0.54944908618927,0.54944908618927,0.45055091381073,0.3,A kérdés jogi.,A kérdés nem jogi.
+Milyen feltételekkel oldható fel egy letiltott fiók egy videojátékban?,not_legal,False,legal,0.7852813601493835,0.7852813601493835,0.21471863985061646,0.3,A kérdés jogi.,A kérdés nem jogi.
+Hogyan működik a jogosultságkezelés egy Discord-szerveren?,not_legal,True,NOT_LEGAL,0.6013681292533875,0.6013681292533875,0.39863190054893494,0.3,A kérdés jogi.,A kérdés nem jogi.
+Milyen szabályok vonatkoznak egy sakkverseny időmérésére?,not_legal,False,legal,0.7828382849693298,0.7828382849693298,0.21716171503067017,0.3,A kérdés jogi.,A kérdés nem jogi.
+"Mekkora adót kell fizetnem a Monopolyban, ha a mezőre lépek?",not_legal,False,legal,0.7430599927902222,0.7430599927902222,0.25694000720977783,0.3,A kérdés jogi.,A kérdés nem jogi.
+Hogyan készíthetek szerződésmintát egy objektumorientált programban?,not_legal,True,NOT_LEGAL,0.5538085699081421,0.5538085699081421,0.4461914002895355,0.3,A kérdés jogi.,A kérdés nem jogi.
+Mit jelent az öröklődés a Java osztályaiban?,not_legal,True,NOT_LEGAL,0.6164809465408325,0.6164809465408325,0.3835190236568451,0.3,A kérdés jogi.,A kérdés nem jogi.
+Hogyan kezelhetem a felhasználói szerepköröket egy webalkalmazásban?,not_legal,False,legal,0.6647441983222961,0.6647441983222961,0.33525583148002625,0.3,A kérdés jogi.,A kérdés nem jogi.
+"Mi történik, ha megszegem a játékon belüli küldetés szabályait?",not_legal,False,legal,0.663790225982666,0.663790225982666,0.33620980381965637,0.3,A kérdés jogi.,A kérdés nem jogi.
+Hogyan lehet egy dokumentumon szerkesztési és olvasási engedélyeket beállítani?,not_legal,False,legal,0.7000563740730286,0.7000563740730286,0.2999436557292938,0.3,A kérdés jogi.,A kérdés nem jogi.
+Szia!,not_legal,True,NOT_LEGAL,0.5126351714134216,0.487364798784256,0.5126351714134216,0.3,A kérdés jogi.,A kérdés nem jogi.
+"Helló, hogy vagy?",not_legal,True,NOT_LEGAL,0.6108689308166504,0.3891310691833496,0.6108689308166504,0.3,A kérdés jogi.,A kérdés nem jogi.
+Jó reggelt!,not_legal,True,NOT_LEGAL,0.5259166955947876,0.5259166955947876,0.4740833342075348,0.3,A kérdés jogi.,A kérdés nem jogi.
+Jó estét kívánok!,not_legal,True,NOT_LEGAL,0.5004762411117554,0.49952375888824463,0.5004762411117554,0.3,A kérdés jogi.,A kérdés nem jogi.
+Köszi szépen!,not_legal,True,NOT_LEGAL,0.5595828294754028,0.5595828294754028,0.44041717052459717,0.3,A kérdés jogi.,A kérdés nem jogi.
+Nagyon hálás vagyok a segítségedért.,not_legal,False,legal,0.6681845784187317,0.6681845784187317,0.3318153917789459,0.3,A kérdés jogi.,A kérdés nem jogi.
+"Viszlát, további szép napot!",not_legal,True,NOT_LEGAL,0.595681369304657,0.404318630695343,0.595681369304657,0.3,A kérdés jogi.,A kérdés nem jogi.
+Mit csinálsz most?,not_legal,True,NOT_LEGAL,0.5080465078353882,0.49195346236228943,0.5080465078353882,0.3,A kérdés jogi.,A kérdés nem jogi.
+Milyen napod volt?,not_legal,True,NOT_LEGAL,0.5744971632957458,0.42550286650657654,0.5744971632957458,0.3,A kérdés jogi.,A kérdés nem jogi.
+Mi újság veled?,not_legal,True,NOT_LEGAL,0.5655328631401062,0.4344671666622162,0.5655328631401062,0.3,A kérdés jogi.,A kérdés nem jogi.
+Tudsz egy kicsit beszélgetni?,not_legal,False,not_legal,0.6896471977233887,0.31035280227661133,0.6896471977233887,0.3,A kérdés jogi.,A kérdés nem jogi.
+"Unatkozom, mit csináljak?",not_legal,True,NOT_LEGAL,0.5109371542930603,0.4890628159046173,0.5109371542930603,0.3,A kérdés jogi.,A kérdés nem jogi.
+Ajánlanál egy jó filmet estére?,not_legal,False,not_legal,0.7742522954940796,0.22574768960475922,0.7742522954940796,0.3,A kérdés jogi.,A kérdés nem jogi.
+Milyen zenét hallgassak tanuláshoz?,not_legal,False,not_legal,0.7148026823997498,0.28519734740257263,0.7148026823997498,0.3,A kérdés jogi.,A kérdés nem jogi.
+Szerinted mit vegyek fel ma?,not_legal,False,not_legal,0.6750766634941101,0.3249232769012451,0.6750766634941101,0.3,A kérdés jogi.,A kérdés nem jogi.
+Mit főzzek ma vacsorára?,not_legal,False,not_legal,0.8001225590705872,0.19987747073173523,0.8001225590705872,0.3,A kérdés jogi.,A kérdés nem jogi.
+Holnap milyen programot szervezzek a barátaimmal?,not_legal,False,not_legal,0.7998528480529785,0.20014716684818268,0.7998528480529785,0.3,A kérdés jogi.,A kérdés nem jogi.
+Elmesélhetek neked valamit?,not_legal,True,NOT_LEGAL,0.5388312339782715,0.5388312339782715,0.46116873621940613,0.3,A kérdés jogi.,A kérdés nem jogi.
+"Ez nagyon jól hangzik, mesélj még!",not_legal,True,NOT_LEGAL,0.5765590071678162,0.5765590071678162,0.4234410226345062,0.3,A kérdés jogi.,A kérdés nem jogi.
+"Bocsi, ezt nem értettem. Elmagyaráznád újra?",not_legal,True,NOT_LEGAL,0.5135334730148315,0.5135334730148315,0.48646652698516846,0.3,A kérdés jogi.,A kérdés nem jogi.
+Mikor vehetem igénybe a 25 éven aluliak adókedvezményét?,legal,True,LEGAL,0.68007493019104,0.68007493019104,0.31992506980895996,0.4,A kérdés jogi.,A kérdés nem jogi.
+Felmondhat-e a munkáltatóm azonnali hatállyal próbaidő alatt?,legal,True,LEGAL,0.6389862895011902,0.6389862895011902,0.3610137104988098,0.4,A kérdés jogi.,A kérdés nem jogi.
+"Mit tehetek, ha a munkáltatóm nem fizeti ki a béremet?",legal,False,legal,0.747125506401062,0.747125506401062,0.252874493598938,0.4,A kérdés jogi.,A kérdés nem jogi.
+Kötelező-e írásba foglalni a munkaszerződést?,legal,False,legal,0.832977294921875,0.832977294921875,0.16702264547348022,0.4,A kérdés jogi.,A kérdés nem jogi.
+Hány nap szabadság jár egy munkavállalónak évente?,legal,True,LEGAL,0.5541633367538452,0.5541633367538452,0.4458366632461548,0.4,A kérdés jogi.,A kérdés nem jogi.
+Mikor tagadhatja meg a munkáltató a szabadság kiadását?,legal,False,legal,0.7347251176834106,0.7347251176834106,0.26527488231658936,0.4,A kérdés jogi.,A kérdés nem jogi.
+"Felmondhatok-e azonnali hatállyal, ha nem fizetnek ki?",legal,True,LEGAL,0.667322039604187,0.667322039604187,0.3326779007911682,0.4,A kérdés jogi.,A kérdés nem jogi.
+Milyen feltételekkel jár munkanélküli-ellátás Magyarországon?,legal,False,legal,0.8044814467430115,0.8044814467430115,0.1955185979604721,0.4,A kérdés jogi.,A kérdés nem jogi.
+Mikor évül el egy polgári jogi követelés?,legal,False,legal,0.8206377029418945,0.8206377029418945,0.17936229705810547,0.4,A kérdés jogi.,A kérdés nem jogi.
+"Mit tehetek, ha valaki nem fizeti vissza a kölcsönadott pénzemet?",legal,False,legal,0.7105810046195984,0.7105810046195984,0.289419025182724,0.4,A kérdés jogi.,A kérdés nem jogi.
+Érvényes-e egy szóbeli megállapodás szerződésként?,legal,False,legal,0.7414698004722595,0.7414698004722595,0.25853022933006287,0.4,A kérdés jogi.,A kérdés nem jogi.
+Mikor állhatok el egy online vásárlástól?,legal,True,LEGAL,0.616312563419342,0.616312563419342,0.38368749618530273,0.4,A kérdés jogi.,A kérdés nem jogi.
+Hány napom van elállni egy interneten vásárolt terméktől?,legal,True,LEGAL,0.5006077885627747,0.49939215183258057,0.5006077885627747,0.4,A kérdés jogi.,A kérdés nem jogi.
+"Mit tehetek, ha a webáruház nem akarja visszafizetni a pénzemet?",legal,False,legal,0.7115054726600647,0.7115054726600647,0.2884944975376129,0.4,A kérdés jogi.,A kérdés nem jogi.
+"Ki felel, ha a bérelt lakásban kárt okozok?",legal,False,legal,0.7306410074234009,0.7306410074234009,0.26935896277427673,0.4,A kérdés jogi.,A kérdés nem jogi.
+Felmondhatja-e a főbérlő azonnal a lakásbérleti szerződést?,legal,True,LEGAL,0.6722134947776794,0.6722134947776794,0.32778650522232056,0.4,A kérdés jogi.,A kérdés nem jogi.
+Visszatarthatja-e a főbérlő a teljes kauciómat kiköltözéskor?,legal,True,LEGAL,0.5988664031028748,0.5988664031028748,0.40113356709480286,0.4,A kérdés jogi.,A kérdés nem jogi.
+"Milyen jogaim vannak, ha a szomszédom rendszeresen zajong éjszaka?",legal,False,legal,0.8430158495903015,0.8430158495903015,0.1569841504096985,0.4,A kérdés jogi.,A kérdés nem jogi.
+Készíthetek-e felvételt valakiről az engedélye nélkül?,legal,True,LEGAL,0.5469173789024353,0.4530826210975647,0.5469173789024353,0.4,A kérdés jogi.,A kérdés nem jogi.
+Közzétehetem-e más ember fényképét a közösségi médiában az engedélye nélkül?,legal,True,LEGAL,0.5292372703552246,0.5292372703552246,0.4707627296447754,0.4,A kérdés jogi.,A kérdés nem jogi.
+"Milyen jogaim vannak, ha valaki engedély nélkül használja a fotómat?",legal,False,legal,0.8294073939323425,0.8294073939323425,0.17059257626533508,0.4,A kérdés jogi.,A kérdés nem jogi.
+Milyen következménye lehet a rágalmazásnak?,legal,True,LEGAL,0.6044636964797974,0.6044636964797974,0.3955363631248474,0.4,A kérdés jogi.,A kérdés nem jogi.
+Mi a különbség a rágalmazás és a becsületsértés között?,legal,True,LEGAL,0.6699651479721069,0.6699651479721069,0.33003485202789307,0.4,A kérdés jogi.,A kérdés nem jogi.
+Mikor köteles valaki kártérítést fizetni egy baleset után?,legal,False,legal,0.8180450797080994,0.8180450797080994,0.18195496499538422,0.4,A kérdés jogi.,A kérdés nem jogi.
+Ki felel a parkoló autómban okozott kárért?,legal,False,legal,0.7702421545982361,0.7702421545982361,0.22975781559944153,0.4,A kérdés jogi.,A kérdés nem jogi.
+"Mit tehetek, ha hibás terméket vásároltam?",legal,True,LEGAL,0.6396792531013489,0.6396792531013489,0.3603207767009735,0.4,A kérdés jogi.,A kérdés nem jogi.
+Mi a különbség a jótállás és a kellékszavatosság között?,legal,True,LEGAL,0.5809916853904724,0.5809916853904724,0.4190082848072052,0.4,A kérdés jogi.,A kérdés nem jogi.
+Mikor tagadhatja meg egy üzlet a termék visszavételét?,legal,False,legal,0.7550889849662781,0.7550889849662781,0.24491102993488312,0.4,A kérdés jogi.,A kérdés nem jogi.
+Milyen feltételekkel lehet örökölni végrendelet nélkül?,legal,True,LEGAL,0.6593833565711975,0.6593833565711975,0.3406166732311249,0.4,A kérdés jogi.,A kérdés nem jogi.
+Hogyan lehet érvényesen végrendeletet készíteni?,legal,False,legal,0.7555261254310608,0.7555261254310608,0.24447385966777802,0.4,A kérdés jogi.,A kérdés nem jogi.
+Milyen jogai vannak a gyermeknek a szülők válása után?,legal,False,legal,0.8345136642456055,0.8345136642456055,0.1654863953590393,0.4,A kérdés jogi.,A kérdés nem jogi.
+Hogyan határozzák meg a gyermektartásdíj összegét?,legal,True,LEGAL,0.5670446753501892,0.5670446753501892,0.4329553544521332,0.4,A kérdés jogi.,A kérdés nem jogi.
+Mikor köteles valaki tartásdíjat fizetni a volt házastársának?,legal,False,legal,0.785321056842804,0.785321056842804,0.21467892825603485,0.4,A kérdés jogi.,A kérdés nem jogi.
+Milyen feltételekkel lehet megváltoztatni a gyermek felügyeletéről szóló döntést?,legal,False,legal,0.7764216065406799,0.7764216065406799,0.22357842326164246,0.4,A kérdés jogi.,A kérdés nem jogi.
+"Mit tehetek, ha egy hatóság elutasította a kérelmemet?",legal,False,legal,0.7568148374557495,0.7568148374557495,0.2431851476430893,0.4,A kérdés jogi.,A kérdés nem jogi.
+Mennyi időn belül lehet fellebbezni egy hatósági határozat ellen?,legal,False,legal,0.7383992075920105,0.7383992075920105,0.2616007328033447,0.4,A kérdés jogi.,A kérdés nem jogi.
+Milyen jogaim vannak rendőri igazoltatás során?,legal,False,legal,0.8651105761528015,0.8651105761528015,0.1348893642425537,0.4,A kérdés jogi.,A kérdés nem jogi.
+Mikor jogosult a rendőrség átvizsgálni a táskámat?,legal,False,legal,0.7503556609153748,0.7503556609153748,0.24964430928230286,0.4,A kérdés jogi.,A kérdés nem jogi.
+Milyen következményei lehetnek a jogosítvány nélküli vezetésnek?,legal,False,legal,0.719454824924469,0.719454824924469,0.280545175075531,0.4,A kérdés jogi.,A kérdés nem jogi.
+Milyen feltételekkel igényelhetek személyi jövedelemadó-visszatérítést?,legal,False,legal,0.8457135558128357,0.8457135558128357,0.1542864590883255,0.4,A kérdés jogi.,A kérdés nem jogi.
+"Hogyan írjak Pythonban egy függvényt, amely két számot összead?",not_legal,True,NOT_LEGAL,0.6762934327125549,0.3237065374851227,0.6762934327125549,0.4,A kérdés jogi.,A kérdés nem jogi.
+Mi a különbség a lista és a tuple között Pythonban?,not_legal,True,NOT_LEGAL,0.563433825969696,0.43656620383262634,0.563433825969696,0.4,A kérdés jogi.,A kérdés nem jogi.
+Hogyan tudom kijavítani a Git merge conflictot?,not_legal,True,NOT_LEGAL,0.5133274793624878,0.5133274793624878,0.4866724908351898,0.4,A kérdés jogi.,A kérdés nem jogi.
+Miért kapok 404-es hibát egy HTTP-kérésnél?,not_legal,True,NOT_LEGAL,0.5243176817893982,0.4756823182106018,0.5243176817893982,0.4,A kérdés jogi.,A kérdés nem jogi.
+Hogyan lehet egy fájlt beolvasni Pythonban?,not_legal,True,NOT_LEGAL,0.5431118011474609,0.45688825845718384,0.5431118011474609,0.4,A kérdés jogi.,A kérdés nem jogi.
+Mi a különbség a mesterséges intelligencia és a gépi tanulás között?,not_legal,True,NOT_LEGAL,0.5934672355651855,0.40653282403945923,0.5934672355651855,0.4,A kérdés jogi.,A kérdés nem jogi.
+Hogyan működik egy neurális hálózat?,not_legal,True,NOT_LEGAL,0.6410154700279236,0.35898450016975403,0.6410154700279236,0.4,A kérdés jogi.,A kérdés nem jogi.
+Miért fogyaszt sok memóriát a Chrome?,not_legal,True,NOT_LEGAL,0.6544193625450134,0.3455805778503418,0.6544193625450134,0.4,A kérdés jogi.,A kérdés nem jogi.
+Hogyan tudom felgyorsítani a Windows rendszerindítását?,not_legal,False,not_legal,0.7198541164398193,0.28014594316482544,0.7198541164398193,0.4,A kérdés jogi.,A kérdés nem jogi.
+Milyen algoritmussal érdemes rendezni egy nagy listát?,not_legal,True,NOT_LEGAL,0.5025638341903687,0.49743616580963135,0.5025638341903687,0.4,A kérdés jogi.,A kérdés nem jogi.
+Miért kék az ég?,not_legal,True,NOT_LEGAL,0.5369544625282288,0.46304547786712646,0.5369544625282288,0.4,A kérdés jogi.,A kérdés nem jogi.
+Hogyan keletkezik a szivárvány?,not_legal,True,NOT_LEGAL,0.6766431927680969,0.32335683703422546,0.6766431927680969,0.4,A kérdés jogi.,A kérdés nem jogi.
+Mi a különbség a vírus és a baktérium között?,not_legal,True,NOT_LEGAL,0.5641682744026184,0.4358316957950592,0.5641682744026184,0.4,A kérdés jogi.,A kérdés nem jogi.
+Miért alszunk naponta több órát?,not_legal,True,NOT_LEGAL,0.5752070546150208,0.42479294538497925,0.5752070546150208,0.4,A kérdés jogi.,A kérdés nem jogi.
+Hogyan működik a fotoszintézis?,not_legal,True,NOT_LEGAL,0.5878927111625671,0.41210728883743286,0.5878927111625671,0.4,A kérdés jogi.,A kérdés nem jogi.
+Melyik bolygó van a legközelebb a Naphoz?,not_legal,True,NOT_LEGAL,0.6932371258735657,0.30676284432411194,0.6932371258735657,0.4,A kérdés jogi.,A kérdés nem jogi.
+Hogyan készíthetek otthon palacsintát?,not_legal,False,not_legal,0.761040985584259,0.23895901441574097,0.761040985584259,0.4,A kérdés jogi.,A kérdés nem jogi.
+Milyen hőmérsékleten érdemes sütni a csirkét?,not_legal,True,NOT_LEGAL,0.6230855584144592,0.3769144117832184,0.6230855584144592,0.4,A kérdés jogi.,A kérdés nem jogi.
+Hogyan lehet megtanulni gyorsabban gépelni?,not_legal,True,NOT_LEGAL,0.62824547290802,0.37175452709198,0.62824547290802,0.4,A kérdés jogi.,A kérdés nem jogi.
+Milyen gyakorlatokkal lehet fejleszteni a memóriát?,not_legal,True,NOT_LEGAL,0.6457076072692871,0.3542923629283905,0.6457076072692871,0.4,A kérdés jogi.,A kérdés nem jogi.
+Hogyan állíthatom be a jogosultságokat egy Google Drive-mappán?,not_legal,True,NOT_LEGAL,0.576679527759552,0.576679527759552,0.423320472240448,0.4,A kérdés jogi.,A kérdés nem jogi.
+"Hogyan ellenőrizhetem, hogy egy API-kérés megfelel-e a specifikációnak?",not_legal,True,NOT_LEGAL,0.510761559009552,0.510761559009552,0.4892384707927704,0.4,A kérdés jogi.,A kérdés nem jogi.
+Mit jelent a szerződés egy REST API dokumentációjában?,not_legal,True,LEGAL,0.5073676109313965,0.5073676109313965,0.4926323890686035,0.4,A kérdés jogi.,A kérdés nem jogi.
+Hogyan kezeljem a hozzáférési jogokat egy SQL-adatbázisban?,not_legal,False,legal,0.726100742816925,0.726100742816925,0.27389925718307495,0.4,A kérdés jogi.,A kérdés nem jogi.
+Hogyan lehet visszavonni egy felhasználó adminisztrátori jogosultságát Linuxon?,not_legal,True,NOT_LEGAL,0.697238028049469,0.697238028049469,0.302761971950531,0.4,A kérdés jogi.,A kérdés nem jogi.
+"Milyen büntetés jár a Monopolyban, ha rossz helyre lépek?",not_legal,True,NOT_LEGAL,0.5852841734886169,0.5852841734886169,0.4147157669067383,0.4,A kérdés jogi.,A kérdés nem jogi.
+Mikor jár büntetőrúgás a fociban?,not_legal,True,NOT_LEGAL,0.581523060798645,0.581523060798645,0.418476939201355,0.4,A kérdés jogi.,A kérdés nem jogi.
+Milyen szabálytalanságért jár kétperces kiállítás kézilabdában?,not_legal,True,LEGAL,0.6665330529212952,0.6665330529212952,0.3334669768810272,0.4,A kérdés jogi.,A kérdés nem jogi.
+Mikor kap büntetőpontot egy versenyző a Forma–1-ben?,not_legal,False,legal,0.7116304039955139,0.7116304039955139,0.2883695960044861,0.4,A kérdés jogi.,A kérdés nem jogi.
+"Milyen büntetés jár, ha sakkban szabálytalan lépést teszek?",not_legal,False,legal,0.7257252931594849,0.7257252931594849,0.27427464723587036,0.4,A kérdés jogi.,A kérdés nem jogi.
+Hogyan számolja ki a játék a karakteremre kiszabott büntetést?,not_legal,True,NOT_LEGAL,0.54944908618927,0.54944908618927,0.45055091381073,0.4,A kérdés jogi.,A kérdés nem jogi.
+Milyen feltételekkel oldható fel egy letiltott fiók egy videojátékban?,not_legal,False,legal,0.7852813601493835,0.7852813601493835,0.21471863985061646,0.4,A kérdés jogi.,A kérdés nem jogi.
+Hogyan működik a jogosultságkezelés egy Discord-szerveren?,not_legal,True,NOT_LEGAL,0.6013681292533875,0.6013681292533875,0.39863190054893494,0.4,A kérdés jogi.,A kérdés nem jogi.
+Milyen szabályok vonatkoznak egy sakkverseny időmérésére?,not_legal,False,legal,0.7828382849693298,0.7828382849693298,0.21716171503067017,0.4,A kérdés jogi.,A kérdés nem jogi.
+"Mekkora adót kell fizetnem a Monopolyban, ha a mezőre lépek?",not_legal,False,legal,0.7430599927902222,0.7430599927902222,0.25694000720977783,0.4,A kérdés jogi.,A kérdés nem jogi.
+Hogyan készíthetek szerződésmintát egy objektumorientált programban?,not_legal,True,NOT_LEGAL,0.5538085699081421,0.5538085699081421,0.4461914002895355,0.4,A kérdés jogi.,A kérdés nem jogi.
+Mit jelent az öröklődés a Java osztályaiban?,not_legal,True,NOT_LEGAL,0.6164809465408325,0.6164809465408325,0.3835190236568451,0.4,A kérdés jogi.,A kérdés nem jogi.
+Hogyan kezelhetem a felhasználói szerepköröket egy webalkalmazásban?,not_legal,True,NOT_LEGAL,0.6647441983222961,0.6647441983222961,0.33525583148002625,0.4,A kérdés jogi.,A kérdés nem jogi.
+"Mi történik, ha megszegem a játékon belüli küldetés szabályait?",not_legal,True,NOT_LEGAL,0.663790225982666,0.663790225982666,0.33620980381965637,0.4,A kérdés jogi.,A kérdés nem jogi.
+Hogyan lehet egy dokumentumon szerkesztési és olvasási engedélyeket beállítani?,not_legal,False,legal,0.7000563740730286,0.7000563740730286,0.2999436557292938,0.4,A kérdés jogi.,A kérdés nem jogi.
+Szia!,not_legal,True,NOT_LEGAL,0.5126351714134216,0.487364798784256,0.5126351714134216,0.4,A kérdés jogi.,A kérdés nem jogi.
+"Helló, hogy vagy?",not_legal,True,NOT_LEGAL,0.6108689308166504,0.3891310691833496,0.6108689308166504,0.4,A kérdés jogi.,A kérdés nem jogi.
+Jó reggelt!,not_legal,True,NOT_LEGAL,0.5259166955947876,0.5259166955947876,0.4740833342075348,0.4,A kérdés jogi.,A kérdés nem jogi.
+Jó estét kívánok!,not_legal,True,NOT_LEGAL,0.5004762411117554,0.49952375888824463,0.5004762411117554,0.4,A kérdés jogi.,A kérdés nem jogi.
+Köszi szépen!,not_legal,True,NOT_LEGAL,0.5595828294754028,0.5595828294754028,0.44041717052459717,0.4,A kérdés jogi.,A kérdés nem jogi.
+Nagyon hálás vagyok a segítségedért.,not_legal,True,NOT_LEGAL,0.6681845784187317,0.6681845784187317,0.3318153917789459,0.4,A kérdés jogi.,A kérdés nem jogi.
+"Viszlát, további szép napot!",not_legal,True,NOT_LEGAL,0.595681369304657,0.404318630695343,0.595681369304657,0.4,A kérdés jogi.,A kérdés nem jogi.
+Mit csinálsz most?,not_legal,True,NOT_LEGAL,0.5080465078353882,0.49195346236228943,0.5080465078353882,0.4,A kérdés jogi.,A kérdés nem jogi.
+Milyen napod volt?,not_legal,True,NOT_LEGAL,0.5744971632957458,0.42550286650657654,0.5744971632957458,0.4,A kérdés jogi.,A kérdés nem jogi.
+Mi újság veled?,not_legal,True,NOT_LEGAL,0.5655328631401062,0.4344671666622162,0.5655328631401062,0.4,A kérdés jogi.,A kérdés nem jogi.
+Tudsz egy kicsit beszélgetni?,not_legal,True,NOT_LEGAL,0.6896471977233887,0.31035280227661133,0.6896471977233887,0.4,A kérdés jogi.,A kérdés nem jogi.
+"Unatkozom, mit csináljak?",not_legal,True,NOT_LEGAL,0.5109371542930603,0.4890628159046173,0.5109371542930603,0.4,A kérdés jogi.,A kérdés nem jogi.
+Ajánlanál egy jó filmet estére?,not_legal,False,not_legal,0.7742522954940796,0.22574768960475922,0.7742522954940796,0.4,A kérdés jogi.,A kérdés nem jogi.
+Milyen zenét hallgassak tanuláshoz?,not_legal,False,not_legal,0.7148026823997498,0.28519734740257263,0.7148026823997498,0.4,A kérdés jogi.,A kérdés nem jogi.
+Szerinted mit vegyek fel ma?,not_legal,True,NOT_LEGAL,0.6750766634941101,0.3249232769012451,0.6750766634941101,0.4,A kérdés jogi.,A kérdés nem jogi.
+Mit főzzek ma vacsorára?,not_legal,False,not_legal,0.8001225590705872,0.19987747073173523,0.8001225590705872,0.4,A kérdés jogi.,A kérdés nem jogi.
+Holnap milyen programot szervezzek a barátaimmal?,not_legal,False,not_legal,0.7998528480529785,0.20014716684818268,0.7998528480529785,0.4,A kérdés jogi.,A kérdés nem jogi.
+Elmesélhetek neked valamit?,not_legal,True,NOT_LEGAL,0.5388312339782715,0.5388312339782715,0.46116873621940613,0.4,A kérdés jogi.,A kérdés nem jogi.
+"Ez nagyon jól hangzik, mesélj még!",not_legal,True,NOT_LEGAL,0.5765590071678162,0.5765590071678162,0.4234410226345062,0.4,A kérdés jogi.,A kérdés nem jogi.
+"Bocsi, ezt nem értettem. Elmagyaráznád újra?",not_legal,True,NOT_LEGAL,0.5135334730148315,0.5135334730148315,0.48646652698516846,0.4,A kérdés jogi.,A kérdés nem jogi.
+Mikor vehetem igénybe a 25 éven aluliak adókedvezményét?,legal,True,LEGAL,0.68007493019104,0.68007493019104,0.31992506980895996,0.5,A kérdés jogi.,A kérdés nem jogi.
+Felmondhat-e a munkáltatóm azonnali hatállyal próbaidő alatt?,legal,True,LEGAL,0.6389862895011902,0.6389862895011902,0.3610137104988098,0.5,A kérdés jogi.,A kérdés nem jogi.
+"Mit tehetek, ha a munkáltatóm nem fizeti ki a béremet?",legal,True,LEGAL,0.747125506401062,0.747125506401062,0.252874493598938,0.5,A kérdés jogi.,A kérdés nem jogi.
+Kötelező-e írásba foglalni a munkaszerződést?,legal,False,legal,0.832977294921875,0.832977294921875,0.16702264547348022,0.5,A kérdés jogi.,A kérdés nem jogi.
+Hány nap szabadság jár egy munkavállalónak évente?,legal,True,LEGAL,0.5541633367538452,0.5541633367538452,0.4458366632461548,0.5,A kérdés jogi.,A kérdés nem jogi.
+Mikor tagadhatja meg a munkáltató a szabadság kiadását?,legal,True,LEGAL,0.7347251176834106,0.7347251176834106,0.26527488231658936,0.5,A kérdés jogi.,A kérdés nem jogi.
+"Felmondhatok-e azonnali hatállyal, ha nem fizetnek ki?",legal,True,LEGAL,0.667322039604187,0.667322039604187,0.3326779007911682,0.5,A kérdés jogi.,A kérdés nem jogi.
+Milyen feltételekkel jár munkanélküli-ellátás Magyarországon?,legal,False,legal,0.8044814467430115,0.8044814467430115,0.1955185979604721,0.5,A kérdés jogi.,A kérdés nem jogi.
+Mikor évül el egy polgári jogi követelés?,legal,False,legal,0.8206377029418945,0.8206377029418945,0.17936229705810547,0.5,A kérdés jogi.,A kérdés nem jogi.
+"Mit tehetek, ha valaki nem fizeti vissza a kölcsönadott pénzemet?",legal,True,LEGAL,0.7105810046195984,0.7105810046195984,0.289419025182724,0.5,A kérdés jogi.,A kérdés nem jogi.
+Érvényes-e egy szóbeli megállapodás szerződésként?,legal,True,LEGAL,0.7414698004722595,0.7414698004722595,0.25853022933006287,0.5,A kérdés jogi.,A kérdés nem jogi.
+Mikor állhatok el egy online vásárlástól?,legal,True,LEGAL,0.616312563419342,0.616312563419342,0.38368749618530273,0.5,A kérdés jogi.,A kérdés nem jogi.
+Hány napom van elállni egy interneten vásárolt terméktől?,legal,True,LEGAL,0.5006077885627747,0.49939215183258057,0.5006077885627747,0.5,A kérdés jogi.,A kérdés nem jogi.
+"Mit tehetek, ha a webáruház nem akarja visszafizetni a pénzemet?",legal,True,LEGAL,0.7115054726600647,0.7115054726600647,0.2884944975376129,0.5,A kérdés jogi.,A kérdés nem jogi.
+"Ki felel, ha a bérelt lakásban kárt okozok?",legal,True,LEGAL,0.7306410074234009,0.7306410074234009,0.26935896277427673,0.5,A kérdés jogi.,A kérdés nem jogi.
+Felmondhatja-e a főbérlő azonnal a lakásbérleti szerződést?,legal,True,LEGAL,0.6722134947776794,0.6722134947776794,0.32778650522232056,0.5,A kérdés jogi.,A kérdés nem jogi.
+Visszatarthatja-e a főbérlő a teljes kauciómat kiköltözéskor?,legal,True,LEGAL,0.5988664031028748,0.5988664031028748,0.40113356709480286,0.5,A kérdés jogi.,A kérdés nem jogi.
+"Milyen jogaim vannak, ha a szomszédom rendszeresen zajong éjszaka?",legal,False,legal,0.8430158495903015,0.8430158495903015,0.1569841504096985,0.5,A kérdés jogi.,A kérdés nem jogi.
+Készíthetek-e felvételt valakiről az engedélye nélkül?,legal,True,LEGAL,0.5469173789024353,0.4530826210975647,0.5469173789024353,0.5,A kérdés jogi.,A kérdés nem jogi.
+Közzétehetem-e más ember fényképét a közösségi médiában az engedélye nélkül?,legal,True,LEGAL,0.5292372703552246,0.5292372703552246,0.4707627296447754,0.5,A kérdés jogi.,A kérdés nem jogi.
+"Milyen jogaim vannak, ha valaki engedély nélkül használja a fotómat?",legal,False,legal,0.8294073939323425,0.8294073939323425,0.17059257626533508,0.5,A kérdés jogi.,A kérdés nem jogi.
+Milyen következménye lehet a rágalmazásnak?,legal,True,LEGAL,0.6044636964797974,0.6044636964797974,0.3955363631248474,0.5,A kérdés jogi.,A kérdés nem jogi.
+Mi a különbség a rágalmazás és a becsületsértés között?,legal,True,LEGAL,0.6699651479721069,0.6699651479721069,0.33003485202789307,0.5,A kérdés jogi.,A kérdés nem jogi.
+Mikor köteles valaki kártérítést fizetni egy baleset után?,legal,False,legal,0.8180450797080994,0.8180450797080994,0.18195496499538422,0.5,A kérdés jogi.,A kérdés nem jogi.
+Ki felel a parkoló autómban okozott kárért?,legal,False,legal,0.7702421545982361,0.7702421545982361,0.22975781559944153,0.5,A kérdés jogi.,A kérdés nem jogi.
+"Mit tehetek, ha hibás terméket vásároltam?",legal,True,LEGAL,0.6396792531013489,0.6396792531013489,0.3603207767009735,0.5,A kérdés jogi.,A kérdés nem jogi.
+Mi a különbség a jótállás és a kellékszavatosság között?,legal,True,LEGAL,0.5809916853904724,0.5809916853904724,0.4190082848072052,0.5,A kérdés jogi.,A kérdés nem jogi.
+Mikor tagadhatja meg egy üzlet a termék visszavételét?,legal,False,legal,0.7550889849662781,0.7550889849662781,0.24491102993488312,0.5,A kérdés jogi.,A kérdés nem jogi.
+Milyen feltételekkel lehet örökölni végrendelet nélkül?,legal,True,LEGAL,0.6593833565711975,0.6593833565711975,0.3406166732311249,0.5,A kérdés jogi.,A kérdés nem jogi.
+Hogyan lehet érvényesen végrendeletet készíteni?,legal,False,legal,0.7555261254310608,0.7555261254310608,0.24447385966777802,0.5,A kérdés jogi.,A kérdés nem jogi.
+Milyen jogai vannak a gyermeknek a szülők válása után?,legal,False,legal,0.8345136642456055,0.8345136642456055,0.1654863953590393,0.5,A kérdés jogi.,A kérdés nem jogi.
+Hogyan határozzák meg a gyermektartásdíj összegét?,legal,True,LEGAL,0.5670446753501892,0.5670446753501892,0.4329553544521332,0.5,A kérdés jogi.,A kérdés nem jogi.
+Mikor köteles valaki tartásdíjat fizetni a volt házastársának?,legal,False,legal,0.785321056842804,0.785321056842804,0.21467892825603485,0.5,A kérdés jogi.,A kérdés nem jogi.
+Milyen feltételekkel lehet megváltoztatni a gyermek felügyeletéről szóló döntést?,legal,False,legal,0.7764216065406799,0.7764216065406799,0.22357842326164246,0.5,A kérdés jogi.,A kérdés nem jogi.
+"Mit tehetek, ha egy hatóság elutasította a kérelmemet?",legal,False,legal,0.7568148374557495,0.7568148374557495,0.2431851476430893,0.5,A kérdés jogi.,A kérdés nem jogi.
+Mennyi időn belül lehet fellebbezni egy hatósági határozat ellen?,legal,True,LEGAL,0.7383992075920105,0.7383992075920105,0.2616007328033447,0.5,A kérdés jogi.,A kérdés nem jogi.
+Milyen jogaim vannak rendőri igazoltatás során?,legal,False,legal,0.8651105761528015,0.8651105761528015,0.1348893642425537,0.5,A kérdés jogi.,A kérdés nem jogi.
+Mikor jogosult a rendőrség átvizsgálni a táskámat?,legal,False,legal,0.7503556609153748,0.7503556609153748,0.24964430928230286,0.5,A kérdés jogi.,A kérdés nem jogi.
+Milyen következményei lehetnek a jogosítvány nélküli vezetésnek?,legal,True,LEGAL,0.719454824924469,0.719454824924469,0.280545175075531,0.5,A kérdés jogi.,A kérdés nem jogi.
+Milyen feltételekkel igényelhetek személyi jövedelemadó-visszatérítést?,legal,False,legal,0.8457135558128357,0.8457135558128357,0.1542864590883255,0.5,A kérdés jogi.,A kérdés nem jogi.
+"Hogyan írjak Pythonban egy függvényt, amely két számot összead?",not_legal,True,NOT_LEGAL,0.6762934327125549,0.3237065374851227,0.6762934327125549,0.5,A kérdés jogi.,A kérdés nem jogi.
+Mi a különbség a lista és a tuple között Pythonban?,not_legal,True,NOT_LEGAL,0.563433825969696,0.43656620383262634,0.563433825969696,0.5,A kérdés jogi.,A kérdés nem jogi.
+Hogyan tudom kijavítani a Git merge conflictot?,not_legal,True,NOT_LEGAL,0.5133274793624878,0.5133274793624878,0.4866724908351898,0.5,A kérdés jogi.,A kérdés nem jogi.
+Miért kapok 404-es hibát egy HTTP-kérésnél?,not_legal,True,NOT_LEGAL,0.5243176817893982,0.4756823182106018,0.5243176817893982,0.5,A kérdés jogi.,A kérdés nem jogi.
+Hogyan lehet egy fájlt beolvasni Pythonban?,not_legal,True,NOT_LEGAL,0.5431118011474609,0.45688825845718384,0.5431118011474609,0.5,A kérdés jogi.,A kérdés nem jogi.
+Mi a különbség a mesterséges intelligencia és a gépi tanulás között?,not_legal,True,NOT_LEGAL,0.5934672355651855,0.40653282403945923,0.5934672355651855,0.5,A kérdés jogi.,A kérdés nem jogi.
+Hogyan működik egy neurális hálózat?,not_legal,True,NOT_LEGAL,0.6410154700279236,0.35898450016975403,0.6410154700279236,0.5,A kérdés jogi.,A kérdés nem jogi.
+Miért fogyaszt sok memóriát a Chrome?,not_legal,True,NOT_LEGAL,0.6544193625450134,0.3455805778503418,0.6544193625450134,0.5,A kérdés jogi.,A kérdés nem jogi.
+Hogyan tudom felgyorsítani a Windows rendszerindítását?,not_legal,True,NOT_LEGAL,0.7198541164398193,0.28014594316482544,0.7198541164398193,0.5,A kérdés jogi.,A kérdés nem jogi.
+Milyen algoritmussal érdemes rendezni egy nagy listát?,not_legal,True,NOT_LEGAL,0.5025638341903687,0.49743616580963135,0.5025638341903687,0.5,A kérdés jogi.,A kérdés nem jogi.
+Miért kék az ég?,not_legal,True,NOT_LEGAL,0.5369544625282288,0.46304547786712646,0.5369544625282288,0.5,A kérdés jogi.,A kérdés nem jogi.
+Hogyan keletkezik a szivárvány?,not_legal,True,NOT_LEGAL,0.6766431927680969,0.32335683703422546,0.6766431927680969,0.5,A kérdés jogi.,A kérdés nem jogi.
+Mi a különbség a vírus és a baktérium között?,not_legal,True,NOT_LEGAL,0.5641682744026184,0.4358316957950592,0.5641682744026184,0.5,A kérdés jogi.,A kérdés nem jogi.
+Miért alszunk naponta több órát?,not_legal,True,NOT_LEGAL,0.5752070546150208,0.42479294538497925,0.5752070546150208,0.5,A kérdés jogi.,A kérdés nem jogi.
+Hogyan működik a fotoszintézis?,not_legal,True,NOT_LEGAL,0.5878927111625671,0.41210728883743286,0.5878927111625671,0.5,A kérdés jogi.,A kérdés nem jogi.
+Melyik bolygó van a legközelebb a Naphoz?,not_legal,True,NOT_LEGAL,0.6932371258735657,0.30676284432411194,0.6932371258735657,0.5,A kérdés jogi.,A kérdés nem jogi.
+Hogyan készíthetek otthon palacsintát?,not_legal,False,not_legal,0.761040985584259,0.23895901441574097,0.761040985584259,0.5,A kérdés jogi.,A kérdés nem jogi.
+Milyen hőmérsékleten érdemes sütni a csirkét?,not_legal,True,NOT_LEGAL,0.6230855584144592,0.3769144117832184,0.6230855584144592,0.5,A kérdés jogi.,A kérdés nem jogi.
+Hogyan lehet megtanulni gyorsabban gépelni?,not_legal,True,NOT_LEGAL,0.62824547290802,0.37175452709198,0.62824547290802,0.5,A kérdés jogi.,A kérdés nem jogi.
+Milyen gyakorlatokkal lehet fejleszteni a memóriát?,not_legal,True,NOT_LEGAL,0.6457076072692871,0.3542923629283905,0.6457076072692871,0.5,A kérdés jogi.,A kérdés nem jogi.
+Hogyan állíthatom be a jogosultságokat egy Google Drive-mappán?,not_legal,True,NOT_LEGAL,0.576679527759552,0.576679527759552,0.423320472240448,0.5,A kérdés jogi.,A kérdés nem jogi.
+"Hogyan ellenőrizhetem, hogy egy API-kérés megfelel-e a specifikációnak?",not_legal,True,NOT_LEGAL,0.510761559009552,0.510761559009552,0.4892384707927704,0.5,A kérdés jogi.,A kérdés nem jogi.
+Mit jelent a szerződés egy REST API dokumentációjában?,not_legal,True,LEGAL,0.5073676109313965,0.5073676109313965,0.4926323890686035,0.5,A kérdés jogi.,A kérdés nem jogi.
+Hogyan kezeljem a hozzáférési jogokat egy SQL-adatbázisban?,not_legal,True,NOT_LEGAL,0.726100742816925,0.726100742816925,0.27389925718307495,0.5,A kérdés jogi.,A kérdés nem jogi.
+Hogyan lehet visszavonni egy felhasználó adminisztrátori jogosultságát Linuxon?,not_legal,True,NOT_LEGAL,0.697238028049469,0.697238028049469,0.302761971950531,0.5,A kérdés jogi.,A kérdés nem jogi.
+"Milyen büntetés jár a Monopolyban, ha rossz helyre lépek?",not_legal,True,NOT_LEGAL,0.5852841734886169,0.5852841734886169,0.4147157669067383,0.5,A kérdés jogi.,A kérdés nem jogi.
+Mikor jár büntetőrúgás a fociban?,not_legal,True,NOT_LEGAL,0.581523060798645,0.581523060798645,0.418476939201355,0.5,A kérdés jogi.,A kérdés nem jogi.
+Milyen szabálytalanságért jár kétperces kiállítás kézilabdában?,not_legal,True,LEGAL,0.6665330529212952,0.6665330529212952,0.3334669768810272,0.5,A kérdés jogi.,A kérdés nem jogi.
+Mikor kap büntetőpontot egy versenyző a Forma–1-ben?,not_legal,True,LEGAL,0.7116304039955139,0.7116304039955139,0.2883695960044861,0.5,A kérdés jogi.,A kérdés nem jogi.
+"Milyen büntetés jár, ha sakkban szabálytalan lépést teszek?",not_legal,True,NOT_LEGAL,0.7257252931594849,0.7257252931594849,0.27427464723587036,0.5,A kérdés jogi.,A kérdés nem jogi.
+Hogyan számolja ki a játék a karakteremre kiszabott büntetést?,not_legal,True,NOT_LEGAL,0.54944908618927,0.54944908618927,0.45055091381073,0.5,A kérdés jogi.,A kérdés nem jogi.
+Milyen feltételekkel oldható fel egy letiltott fiók egy videojátékban?,not_legal,False,legal,0.7852813601493835,0.7852813601493835,0.21471863985061646,0.5,A kérdés jogi.,A kérdés nem jogi.
+Hogyan működik a jogosultságkezelés egy Discord-szerveren?,not_legal,True,NOT_LEGAL,0.6013681292533875,0.6013681292533875,0.39863190054893494,0.5,A kérdés jogi.,A kérdés nem jogi.
+Milyen szabályok vonatkoznak egy sakkverseny időmérésére?,not_legal,False,legal,0.7828382849693298,0.7828382849693298,0.21716171503067017,0.5,A kérdés jogi.,A kérdés nem jogi.
+"Mekkora adót kell fizetnem a Monopolyban, ha a mezőre lépek?",not_legal,True,NOT_LEGAL,0.7430599927902222,0.7430599927902222,0.25694000720977783,0.5,A kérdés jogi.,A kérdés nem jogi.
+Hogyan készíthetek szerződésmintát egy objektumorientált programban?,not_legal,True,NOT_LEGAL,0.5538085699081421,0.5538085699081421,0.4461914002895355,0.5,A kérdés jogi.,A kérdés nem jogi.
+Mit jelent az öröklődés a Java osztályaiban?,not_legal,True,NOT_LEGAL,0.6164809465408325,0.6164809465408325,0.3835190236568451,0.5,A kérdés jogi.,A kérdés nem jogi.
+Hogyan kezelhetem a felhasználói szerepköröket egy webalkalmazásban?,not_legal,True,NOT_LEGAL,0.6647441983222961,0.6647441983222961,0.33525583148002625,0.5,A kérdés jogi.,A kérdés nem jogi.
+"Mi történik, ha megszegem a játékon belüli küldetés szabályait?",not_legal,True,NOT_LEGAL,0.663790225982666,0.663790225982666,0.33620980381965637,0.5,A kérdés jogi.,A kérdés nem jogi.
+Hogyan lehet egy dokumentumon szerkesztési és olvasási engedélyeket beállítani?,not_legal,True,NOT_LEGAL,0.7000563740730286,0.7000563740730286,0.2999436557292938,0.5,A kérdés jogi.,A kérdés nem jogi.
+Szia!,not_legal,True,NOT_LEGAL,0.5126351714134216,0.487364798784256,0.5126351714134216,0.5,A kérdés jogi.,A kérdés nem jogi.
+"Helló, hogy vagy?",not_legal,True,NOT_LEGAL,0.6108689308166504,0.3891310691833496,0.6108689308166504,0.5,A kérdés jogi.,A kérdés nem jogi.
+Jó reggelt!,not_legal,True,NOT_LEGAL,0.5259166955947876,0.5259166955947876,0.4740833342075348,0.5,A kérdés jogi.,A kérdés nem jogi.
+Jó estét kívánok!,not_legal,True,NOT_LEGAL,0.5004762411117554,0.49952375888824463,0.5004762411117554,0.5,A kérdés jogi.,A kérdés nem jogi.
+Köszi szépen!,not_legal,True,NOT_LEGAL,0.5595828294754028,0.5595828294754028,0.44041717052459717,0.5,A kérdés jogi.,A kérdés nem jogi.
+Nagyon hálás vagyok a segítségedért.,not_legal,True,NOT_LEGAL,0.6681845784187317,0.6681845784187317,0.3318153917789459,0.5,A kérdés jogi.,A kérdés nem jogi.
+"Viszlát, további szép napot!",not_legal,True,NOT_LEGAL,0.595681369304657,0.404318630695343,0.595681369304657,0.5,A kérdés jogi.,A kérdés nem jogi.
+Mit csinálsz most?,not_legal,True,NOT_LEGAL,0.5080465078353882,0.49195346236228943,0.5080465078353882,0.5,A kérdés jogi.,A kérdés nem jogi.
+Milyen napod volt?,not_legal,True,NOT_LEGAL,0.5744971632957458,0.42550286650657654,0.5744971632957458,0.5,A kérdés jogi.,A kérdés nem jogi.
+Mi újság veled?,not_legal,True,NOT_LEGAL,0.5655328631401062,0.4344671666622162,0.5655328631401062,0.5,A kérdés jogi.,A kérdés nem jogi.
+Tudsz egy kicsit beszélgetni?,not_legal,True,NOT_LEGAL,0.6896471977233887,0.31035280227661133,0.6896471977233887,0.5,A kérdés jogi.,A kérdés nem jogi.
+"Unatkozom, mit csináljak?",not_legal,True,NOT_LEGAL,0.5109371542930603,0.4890628159046173,0.5109371542930603,0.5,A kérdés jogi.,A kérdés nem jogi.
+Ajánlanál egy jó filmet estére?,not_legal,False,not_legal,0.7742522954940796,0.22574768960475922,0.7742522954940796,0.5,A kérdés jogi.,A kérdés nem jogi.
+Milyen zenét hallgassak tanuláshoz?,not_legal,True,NOT_LEGAL,0.7148026823997498,0.28519734740257263,0.7148026823997498,0.5,A kérdés jogi.,A kérdés nem jogi.
+Szerinted mit vegyek fel ma?,not_legal,True,NOT_LEGAL,0.6750766634941101,0.3249232769012451,0.6750766634941101,0.5,A kérdés jogi.,A kérdés nem jogi.
+Mit főzzek ma vacsorára?,not_legal,False,not_legal,0.8001225590705872,0.19987747073173523,0.8001225590705872,0.5,A kérdés jogi.,A kérdés nem jogi.
+Holnap milyen programot szervezzek a barátaimmal?,not_legal,False,not_legal,0.7998528480529785,0.20014716684818268,0.7998528480529785,0.5,A kérdés jogi.,A kérdés nem jogi.
+Elmesélhetek neked valamit?,not_legal,True,NOT_LEGAL,0.5388312339782715,0.5388312339782715,0.46116873621940613,0.5,A kérdés jogi.,A kérdés nem jogi.
+"Ez nagyon jól hangzik, mesélj még!",not_legal,True,NOT_LEGAL,0.5765590071678162,0.5765590071678162,0.4234410226345062,0.5,A kérdés jogi.,A kérdés nem jogi.
+"Bocsi, ezt nem értettem. Elmagyaráznád újra?",not_legal,True,NOT_LEGAL,0.5135334730148315,0.5135334730148315,0.48646652698516846,0.5,A kérdés jogi.,A kérdés nem jogi.
+Mikor vehetem igénybe a 25 éven aluliak adókedvezményét?,legal,True,LEGAL,0.68007493019104,0.68007493019104,0.31992506980895996,0.6,A kérdés jogi.,A kérdés nem jogi.
+Felmondhat-e a munkáltatóm azonnali hatállyal próbaidő alatt?,legal,True,LEGAL,0.6389862895011902,0.6389862895011902,0.3610137104988098,0.6,A kérdés jogi.,A kérdés nem jogi.
+"Mit tehetek, ha a munkáltatóm nem fizeti ki a béremet?",legal,True,LEGAL,0.747125506401062,0.747125506401062,0.252874493598938,0.6,A kérdés jogi.,A kérdés nem jogi.
+Kötelező-e írásba foglalni a munkaszerződést?,legal,False,legal,0.832977294921875,0.832977294921875,0.16702264547348022,0.6,A kérdés jogi.,A kérdés nem jogi.
+Hány nap szabadság jár egy munkavállalónak évente?,legal,True,LEGAL,0.5541633367538452,0.5541633367538452,0.4458366632461548,0.6,A kérdés jogi.,A kérdés nem jogi.
+Mikor tagadhatja meg a munkáltató a szabadság kiadását?,legal,True,LEGAL,0.7347251176834106,0.7347251176834106,0.26527488231658936,0.6,A kérdés jogi.,A kérdés nem jogi.
+"Felmondhatok-e azonnali hatállyal, ha nem fizetnek ki?",legal,True,LEGAL,0.667322039604187,0.667322039604187,0.3326779007911682,0.6,A kérdés jogi.,A kérdés nem jogi.
+Milyen feltételekkel jár munkanélküli-ellátás Magyarországon?,legal,False,legal,0.8044814467430115,0.8044814467430115,0.1955185979604721,0.6,A kérdés jogi.,A kérdés nem jogi.
+Mikor évül el egy polgári jogi követelés?,legal,False,legal,0.8206377029418945,0.8206377029418945,0.17936229705810547,0.6,A kérdés jogi.,A kérdés nem jogi.
+"Mit tehetek, ha valaki nem fizeti vissza a kölcsönadott pénzemet?",legal,True,LEGAL,0.7105810046195984,0.7105810046195984,0.289419025182724,0.6,A kérdés jogi.,A kérdés nem jogi.
+Érvényes-e egy szóbeli megállapodás szerződésként?,legal,True,LEGAL,0.7414698004722595,0.7414698004722595,0.25853022933006287,0.6,A kérdés jogi.,A kérdés nem jogi.
+Mikor állhatok el egy online vásárlástól?,legal,True,LEGAL,0.616312563419342,0.616312563419342,0.38368749618530273,0.6,A kérdés jogi.,A kérdés nem jogi.
+Hány napom van elállni egy interneten vásárolt terméktől?,legal,True,LEGAL,0.5006077885627747,0.49939215183258057,0.5006077885627747,0.6,A kérdés jogi.,A kérdés nem jogi.
+"Mit tehetek, ha a webáruház nem akarja visszafizetni a pénzemet?",legal,True,LEGAL,0.7115054726600647,0.7115054726600647,0.2884944975376129,0.6,A kérdés jogi.,A kérdés nem jogi.
+"Ki felel, ha a bérelt lakásban kárt okozok?",legal,True,LEGAL,0.7306410074234009,0.7306410074234009,0.26935896277427673,0.6,A kérdés jogi.,A kérdés nem jogi.
+Felmondhatja-e a főbérlő azonnal a lakásbérleti szerződést?,legal,True,LEGAL,0.6722134947776794,0.6722134947776794,0.32778650522232056,0.6,A kérdés jogi.,A kérdés nem jogi.
+Visszatarthatja-e a főbérlő a teljes kauciómat kiköltözéskor?,legal,True,LEGAL,0.5988664031028748,0.5988664031028748,0.40113356709480286,0.6,A kérdés jogi.,A kérdés nem jogi.
+"Milyen jogaim vannak, ha a szomszédom rendszeresen zajong éjszaka?",legal,False,legal,0.8430158495903015,0.8430158495903015,0.1569841504096985,0.6,A kérdés jogi.,A kérdés nem jogi.
+Készíthetek-e felvételt valakiről az engedélye nélkül?,legal,True,LEGAL,0.5469173789024353,0.4530826210975647,0.5469173789024353,0.6,A kérdés jogi.,A kérdés nem jogi.
+Közzétehetem-e más ember fényképét a közösségi médiában az engedélye nélkül?,legal,True,LEGAL,0.5292372703552246,0.5292372703552246,0.4707627296447754,0.6,A kérdés jogi.,A kérdés nem jogi.
+"Milyen jogaim vannak, ha valaki engedély nélkül használja a fotómat?",legal,False,legal,0.8294073939323425,0.8294073939323425,0.17059257626533508,0.6,A kérdés jogi.,A kérdés nem jogi.
+Milyen következménye lehet a rágalmazásnak?,legal,True,LEGAL,0.6044636964797974,0.6044636964797974,0.3955363631248474,0.6,A kérdés jogi.,A kérdés nem jogi.
+Mi a különbség a rágalmazás és a becsületsértés között?,legal,True,LEGAL,0.6699651479721069,0.6699651479721069,0.33003485202789307,0.6,A kérdés jogi.,A kérdés nem jogi.
+Mikor köteles valaki kártérítést fizetni egy baleset után?,legal,False,legal,0.8180450797080994,0.8180450797080994,0.18195496499538422,0.6,A kérdés jogi.,A kérdés nem jogi.
+Ki felel a parkoló autómban okozott kárért?,legal,True,LEGAL,0.7702421545982361,0.7702421545982361,0.22975781559944153,0.6,A kérdés jogi.,A kérdés nem jogi.
+"Mit tehetek, ha hibás terméket vásároltam?",legal,True,LEGAL,0.6396792531013489,0.6396792531013489,0.3603207767009735,0.6,A kérdés jogi.,A kérdés nem jogi.
+Mi a különbség a jótállás és a kellékszavatosság között?,legal,True,LEGAL,0.5809916853904724,0.5809916853904724,0.4190082848072052,0.6,A kérdés jogi.,A kérdés nem jogi.
+Mikor tagadhatja meg egy üzlet a termék visszavételét?,legal,True,LEGAL,0.7550889849662781,0.7550889849662781,0.24491102993488312,0.6,A kérdés jogi.,A kérdés nem jogi.
+Milyen feltételekkel lehet örökölni végrendelet nélkül?,legal,True,LEGAL,0.6593833565711975,0.6593833565711975,0.3406166732311249,0.6,A kérdés jogi.,A kérdés nem jogi.
+Hogyan lehet érvényesen végrendeletet készíteni?,legal,True,LEGAL,0.7555261254310608,0.7555261254310608,0.24447385966777802,0.6,A kérdés jogi.,A kérdés nem jogi.
+Milyen jogai vannak a gyermeknek a szülők válása után?,legal,False,legal,0.8345136642456055,0.8345136642456055,0.1654863953590393,0.6,A kérdés jogi.,A kérdés nem jogi.
+Hogyan határozzák meg a gyermektartásdíj összegét?,legal,True,LEGAL,0.5670446753501892,0.5670446753501892,0.4329553544521332,0.6,A kérdés jogi.,A kérdés nem jogi.
+Mikor köteles valaki tartásdíjat fizetni a volt házastársának?,legal,True,LEGAL,0.785321056842804,0.785321056842804,0.21467892825603485,0.6,A kérdés jogi.,A kérdés nem jogi.
+Milyen feltételekkel lehet megváltoztatni a gyermek felügyeletéről szóló döntést?,legal,True,LEGAL,0.7764216065406799,0.7764216065406799,0.22357842326164246,0.6,A kérdés jogi.,A kérdés nem jogi.
+"Mit tehetek, ha egy hatóság elutasította a kérelmemet?",legal,True,LEGAL,0.7568148374557495,0.7568148374557495,0.2431851476430893,0.6,A kérdés jogi.,A kérdés nem jogi.
+Mennyi időn belül lehet fellebbezni egy hatósági határozat ellen?,legal,True,LEGAL,0.7383992075920105,0.7383992075920105,0.2616007328033447,0.6,A kérdés jogi.,A kérdés nem jogi.
+Milyen jogaim vannak rendőri igazoltatás során?,legal,False,legal,0.8651105761528015,0.8651105761528015,0.1348893642425537,0.6,A kérdés jogi.,A kérdés nem jogi.
+Mikor jogosult a rendőrség átvizsgálni a táskámat?,legal,True,LEGAL,0.7503556609153748,0.7503556609153748,0.24964430928230286,0.6,A kérdés jogi.,A kérdés nem jogi.
+Milyen következményei lehetnek a jogosítvány nélküli vezetésnek?,legal,True,LEGAL,0.719454824924469,0.719454824924469,0.280545175075531,0.6,A kérdés jogi.,A kérdés nem jogi.
+Milyen feltételekkel igényelhetek személyi jövedelemadó-visszatérítést?,legal,False,legal,0.8457135558128357,0.8457135558128357,0.1542864590883255,0.6,A kérdés jogi.,A kérdés nem jogi.
+"Hogyan írjak Pythonban egy függvényt, amely két számot összead?",not_legal,True,NOT_LEGAL,0.6762934327125549,0.3237065374851227,0.6762934327125549,0.6,A kérdés jogi.,A kérdés nem jogi.
+Mi a különbség a lista és a tuple között Pythonban?,not_legal,True,NOT_LEGAL,0.563433825969696,0.43656620383262634,0.563433825969696,0.6,A kérdés jogi.,A kérdés nem jogi.
+Hogyan tudom kijavítani a Git merge conflictot?,not_legal,True,NOT_LEGAL,0.5133274793624878,0.5133274793624878,0.4866724908351898,0.6,A kérdés jogi.,A kérdés nem jogi.
+Miért kapok 404-es hibát egy HTTP-kérésnél?,not_legal,True,NOT_LEGAL,0.5243176817893982,0.4756823182106018,0.5243176817893982,0.6,A kérdés jogi.,A kérdés nem jogi.
+Hogyan lehet egy fájlt beolvasni Pythonban?,not_legal,True,NOT_LEGAL,0.5431118011474609,0.45688825845718384,0.5431118011474609,0.6,A kérdés jogi.,A kérdés nem jogi.
+Mi a különbség a mesterséges intelligencia és a gépi tanulás között?,not_legal,True,NOT_LEGAL,0.5934672355651855,0.40653282403945923,0.5934672355651855,0.6,A kérdés jogi.,A kérdés nem jogi.
+Hogyan működik egy neurális hálózat?,not_legal,True,NOT_LEGAL,0.6410154700279236,0.35898450016975403,0.6410154700279236,0.6,A kérdés jogi.,A kérdés nem jogi.
+Miért fogyaszt sok memóriát a Chrome?,not_legal,True,NOT_LEGAL,0.6544193625450134,0.3455805778503418,0.6544193625450134,0.6,A kérdés jogi.,A kérdés nem jogi.
+Hogyan tudom felgyorsítani a Windows rendszerindítását?,not_legal,True,NOT_LEGAL,0.7198541164398193,0.28014594316482544,0.7198541164398193,0.6,A kérdés jogi.,A kérdés nem jogi.
+Milyen algoritmussal érdemes rendezni egy nagy listát?,not_legal,True,NOT_LEGAL,0.5025638341903687,0.49743616580963135,0.5025638341903687,0.6,A kérdés jogi.,A kérdés nem jogi.
+Miért kék az ég?,not_legal,True,NOT_LEGAL,0.5369544625282288,0.46304547786712646,0.5369544625282288,0.6,A kérdés jogi.,A kérdés nem jogi.
+Hogyan keletkezik a szivárvány?,not_legal,True,NOT_LEGAL,0.6766431927680969,0.32335683703422546,0.6766431927680969,0.6,A kérdés jogi.,A kérdés nem jogi.
+Mi a különbség a vírus és a baktérium között?,not_legal,True,NOT_LEGAL,0.5641682744026184,0.4358316957950592,0.5641682744026184,0.6,A kérdés jogi.,A kérdés nem jogi.
+Miért alszunk naponta több órát?,not_legal,True,NOT_LEGAL,0.5752070546150208,0.42479294538497925,0.5752070546150208,0.6,A kérdés jogi.,A kérdés nem jogi.
+Hogyan működik a fotoszintézis?,not_legal,True,NOT_LEGAL,0.5878927111625671,0.41210728883743286,0.5878927111625671,0.6,A kérdés jogi.,A kérdés nem jogi.
+Melyik bolygó van a legközelebb a Naphoz?,not_legal,True,NOT_LEGAL,0.6932371258735657,0.30676284432411194,0.6932371258735657,0.6,A kérdés jogi.,A kérdés nem jogi.
+Hogyan készíthetek otthon palacsintát?,not_legal,True,NOT_LEGAL,0.761040985584259,0.23895901441574097,0.761040985584259,0.6,A kérdés jogi.,A kérdés nem jogi.
+Milyen hőmérsékleten érdemes sütni a csirkét?,not_legal,True,NOT_LEGAL,0.6230855584144592,0.3769144117832184,0.6230855584144592,0.6,A kérdés jogi.,A kérdés nem jogi.
+Hogyan lehet megtanulni gyorsabban gépelni?,not_legal,True,NOT_LEGAL,0.62824547290802,0.37175452709198,0.62824547290802,0.6,A kérdés jogi.,A kérdés nem jogi.
+Milyen gyakorlatokkal lehet fejleszteni a memóriát?,not_legal,True,NOT_LEGAL,0.6457076072692871,0.3542923629283905,0.6457076072692871,0.6,A kérdés jogi.,A kérdés nem jogi.
+Hogyan állíthatom be a jogosultságokat egy Google Drive-mappán?,not_legal,True,NOT_LEGAL,0.576679527759552,0.576679527759552,0.423320472240448,0.6,A kérdés jogi.,A kérdés nem jogi.
+"Hogyan ellenőrizhetem, hogy egy API-kérés megfelel-e a specifikációnak?",not_legal,True,NOT_LEGAL,0.510761559009552,0.510761559009552,0.4892384707927704,0.6,A kérdés jogi.,A kérdés nem jogi.
+Mit jelent a szerződés egy REST API dokumentációjában?,not_legal,True,LEGAL,0.5073676109313965,0.5073676109313965,0.4926323890686035,0.6,A kérdés jogi.,A kérdés nem jogi.
+Hogyan kezeljem a hozzáférési jogokat egy SQL-adatbázisban?,not_legal,True,NOT_LEGAL,0.726100742816925,0.726100742816925,0.27389925718307495,0.6,A kérdés jogi.,A kérdés nem jogi.
+Hogyan lehet visszavonni egy felhasználó adminisztrátori jogosultságát Linuxon?,not_legal,True,NOT_LEGAL,0.697238028049469,0.697238028049469,0.302761971950531,0.6,A kérdés jogi.,A kérdés nem jogi.
+"Milyen büntetés jár a Monopolyban, ha rossz helyre lépek?",not_legal,True,NOT_LEGAL,0.5852841734886169,0.5852841734886169,0.4147157669067383,0.6,A kérdés jogi.,A kérdés nem jogi.
+Mikor jár büntetőrúgás a fociban?,not_legal,True,NOT_LEGAL,0.581523060798645,0.581523060798645,0.418476939201355,0.6,A kérdés jogi.,A kérdés nem jogi.
+Milyen szabálytalanságért jár kétperces kiállítás kézilabdában?,not_legal,True,LEGAL,0.6665330529212952,0.6665330529212952,0.3334669768810272,0.6,A kérdés jogi.,A kérdés nem jogi.
+Mikor kap büntetőpontot egy versenyző a Forma–1-ben?,not_legal,True,LEGAL,0.7116304039955139,0.7116304039955139,0.2883695960044861,0.6,A kérdés jogi.,A kérdés nem jogi.
+"Milyen büntetés jár, ha sakkban szabálytalan lépést teszek?",not_legal,True,NOT_LEGAL,0.7257252931594849,0.7257252931594849,0.27427464723587036,0.6,A kérdés jogi.,A kérdés nem jogi.
+Hogyan számolja ki a játék a karakteremre kiszabott büntetést?,not_legal,True,NOT_LEGAL,0.54944908618927,0.54944908618927,0.45055091381073,0.6,A kérdés jogi.,A kérdés nem jogi.
+Milyen feltételekkel oldható fel egy letiltott fiók egy videojátékban?,not_legal,True,LEGAL,0.7852813601493835,0.7852813601493835,0.21471863985061646,0.6,A kérdés jogi.,A kérdés nem jogi.
+Hogyan működik a jogosultságkezelés egy Discord-szerveren?,not_legal,True,NOT_LEGAL,0.6013681292533875,0.6013681292533875,0.39863190054893494,0.6,A kérdés jogi.,A kérdés nem jogi.
+Milyen szabályok vonatkoznak egy sakkverseny időmérésére?,not_legal,True,NOT_LEGAL,0.7828382849693298,0.7828382849693298,0.21716171503067017,0.6,A kérdés jogi.,A kérdés nem jogi.
+"Mekkora adót kell fizetnem a Monopolyban, ha a mezőre lépek?",not_legal,True,NOT_LEGAL,0.7430599927902222,0.7430599927902222,0.25694000720977783,0.6,A kérdés jogi.,A kérdés nem jogi.
+Hogyan készíthetek szerződésmintát egy objektumorientált programban?,not_legal,True,NOT_LEGAL,0.5538085699081421,0.5538085699081421,0.4461914002895355,0.6,A kérdés jogi.,A kérdés nem jogi.
+Mit jelent az öröklődés a Java osztályaiban?,not_legal,True,NOT_LEGAL,0.6164809465408325,0.6164809465408325,0.3835190236568451,0.6,A kérdés jogi.,A kérdés nem jogi.
+Hogyan kezelhetem a felhasználói szerepköröket egy webalkalmazásban?,not_legal,True,NOT_LEGAL,0.6647441983222961,0.6647441983222961,0.33525583148002625,0.6,A kérdés jogi.,A kérdés nem jogi.
+"Mi történik, ha megszegem a játékon belüli küldetés szabályait?",not_legal,True,NOT_LEGAL,0.663790225982666,0.663790225982666,0.33620980381965637,0.6,A kérdés jogi.,A kérdés nem jogi.
+Hogyan lehet egy dokumentumon szerkesztési és olvasási engedélyeket beállítani?,not_legal,True,NOT_LEGAL,0.7000563740730286,0.7000563740730286,0.2999436557292938,0.6,A kérdés jogi.,A kérdés nem jogi.
+Szia!,not_legal,True,NOT_LEGAL,0.5126351714134216,0.487364798784256,0.5126351714134216,0.6,A kérdés jogi.,A kérdés nem jogi.
+"Helló, hogy vagy?",not_legal,True,NOT_LEGAL,0.6108689308166504,0.3891310691833496,0.6108689308166504,0.6,A kérdés jogi.,A kérdés nem jogi.
+Jó reggelt!,not_legal,True,NOT_LEGAL,0.5259166955947876,0.5259166955947876,0.4740833342075348,0.6,A kérdés jogi.,A kérdés nem jogi.
+Jó estét kívánok!,not_legal,True,NOT_LEGAL,0.5004762411117554,0.49952375888824463,0.5004762411117554,0.6,A kérdés jogi.,A kérdés nem jogi.
+Köszi szépen!,not_legal,True,NOT_LEGAL,0.5595828294754028,0.5595828294754028,0.44041717052459717,0.6,A kérdés jogi.,A kérdés nem jogi.
+Nagyon hálás vagyok a segítségedért.,not_legal,True,NOT_LEGAL,0.6681845784187317,0.6681845784187317,0.3318153917789459,0.6,A kérdés jogi.,A kérdés nem jogi.
+"Viszlát, további szép napot!",not_legal,True,NOT_LEGAL,0.595681369304657,0.404318630695343,0.595681369304657,0.6,A kérdés jogi.,A kérdés nem jogi.
+Mit csinálsz most?,not_legal,True,NOT_LEGAL,0.5080465078353882,0.49195346236228943,0.5080465078353882,0.6,A kérdés jogi.,A kérdés nem jogi.
+Milyen napod volt?,not_legal,True,NOT_LEGAL,0.5744971632957458,0.42550286650657654,0.5744971632957458,0.6,A kérdés jogi.,A kérdés nem jogi.
+Mi újság veled?,not_legal,True,NOT_LEGAL,0.5655328631401062,0.4344671666622162,0.5655328631401062,0.6,A kérdés jogi.,A kérdés nem jogi.
+Tudsz egy kicsit beszélgetni?,not_legal,True,NOT_LEGAL,0.6896471977233887,0.31035280227661133,0.6896471977233887,0.6,A kérdés jogi.,A kérdés nem jogi.
+"Unatkozom, mit csináljak?",not_legal,True,NOT_LEGAL,0.5109371542930603,0.4890628159046173,0.5109371542930603,0.6,A kérdés jogi.,A kérdés nem jogi.
+Ajánlanál egy jó filmet estére?,not_legal,True,NOT_LEGAL,0.7742522954940796,0.22574768960475922,0.7742522954940796,0.6,A kérdés jogi.,A kérdés nem jogi.
+Milyen zenét hallgassak tanuláshoz?,not_legal,True,NOT_LEGAL,0.7148026823997498,0.28519734740257263,0.7148026823997498,0.6,A kérdés jogi.,A kérdés nem jogi.
+Szerinted mit vegyek fel ma?,not_legal,True,NOT_LEGAL,0.6750766634941101,0.3249232769012451,0.6750766634941101,0.6,A kérdés jogi.,A kérdés nem jogi.
+Mit főzzek ma vacsorára?,not_legal,False,not_legal,0.8001225590705872,0.19987747073173523,0.8001225590705872,0.6,A kérdés jogi.,A kérdés nem jogi.
+Holnap milyen programot szervezzek a barátaimmal?,not_legal,True,NOT_LEGAL,0.7998528480529785,0.20014716684818268,0.7998528480529785,0.6,A kérdés jogi.,A kérdés nem jogi.
+Elmesélhetek neked valamit?,not_legal,True,NOT_LEGAL,0.5388312339782715,0.5388312339782715,0.46116873621940613,0.6,A kérdés jogi.,A kérdés nem jogi.
+"Ez nagyon jól hangzik, mesélj még!",not_legal,True,NOT_LEGAL,0.5765590071678162,0.5765590071678162,0.4234410226345062,0.6,A kérdés jogi.,A kérdés nem jogi.
+"Bocsi, ezt nem értettem. Elmagyaráznád újra?",not_legal,True,NOT_LEGAL,0.5135334730148315,0.5135334730148315,0.48646652698516846,0.6,A kérdés jogi.,A kérdés nem jogi.

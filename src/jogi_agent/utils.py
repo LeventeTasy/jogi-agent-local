@@ -11,6 +11,16 @@ import base64
 import firebase_admin
 from firebase_admin import credentials, firestore
 from jogi_agent.tools.PDFReader import PDFFullTextReaderTool
+from clm import CLMClient, Choice, Noul, Score
+from crewai import LLM
+import os
+
+import numpy as np
+import onnxruntime as ort
+
+from scipy.special import softmax
+from huggingface_hub import hf_hub_download
+from transformers import AutoTokenizer
 
 def get_config():
     config = configparser.ConfigParser()
@@ -116,3 +126,88 @@ def run_pdf_agent(question: str, is_verbose: bool):
 
     return str(pdf_read_task.execute_sync())
 
+def ask_clm_choice(state: str, instructions: str, criteria: dict[str, str], client = CLMClient()):
+    r = client.system_one(
+        state=state,
+        questions={
+            "question1": Choice(instructions=(instructions),
+                                 criteria=criteria)
+        },
+    )
+
+    return r.answers["question1"]
+
+def ask_llm(system: str, question: str):
+    llm = LLM(model=os.getenv("MODEL"))
+
+    messages = [
+        {"role": "system", "content": system},
+        {"role": "user", "content": question},
+    ]
+
+    return llm.call(messages)
+
+def ask_clm_llm_choice(state: str, instructions: str, criteria: dict[str, str], system: str, client = CLMClient(), prob: float = 0.5):
+    r = ask_clm_choice(state, instructions, criteria, client)
+
+    if r.confidence < prob:
+        print(f"Confidence: {r.confidence}, using LLM")
+        return {"is_llm": True, "resp": ask_llm(system, state)}
+    else:
+        return {"is_llm": False, "resp": r}
+
+def classify_onnx(question, labels):
+    REPO = "Horizon-Labs/multilingual-zeroshot-base"
+
+    model_path = hf_hub_download(
+        repo_id=REPO,
+        filename="onnx/model_quantized.onnx",
+    )
+
+    tokenizer = AutoTokenizer.from_pretrained(REPO)
+
+    # Első teszt: CPU
+    session = ort.InferenceSession(
+        model_path,
+        providers=["CPUExecutionProvider"],
+    )
+
+    class_names = list(labels.keys())
+    labels = list(labels.values())
+
+    hypotheses = [
+            f"This example is {label}."
+            for label in labels
+        ]
+
+    inputs = tokenizer(
+            [question] * len(labels),
+            hypotheses,
+            padding=True,
+            truncation=True,
+            return_tensors="np",
+        )
+
+    feed = {
+            item.name: inputs[item.name]
+            for item in session.get_inputs()
+            if item.name in inputs
+        }
+
+    logits = session.run(None, feed)[0]
+
+        # A modell NLI-kimenetének második oszlopa:
+        # entailment pontszám.
+    entailment_scores = logits[:, 1]
+
+    scores = softmax(entailment_scores)
+
+    best = int(np.argmax(scores))
+
+        # Mindkét osztály pontszámát visszaadjuk.
+    class_scores = {
+            class_names[i]: float(scores[i])
+            for i in range(len(class_names))
+        }
+
+    return (class_names[best], float(scores[best]), class_scores)

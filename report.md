@@ -1,21 +1,23 @@
-# JOGI SZAKVÉLEMÉNY: mennyire szabalyos a lakberleti_szerzodes.pdf
+# JOGI SZAKVÉLEMÉNY: mikor torvenytelen egy munkaszerzodes felmondasa?
 
 ### RÖVID VÁLASZ
-**Jogellenes és tisztességtelen.** A vizsgált szerződéses kikötések a hatályos jogszabályok értelmében **semmisek**.
+A felmondás akkor tekinthető törvénytelennek, ha az **jogellenes**, azaz sérti a Munka Törvénykönyve által előírt **felmondási tilalmakat** vagy az **indokolási kötelezettséget**.
 
 ### JOGI INDOKOLÁS
-A bérleti díj egyoldalú, mérték nélküli emelésére vonatkozó kikötések a **Polgári Törvénykönyv 6:102. §** alapján **tisztességtelenek**, mivel a jóhiszeműség és tisztesség követelményét sértve a szerződő fél hátrányára indokolatlanul egyoldalúan állapítják meg a jogokat. Fogyasztói szerződés esetén a **6:104. §** értelmében a szolgáltatás egyoldalú módosítása akkor tisztességtelen, ha a szerződés nem jelöl meg **érvényes okot**.
+A munkaviszony megszüntetése során a munkáltató köteles betartani a jogszabályi korlátokat. Elsődlegesen, a munkáltató nem szüntetheti meg a munkaviszonyt felmondással a törvényben meghatározott **védett időszakokban**, mint például a várandósság, szülési szabadság vagy gyermek gondozása céljából igénybe vett fizetés nélküli szabadság alatt (**65. § (3)**).
 
-A kaució 180 napos visszatartása ellentétes az **1993. évi LXXVIII. törvény 23. § (1) bekezdésével**, amely kimondja, hogy a bérleti jogviszony megszűnésekor a bérbeadó köteles a kaucióval **elszámolni**, amint a bérlő a lakást elhagyta és a bérbeadónak követelése nincs.
+Másodsorban, a munkáltató által közölt felmondásnak **írásbelinek** és **indokolt**nak kell lennie (**66. § (2)**). Az indokolásnak a munkavállaló magatartásával, képességével vagy a munkáltató működésével összefüggő oknak kell lennie. Amennyiben az indokolás hiányzik, vagy az nem valós és okszerű, a felmondás törvényellenesnek minősülhet.
 
-A bérbeadó belépési joga tekintetében a **Polgári Törvénykönyv 6:339. §** egyértelmű korlátokat állít: a belépésről a bérlőt **előzetesen tájékoztatni** kell. Minden olyan kikötés, amely a bérlő magánszféráját indokolatlanul korlátozza, **semmis**.
-
-Az adatkezeléssel kapcsolatos kikötések, amelyek a hozzájárulás visszavonhatóságát kizárják, közvetlenül sértik az **EU 2016/679 (GDPR) 6. cikk (1) bekezdését**, amely szerint a hozzájárulást az érintett **bármikor visszavonhatja**.
+Kivételt képeznek a speciális munkavállalói státuszok és helyzetek. Vezető állású munkavállaló esetében a munkáltató **nem köteles** indokolni a felmondást (**211. §**). Továbbá, határozott idejű munkaviszonynál a munkáltató indokolás nélkül is megszüntetheti a munkaviszonyt, ha **felszámolási** vagy **végelszámolási** eljárás alatt áll (**66. § (8)**).
 
 ### JOGSZABÁLYI HIVATKOZÁSOK
-- **Polgári Törvénykönyv (2013. évi V. törvény)** 6:102. §, 6:104. §, 6:339. §
-- **Lakástörvény (1993. évi LXXVIII. törvény a lakások és helyiségek bérletére)** 23. § (1) bekezdés
-- **GDPR (Az Európai Parlament és a Tanács (EU) 2016/679 rendelete)** 6. cikk (1) bekezdés
+* **2012. évi I. törvény a munka törvénykönyvéről** 65. § (3) bekezdés
+* **2012. évi I. törvény a munka törvénykönyvéről** 66. § (2) bekezdés
+* **2012. évi I. törvény a munka törvénykönyvéről** 66. § (8) bekezdés
+* **2012. évi I. törvény a munka törvénykönyvéről** 211. § (1) bekezdés
 
 ### KOCKÁZATI TÉNYEZŐK ÉS KIVÉTELEK
-A szerződéses kikötések **fennálló jogellenessége** miatt a dokumentum érvényessége vitatható. Az adatkezelés körében a hozzájárulás visszavonása **nem érinti** a már megtörtént, visszavonás előtti adatkezelés jogszerűségét. Nincs más releváns kivétel, a hivatkozott jogszabályok **kötelező érvényűek**.
+A szabályok alkalmazhatósága nem tekinthető abszolútnak, az alábbi kivételek fennállhatnak:
+* **Vezetői státusz:** Vezető állású munkavállalónál az indokolási kötelezettség **kizárt**.
+* **Felszámolási eljárás:** Határozott idejű munkaviszonynál a felszámolási eljárás **felülírja** az indokolási kötelezettséget.
+* **Egyéb korlátok:** A fenti felsorolás a felmondás szabálytalanságának főbb pontjait tartalmazza, de nem zárja ki egyéb, a törvényben meghatározott további érvénytelenítési okok fennállását.

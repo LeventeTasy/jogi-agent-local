@@ -11,3 +11,6 @@ __pycache__/
 huggingface/
 models/
 
+
+src/jogi_agent/tools/__pycache__
+src/jogi_agent/__pycache__

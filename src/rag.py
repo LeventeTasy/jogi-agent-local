@@ -8,12 +8,16 @@ from langchain_core.documents import Document
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_community.retrievers import BM25Retriever
+from langchain_classic.retrievers import EnsembleRetriever
 
 # Setup
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 CHROMA_PATH = os.path.abspath(os.path.join(BASE_DIR, "../chroma_db"))
 DATA_PATH = os.path.abspath(os.path.join(BASE_DIR, "../pdf"))
 RETRIEVAL_K = 5
+IS_HYBRID = True
+IS_BM25 = False
 
 
 def load_documents():
@@ -32,6 +36,8 @@ def detect_law_name(source_path: str) -> str:
         return "Munka Törvénykönyve (Mt.)"
     if filename == "GDPR_2016":
         return "GDPR rendelet"
+    if filename == "2012_C_BTK":
+        return "Büntető Törvénykönyv (Btk.)"
 
     return filename
 
@@ -70,7 +76,7 @@ def split_documents(documents: list[Document]):
         docs_by_source.setdefault(source, []).append(doc)
 
     section_pattern = re.compile(
-        r'(?m)^\s*((?:\d+:\d+|\d+)\.\s*§|\d+\.\s*§|\d+\.\s*[Cc]ikk)\s*'
+        r'(?m)^\s*(\d+(?::\d+)?(?:/[A-Z])?\.\s*(?:§|[Cc]ikk))\s*'
     )
 
     for source, pages in docs_by_source.items():
@@ -197,11 +203,51 @@ def query_rag(query_text: str):
     )
 
     allowed_types = ["cikk", "paragrafus"]
-    results = db.similarity_search_with_score(
-        query_text,
-        k=RETRIEVAL_K,
-        filter={"section_type": {"$in": allowed_types}}
-    )
+
+    if IS_HYBRID:
+        vector_retriever = db.as_retriever(
+            search_type="similarity",
+            search_kwargs={
+                "k": RETRIEVAL_K,
+                "filter": {"section_type": {"$in": allowed_types}}
+            }
+        )
+
+        data = db.get(include=["documents", "metadatas"])
+
+        documents = [
+            Document(page_content=text, metadata=metadata or {})
+            for text, metadata in zip(data["documents"], data["metadatas"])
+            if (metadata or {}).get("section_type") in allowed_types
+        ]
+
+        bm25_retriever = BM25Retriever.from_documents(documents,k=RETRIEVAL_K)
+
+        ensemble = EnsembleRetriever(
+            retrievers=[vector_retriever, bm25_retriever],
+            weights=[0.5, 0.5])
+
+        results = [(doc, None) for doc in ensemble.invoke(query_text)]
+    elif IS_BM25:
+        data = db.get(include=["documents", "metadatas"])
+
+        documents = [
+            Document(page_content=text, metadata=metadata or {})
+            for text, metadata in zip(data["documents"], data["metadatas"])
+            if (metadata or {}).get("section_type") in allowed_types
+        ]
+
+        retriever = BM25Retriever.from_documents(
+            documents,
+            k=RETRIEVAL_K
+        )
+        results = [(doc, None) for doc in retriever.invoke(query_text)]
+    else:
+        results = db.similarity_search_with_score(
+            query_text,
+            k=RETRIEVAL_K,
+            filter={"section_type": {"$in": allowed_types}}
+        )
 
     formatted_context = ""
     source_list = []
@@ -215,7 +261,11 @@ def query_rag(query_text: str):
         page = meta.get("page", "multiple")
         src = os.path.basename(meta.get("source", "file"))
 
-        distance_score = round(float(score), 4)
+        if IS_BM25 or IS_HYBRID:
+            distance_score = "BM25/Hybrid"
+        else:
+            distance_score = round(float(score), 4)
+
 
         clean_content = doc.page_content[:1500] + "... [vágva a stabilitásért]" if len(
             doc.page_content) > 1500 else doc.page_content

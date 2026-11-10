@@ -9,8 +9,8 @@ from crewai import LLM
 from dotenv import load_dotenv
 from jogi_agent.flow import JogiFlow
 import os
-
-from jogi_agent.utils import initialize_firebase
+from clm import CLMClient
+from jogi_agent.utils import initialize_firebase, ask_clm_llm_choice
 
 
 class RouterFlow(Flow):
@@ -32,6 +32,7 @@ class RouterFlow(Flow):
         self.state["chunks"] = ""
         self.state["verifier_counter"] = ""
         self.state["total_tokens"] = 0
+        self.state["is_llm"] = False
 
         if self.state["inputs"]["chatID"] == "":
             self.state["inputs"]["chatID"] = f"C_{uuid.uuid4()}".upper()
@@ -71,17 +72,47 @@ class RouterFlow(Flow):
            NOT_LEGAL
         '''
 
-        llm = LLM(model=self.state["model"])
+        """llm = LLM(model=self.state["model"])
         messages = [
             {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": self.state["question"]},
         ]
         response = llm.call(messages)
-        self.state["total_tokens"] = llm.get_token_usage_summary()
+        self.state["total_tokens"] = llm.get_token_usage_summary()"""
 
-        if "not_legal" in response.lower():
+
+        client = CLMClient()
+        instruction = f"""Döntsd el, hogy az aktuális felhasználói kérdés jogi vagy nem jogi.
+    
+            A beszélgetési előzményt csak akkor használd, ha az aktuális kérdés értelmezéséhez szükséges.
+    
+            Szabályok:
+            - Ha az aktuális kérdés egy korábbi jogi kérdés folytatása, akkor jogi.
+            - Ha az aktuális kérdés egyértelműen új, a korábbi témától független kérdés, akkor a saját tartalma alapján dönts.
+            - Ne minősíts egy kérdést joginak pusztán azért, mert a beszélgetési előzmény jogi témát tartalmaz.
+            - Ha az aktuális kérdés önmagában nem egyértelmű, a beszélgetési előzmény segítségével döntsd el, hogy egy korábbi jogi témához kapcsolódik-e.
+    
+            Beszélgetési előzmény:
+            {formatted_history}
+    
+            Kizárólag az aktuális kérdést osztályozd, a fenti szabályok szerint."""
+
+        criteria = {
+            "legal": "Az aktuális kérdés jogi, vagy egy korábbi jogi kérdés folytatása.",
+            "not_legal": "Az aktuális kérdés nem jogi, és nem egy korábbi jogi kérdés folytatása."
+        }
+
+        r = ask_clm_llm_choice(self.state["question"], instruction, criteria,
+                               SYSTEM_PROMPT, client, 0.6)
+
+        self.state["is_llm"] = r["is_llm"]
+
+        classification = r["resp"].choice if not r["is_llm"] else r["resp"]
+        print(classification)
+
+        if "not_legal" in classification.lower():
             return "NOT_LEGAL"
-        elif "legal" in response.lower():
+        elif "legal" in classification.lower():
             return "LEGAL"
         else:
             return "HIBA"
@@ -91,7 +122,8 @@ class RouterFlow(Flow):
         flow = JogiFlow()
         flow.state["inputs"] = self.state["inputs"]
         flow.state["history"] = self.state["history"]
-        flow.state["init_tokens"] = self.state["total_tokens"]
+        if self.state["is_llm"]:
+            flow.state["init_tokens"] = self.state["total_tokens"]
 
         resp = flow.kickoff()
 
