@@ -147,7 +147,7 @@ def eval():
     print()
     print(vc)
 
-
+# Helyesség oszlopban: -1=nagyon messze, -2=hiba
 eval()
 #scraping()
 #print("Scraping finished!")
