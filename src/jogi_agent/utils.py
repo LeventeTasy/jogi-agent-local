@@ -159,55 +159,22 @@ def ask_clm_llm_choice(state: str, instructions: str, criteria: dict[str, str], 
 def classify_onnx(question, labels):
     REPO = "Horizon-Labs/multilingual-zeroshot-base"
 
-    model_path = hf_hub_download(
-        repo_id=REPO,
-        filename="onnx/model_quantized.onnx",
-    )
-
+    model_path = hf_hub_download(repo_id=REPO, filename="onnx/model_quantized.onnx")
     tokenizer = AutoTokenizer.from_pretrained(REPO)
 
-    # Első teszt: CPU
-    session = ort.InferenceSession(
-        model_path,
-        providers=["CPUExecutionProvider"],
-    )
-
+    session = ort.InferenceSession(model_path,providers=["CPUExecutionProvider"])
     class_names = list(labels.keys())
     labels = list(labels.values())
 
-    hypotheses = [
-            f"This example is {label}."
-            for label in labels
-        ]
+    hypotheses = [f"This example is {label}." for label in labels]
+    inputs = tokenizer([question] * len(labels),hypotheses,padding=True,truncation=True,return_tensors="np")
 
-    inputs = tokenizer(
-            [question] * len(labels),
-            hypotheses,
-            padding=True,
-            truncation=True,
-            return_tensors="np",
-        )
-
-    feed = {
-            item.name: inputs[item.name]
-            for item in session.get_inputs()
-            if item.name in inputs
-        }
-
+    feed = {item.name: inputs[item.name] for item in session.get_inputs() if item.name in inputs}
     logits = session.run(None, feed)[0]
-
-        # A modell NLI-kimenetének második oszlopa:
-        # entailment pontszám.
     entailment_scores = logits[:, 1]
 
     scores = softmax(entailment_scores)
-
     best = int(np.argmax(scores))
-
-        # Mindkét osztály pontszámát visszaadjuk.
-    class_scores = {
-            class_names[i]: float(scores[i])
-            for i in range(len(class_names))
-        }
+    class_scores = {class_names[i]: float(scores[i]) for i in range(len(class_names))}
 
     return (class_names[best], float(scores[best]), class_scores)
