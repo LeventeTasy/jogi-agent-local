@@ -197,7 +197,7 @@ jogi-agent-rag/
 | **0.3** | ![CLM p=0.3](test/results/clm/ConfusionMatrices/CLM_v0.1-8B-v2_p0_3.png) | ![ZeSh p=0.3](test/results/clm/ConfusionMatrices/HorizonLabs-ZeSh_onnx_p0_3.png) |
 | **0.4** | ![CLM p=0.4](test/results/clm/ConfusionMatrices/CLM_v0.1-8B-v2_p0_4.png) | ![ZeSh p=0.4](test/results/clm/ConfusionMatrices/HorizonLabs-ZeSh_onnx_p0_4.png) |
 | **0.5** | ![CLM p=0.5](test/results/clm/ConfusionMatrices/CLM_v0.1-8B-v2_p0_5.png) | ![ZeSh p=0.5](test/results/clm/ConfusionMatrices/HorizonLabs-ZeSh_onnx_p0_5.png) |
-| **0.6** | ![CLM p=0.6](test/results/clm/ConfusionMatrices/CLM_v0.1-8B-v2_p0_6.png) | ![ZeSh p=0.6](test/results/clm/ConfusionMatrices/HorizonLabs-ZeSh_onnx_p0_6.png) |
+| **0.6** | - | ![ZeSh p=0.6](test/results/clm/ConfusionMatrices/HorizonLabs-ZeSh_onnx_p0_6.png) |
 
 
 ## ⚙️ Telepítés és Konfiguráció
