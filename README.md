@@ -188,6 +188,18 @@ jogi-agent-rag/
 
 ---
 
+## CLM és HorizonLabs eredmények
+
+| p value | CLM v0.1-8B-v2 | HorizonLabs ZeSh ONNX |
+|:---:|:---:|:---:|
+| **0.0** | ![CLM p=0](test/results/clm/ConfusionMatrices/CLM_v0.1-8B-v2_p0.png) | ![ZeSh p=0](test/results/clm/ConfusionMatrices/HorizonLabs-ZeSh_onnx_p0.png) |
+| **0.2** | ![CLM p=0.2](test/results/clm/ConfusionMatrices/CLM_v0.1-8B-v2_p0_2.png) | ![ZeSh p=0.2](test/results/clm/ConfusionMatrices/HorizonLabs-ZeSh_onnx_p0_2.png) |
+| **0.3** | ![CLM p=0.3](test/results/clm/ConfusionMatrices/CLM_v0.1-8B-v2_p0_3.png) | ![ZeSh p=0.3](test/results/clm/ConfusionMatrices/HorizonLabs-ZeSh_onnx_p0_3.png) |
+| **0.4** | ![CLM p=0.4](test/results/clm/ConfusionMatrices/CLM_v0.1-8B-v2_p0_4.png) | ![ZeSh p=0.4](test/results/clm/ConfusionMatrices/HorizonLabs-ZeSh_onnx_p0_4.png) |
+| **0.5** | ![CLM p=0.5](test/results/clm/ConfusionMatrices/CLM_v0.1-8B-v2_p0_5.png) | ![ZeSh p=0.5](test/results/clm/ConfusionMatrices/HorizonLabs-ZeSh_onnx_p0_5.png) |
+| **0.6** | - | ![ZeSh p=0.6](test/results/clm/ConfusionMatrices/HorizonLabs-ZeSh_onnx_p0_6.png) |
+
+
 ## ⚙️ Telepítés és Konfiguráció
 
 ### Előfeltételek

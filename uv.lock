@@ -1547,6 +1547,7 @@ name = "jogi-agent"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
+    { name = "beautifulsoup4" },
     { name = "chromadb" },
     { name = "contrastive-lm" },
     { name = "crewai", extra = ["tools"] },
@@ -1566,6 +1567,7 @@ dependencies = [
     { name = "pypdf" },
     { name = "python-dotenv" },
     { name = "rank-bm25" },
+    { name = "requests" },
     { name = "rich" },
     { name = "scikit-learn" },
     { name = "scipy" },
@@ -1575,6 +1577,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "beautifulsoup4", specifier = ">=4.13.5" },
     { name = "chromadb", specifier = ">=1.1.1" },
     { name = "contrastive-lm", specifier = ">=0.1.0" },
     { name = "crewai", extras = ["tools"], specifier = "==1.14.4" },
@@ -1594,6 +1597,7 @@ requires-dist = [
     { name = "pypdf", specifier = ">=6.10.2" },
     { name = "python-dotenv", specifier = ">=1.2.2" },
     { name = "rank-bm25", specifier = ">=0.2.2" },
+    { name = "requests", specifier = ">=2.34.2" },
     { name = "rich", specifier = ">=14.3.4" },
     { name = "scikit-learn", specifier = ">=1.9.1" },
     { name = "scipy", specifier = ">=1.17.1" },
